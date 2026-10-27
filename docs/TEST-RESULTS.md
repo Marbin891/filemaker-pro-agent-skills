@@ -28,21 +28,22 @@ running Codex host was used.
 ## GitHub Actions
 
 [Current workflow runs](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/workflows/validate.yml)
-are the stable entry point for the latest commit. The last observed baseline,
-[run 40575076816](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40575076816),
-validated commit `f03db8ab080550ce9db4a103e7fe63714d04aa6a` successfully:
+are the stable entry point for the latest commit. The observed audit-correction
+[run 40586645864](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40586645864)
+validated commit `8dc265a8b95c706b096ac89776377fb57e5d7694` successfully:
 
 | Runner | Python | Test result | Full job |
 |---|---|---|---|
-| Ubuntu | 3.10 | 104 passed, no skips | PASS |
-| macOS | 3.10 | 104 passed, no skips | PASS |
-| Windows | 3.10 | 104 passed, no skips | PASS |
+| Ubuntu | 3.10 | 149 passed, no skips | PASS |
+| macOS | 3.10 | 149 passed, no skips | PASS |
+| Windows | 3.10 | 149 passed, no skips | PASS |
 
 All three jobs checked source provenance, exact catalog transformations,
 Lanczos pixels, skill/package structure, deterministic rebuilds and the bounded
 audit. Ubuntu additionally validated the hash-pinned official manifest schema.
-This baseline predates the audit corrections and the 149-test local run above;
-new CI evidence is recorded only after it completes, not inferred from local tests.
+The run includes the audit corrections, 32 bilingual intent cases and 31 routing
+cases. This is observed remote evidence, not inferred from local tests. Subsequent
+documentation commits have their own runs available through the stable link.
 
 Raw unittest output: [TEST-RUN.txt](TEST-RUN.txt).
 Machine-readable static report: [STATIC-AUDIT.json](STATIC-AUDIT.json).

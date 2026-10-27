@@ -24,7 +24,7 @@ limits. It is not a legal opinion or a guarantee of runtime equivalence.
 | Security | Bounded static review | AST and text checks; no network imports, dynamic execution or `shell=True` in project helpers |
 | Plugin identity | Implemented and checked | Unmodified RGBA PNG master; Lanczos 512px logo and 128px composer icon; 48px visual review on light/dark backgrounds |
 | Official manifest schema | Checked | Agent Plugins 1.0.0 schema plus OpenAI listing and image rules; see TEST-RESULTS.md |
-| Cross-platform CI | Baseline PASS | Ubuntu, macOS and Windows; 104 tests per job, no skips; [observed run 40575076816](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40575076816). [Current workflow runs](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/workflows/validate.yml); audit-correction local suite: 149 tests |
+| Cross-platform CI | PASS | Ubuntu, macOS and Windows; 149 tests per job, no skips; [observed audit-correction run 40586645864](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40586645864). [Current workflow runs](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/workflows/validate.yml) |
 
 ## Not executed here
 
