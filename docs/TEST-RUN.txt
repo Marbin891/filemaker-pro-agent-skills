@@ -11,6 +11,7 @@ test_readmes_use_the_same_project_identity (test_branding.BrandingStructureTests
 test_standalone_skills_do_not_depend_on_plugin_icons (test_branding.BrandingStructureTests.test_standalone_skills_do_not_depend_on_plugin_icons) ... ok
 test_wrong_dimensions_are_rejected (test_branding.BrandingStructureTests.test_wrong_dimensions_are_rejected) ... ok
 test_builder_preflights_before_overwriting_notices (test_branding.FinalReviewRegressionTests.test_builder_preflights_before_overwriting_notices) ... ok
+test_ci_workflow_yaml_and_step_types (test_branding.FinalReviewRegressionTests.test_ci_workflow_yaml_and_step_types) ... ok
 test_linter_rejects_missing_smtp_arguments (test_branding.FinalReviewRegressionTests.test_linter_rejects_missing_smtp_arguments) ... ok
 test_linter_rejects_unknown_plugin_function (test_branding.FinalReviewRegressionTests.test_linter_rejects_unknown_plugin_function) ... ok
 test_marketplace_rejects_traversal (test_branding.FinalReviewRegressionTests.test_marketplace_rejects_traversal) ... ok
@@ -106,7 +107,7 @@ test_unicode_and_text_models (test_text_date_oracles.TextDateOracleTests.test_un
 test_weekday_numbering_and_next_business_day (test_text_date_oracles.TextDateOracleTests.test_weekday_numbering_and_next_business_day) ... ok
 
 ----------------------------------------------------------------------
-Ran 103 tests in 4.340s
+Ran 104 tests in 3.822s
 
 OK
 Independent Python oracle equality assertions executed: 374; no FileMaker engine invoked.

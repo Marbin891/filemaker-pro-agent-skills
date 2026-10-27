@@ -1,6 +1,6 @@
 # Executed checks
 
-Environment: macOS arm64, Python 3.14 with Pillow 12.0.0 and jsonschema 4.25.1
+Environment: macOS arm64, Python 3.14 with Pillow 12.0.0, jsonschema 4.25.1 and PyYAML 6.0.3
 in an isolated development environment. Production, helper and test source also
 passes a Python 3.10 grammar check; that is not equivalent to executing on
 Python 3.10. No FileMaker engine, live plug-in, eligible ChatGPT workspace or
@@ -11,7 +11,7 @@ running Codex host was used.
 | Check | Result |
 |---|---|
 | `python3 scripts/validate.py` | PASS: frontmatter, links, catalog counts, plugin manifest and notices |
-| `python3 -m unittest discover -s tests -v` | **103 tests passed**, 0 failures, 0 errors, 0 skips |
+| `python3 -m unittest discover -s tests -v` | **104 tests passed**, 0 failures, 0 errors, 0 skips |
 | `python3 scripts/lint_examples.py` | PASS: native/plug-in call inventory and bounded BE/MBS argument counts |
 | `python3 scripts/audit.py` | PASS: no automated findings in the bounded checks |
 | `python3 scripts/verify_provenance.py ../sources` | PASS: 43 source hashes; 368 functions, 216 steps and 292 errors preserved |
@@ -23,6 +23,24 @@ running Codex host was used.
 | Official Agent Plugins 1.0.0 schema | PASS with jsonschema; downloaded schema SHA-256 `0a4aad95ce337878ad38802ebf0daa3fde76abe3f65400c86bcbb1ec0b3ab883` |
 | OpenAI presentation fields | PASS: final listing text limits, logo/composerIcon paths, PNG dimensions, CRCs and 5 MiB limit |
 | 48 × 48 visual review | Profile and database silhouette remain recognizable on light and dark backgrounds; no alternate design |
+| Workflow YAML | PASS: safe structural parsing and regression test for typed `run` steps |
+
+## GitHub Actions
+
+[Run 40574499264](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40574499264)
+validated commit `36cadcb0b9743965fe63bcc0fa811b09011c4832` successfully:
+
+| Runner | Python | Test result | Full job |
+|---|---|---|---|
+| Ubuntu | 3.10 | 104 passed, no skips | PASS |
+| macOS | 3.10 | 104 passed, no skips | PASS |
+| Windows | 3.10 | 104 passed, no skips | PASS |
+
+All three jobs checked source provenance, exact catalog transformations,
+Lanczos pixels, skill/package structure, deterministic rebuilds and the bounded
+audit. Ubuntu additionally validated the hash-pinned official manifest schema.
+The first two runs stopped during workflow definition validation; the YAML and
+path-initialization corrections are covered by the successful run above.
 
 Raw unittest output: [TEST-RUN.txt](TEST-RUN.txt).
 Machine-readable static report: [STATIC-AUDIT.json](STATIC-AUDIT.json).
@@ -75,8 +93,8 @@ and `assets/icon-128.png`. The PNG master and preview sheet are not packaged.
 4. FileMaker parsing, evaluation, script execution, privileges, transactions,
    Data API/OData calls or plug-in behaviour.
 5. Live BaseElements, MBS or bBox calls, licensing or add-on verification.
-6. CI results are recorded separately in GitHub Actions after pushing; do not
-   infer remote results from this local run.
+6. Cross-platform engine and live plug-in behaviour. CI checks Python helpers,
+   data, images and packaging, not the FileMaker runtime.
 7. A legal determination or written permission for Claris material or public
    redistribution of the supplied logo artwork.
 

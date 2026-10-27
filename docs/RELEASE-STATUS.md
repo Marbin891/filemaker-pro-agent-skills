@@ -24,6 +24,7 @@ limits. It is not a legal opinion or a guarantee of runtime equivalence.
 | Security | Bounded static review | AST and text checks; no network imports, dynamic execution or `shell=True` in project helpers |
 | Plugin identity | Implemented and checked | Unmodified RGBA PNG master; Lanczos 512px logo and 128px composer icon; 48px visual review on light/dark backgrounds |
 | Official manifest schema | Checked | Agent Plugins 1.0.0 schema plus OpenAI listing and image rules; see TEST-RESULTS.md |
+| Cross-platform CI | PASS | Ubuntu, macOS and Windows; 104 tests per job, no skips; [run 40574499264](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40574499264) |
 
 ## Not executed here
 
@@ -35,7 +36,12 @@ limits. It is not a legal opinion or a guarantee of runtime equivalence.
 | FileMaker engine parsing, evaluation or script execution | Not run |
 | Live BaseElements, MBS or bBox calls | Not run |
 | Plug-in licensing or add-on verification | Not run |
-| Cross-platform CI execution | Workflow prepared; not executed without a push |
+
+## Repository distribution
+
+The initial commit and subsequent validation fixes are stored in the private
+repository https://github.com/Marbin891/filemaker-pro-agent-skills. GitHub
+reports `PRIVATE`. No release, tag or OpenAI directory publication was created.
 
 ## Known limitations
 

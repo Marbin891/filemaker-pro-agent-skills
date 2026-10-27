@@ -50,7 +50,8 @@ containing a real export.
 - Icon generation uses Pillow as a development-only dependency. The original
   PNG is hash-pinned and never overwritten. Derived PNGs preserve RGBA and use
   Lanczos; metadata is stripped. Pillow and jsonschema are not installed with
-  the skills and are not bundled in archives.
+  the skills and are not bundled in archives. PyYAML is also development-only,
+  used to check workflow syntax without executing the workflow locally.
 - CI deliberately acquires six pinned public source revisions for provenance
   checks, installs development validators and fetches the hash-pinned official
   plugin schema. It does not execute upstream scripts. This is separate from
