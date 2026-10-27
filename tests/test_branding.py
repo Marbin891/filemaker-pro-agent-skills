@@ -22,6 +22,10 @@ try:
     from PIL import Image
 except ImportError:
     Image = None
+try:
+    import yaml
+except ImportError:
+    yaml = None
 
 
 class BrandingStructureTests(unittest.TestCase):
@@ -104,6 +108,19 @@ class BrandingPixelTests(unittest.TestCase):
 
 
 class FinalReviewRegressionTests(unittest.TestCase):
+    @unittest.skipUnless(yaml is not None, "PyYAML is a development dependency")
+    def test_ci_workflow_yaml_and_step_types(self):
+        workflow = yaml.load((ROOT / ".github/workflows/validate.yml").read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
+        self.assertIn("push", workflow["on"])
+        self.assertIn("pull_request", workflow["on"])
+        self.assertEqual(workflow["permissions"], {"contents": "read"})
+        for job in workflow["jobs"].values():
+            for step in job["steps"]:
+                if "run" in step:
+                    self.assertIsInstance(step["run"], str)
+                else:
+                    self.assertRegex(step["uses"], r"@[a-f0-9]{40}$")
+
     def test_builder_preflights_before_overwriting_notices(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary).resolve()
