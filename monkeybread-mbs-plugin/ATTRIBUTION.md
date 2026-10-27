@@ -4,10 +4,12 @@
 
 The official project identity is the supplied `assets/logo.png`. Optimized
 512px and 128px PNGs are Lanczos derivatives, not alternate designs. They do
-not represent the marks of Claris, FileMaker or any plug-in vendor. No separate
-artwork licence or author metadata accompanied the master; the general CC BY
-notice does not independently license this artwork. See `assets/README.md` in
-the repository before public redistribution.
+not represent the marks of Claris, FileMaker or any plug-in vendor. The project
+owner reports that the master was generated through ChatGPT for this project.
+This provenance does not establish exclusive rights, copyright eligibility or
+third-party clearance; no exclusive artwork rights are claimed. The general
+CC BY notice does not independently license this artwork. See `assets/README.md`
+in the repository before public redistribution.
 
 This is an independent adaptation for ChatGPT and Codex. It is not affiliated
 with or endorsed by CadenceUX, Darrin Southern, Claris, Goya, Monkeybread

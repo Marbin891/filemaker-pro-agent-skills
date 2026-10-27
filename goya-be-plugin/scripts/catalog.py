@@ -2,10 +2,47 @@
 """Read-only BaseElements catalog lookup. Standard library only; no network."""
 import argparse
 import json
+import re
+import unicodedata
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 CATALOG = HERE.parent / "references" / "function-catalog.json"
+
+# Small, curated EN/ES intent hints, not a semantic model or an execution plan.
+INTENTS = (
+    (r"(?=.*\b(send|enviar|mandar)\b)(?=.*\b(email|mail|correo)\b)", ("BE_SMTPSend", "BE_SMTPServer")),
+    (r"(?=.*\b(write|save|escribir|guardar)\b)(?=.*\b(file|archivo|csv)\b)", ("BE_FileWriteText",)),
+    (r"(?=.*\b(read|leer)\b)(?=.*\b(file|archivo)\b)", ("BE_FileReadText",)),
+    (r"(?=.*\b(list|listar)\b)(?=.*\b(folder|directory|carpeta|directorio)\b)", ("BE_FileListFolder",)),
+    (r"\b(http|request|peticion|solicitud)\b", ("BE_HTTP_GET", "BE_HTTP_POST", "BE_HTTP_ResponseCode")),
+    (r"\b(regex|regexp|regular expression|expresion regular)\b", ("BE_RegularExpression",)),
+    (r"\b(javascript|js)\b", ("BE_EvaluateJavaScript",)),
+    (r"\b(xslt|transformar xml|transform xml)\b", ("BE_XSLTApply", "BE_XSLT_ApplyInMemory")),
+    (r"(?=.*\b(merge|append|unir|combinar)\b)(?=.*\b(pdf)\b)", ("BE_PDFAppend",)),
+    (r"\b(hash|digest|huella)\b", ("BE_MessageDigest",)),
+)
+
+
+def normalize(text):
+    return " ".join("".join(c for c in unicodedata.normalize("NFKD", text.casefold())
+                            if not unicodedata.combining(c)).split())
+
+
+def search_score(query, name, haystack):
+    if not query:
+        return 0
+    if query == name.casefold():
+        return 1000
+    if query in haystack:
+        return 900
+    hints = [names.index(name) for pattern, names in INTENTS
+             if name in names and re.search(pattern, query)]
+    if hints:
+        return 800 - min(hints)
+    tokens = [t for t in re.findall(r"\w+", query)
+              if t not in {"a", "an", "the", "to", "with", "using", "in", "de", "un", "una", "con", "en", "el", "la"}]
+    return 100 if tokens and all(t in haystack for t in tokens) else 0
 
 
 def load():
@@ -32,22 +69,23 @@ def emit(value, code=0):
 
 
 def search(data, query, limit):
-    needle = query.casefold()
+    needle = normalize(query)
     matches = []
+    seen = set()
     for category, entry in entries(data):
         haystack = " ".join([
             entry["name"], entry.get("signature", ""), category,
             " ".join(entry.get("keywords", [])),
-        ]).casefold()
-        if needle in haystack:
-            matches.append({
+        ])
+        score = search_score(needle, entry["name"], normalize(haystack))
+        if score and entry["name"] not in seen:
+            seen.add(entry["name"])
+            matches.append((score, {
                 "name": entry["name"],
                 "category": category,
                 "signature": entry.get("signature", ""),
-            })
-            if len(matches) >= limit:
-                break
-    return matches
+            }))
+    return [entry for _, entry in sorted(matches, key=lambda item: (-item[0], item[1]["name"]))[:limit]]
 
 
 def constants(data):
@@ -81,6 +119,8 @@ def main():
             return emit({"status": "not-found-in-snapshot", "name": args.name}, 1)
         return emit({"status": "found", "category": category, "entry": entry})
     if args.command == "search":
+        if not args.query.strip():
+            parser.error("search query must not be blank")
         if not 1 <= args.limit <= 50:
             parser.error("--limit must be between 1 and 50")
         return emit({"query": args.query, "matches": search(data, args.query, args.limit)})

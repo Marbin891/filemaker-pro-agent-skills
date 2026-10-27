@@ -7,7 +7,7 @@ import re
 SKILLS = ("filemaker-pro", "goya-be-plugin", "monkeybread-mbs-plugin", "beezwax-bbox-plugin")
 
 MARKERS = {
-    "goya-be-plugin": [r"\bBE_[A-Za-z0-9_]+", r"\bBaseElements\b"],
+    "goya-be-plugin": [r"\bBE_[A-Za-z0-9_]*", r"\bBaseElements\b"],
     "monkeybread-mbs-plugin": [r"\bMBS\b", r"\bMonkeybread\b", r"\bDynaPDF\b", r"\bLibXL\b", r"\bSaxon\b"],
     "beezwax-bbox-plugin": [r"\bbBox_[A-Za-z0-9_]+", r"\bbBox\b", r"\bBeezwax\b"],
 }
@@ -18,6 +18,7 @@ NATIVE = [
     r"\bfield type\b", r"\bschema\b", r"\blayout\b", r"\brelationship\b",
     r"\btransaction\b", r"\bOpen Transaction\b", r"\bPSoS\b",
     r"\bPerform Script on Server\b", r"\bServer\b",
+    r"\biOS App SDK\b", r"\bcalculo\b", r"\bcálculo\b", r"\bguion\b", r"\bguión\b",
 ]
 STRONG_NATIVE = [
     r"\bscript step\b", r"\bSet Variable\b", r"\bIf\s*\[", r"\bExecuteSQL\b",
@@ -25,6 +26,8 @@ STRONG_NATIVE = [
     r"\bPSoS\b", r"\bPerform Script on Server\b", r"\bfield type\b",
     r"\bcalculation\b", r"\blayout\b", r"\brelationship\b", r"\berror code\b",
     r"\bscript\b", r"\bnative\b",
+    r"\bFileMaker Go\b", r"\biOS App SDK\b", r"\bServer\b",
+    r"\bcalculo\b", r"\bcálculo\b", r"\bguion\b", r"\bguión\b", r"\bnativo\b",
 ]
 NEGATIVE = [r"\bPostgreSQL\b", r"\bExcel\b", r"\bgeneric JSON\b", r"\bPower BI\b"]
 
@@ -59,9 +62,9 @@ def route(prompt):
             matched[skill] = sorted(set(hits))
     native_hits = matches(NATIVE, text)
     strong_native = matches(STRONG_NATIVE, text)
-    if native_hits:
-        scores["filemaker-pro"] = scores.get("filemaker-pro", 0) + 2 * len(native_hits)
-        matched["filemaker-pro"] = sorted(set(native_hits))
+    if native_hits or (has_plugin and strong_native):
+        scores["filemaker-pro"] = 2 * max(1, len(native_hits))
+        matched["filemaker-pro"] = sorted(set(native_hits + strong_native))
     # A plug-in marker alone should not pull in the native catalog.
     if "filemaker-pro" in scores and scores["filemaker-pro"] < 2:
         scores.pop("filemaker-pro")

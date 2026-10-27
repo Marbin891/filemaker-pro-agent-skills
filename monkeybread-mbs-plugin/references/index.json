@@ -9,10 +9,10 @@
   "prerelease_meaning": "The vendor's doc site documents functions for in-development plugin versions ahead of release. prerelease: true means the function's version_introduced was higher than plugin_version_released_at_build when this catalog was built -- it exists in the docs but may not be in the shipping plugin yet. Once that version ships, the flag is stale until the next rebuild.",
   "deprecated_function_count": 400,
   "deprecated_meaning": "Listed on the vendor's deprecated functions page (https://www.mbsplugins.eu/deprecated.md) at build time. Deprecated functions still exist and run, but the vendor recommends a replacement -- check the function's own doc page for what to use instead.",
-  "count_note": "catalog_function_count is derived by enumerating every function link on the vendor's component_X.md pages plus the deprecated.md page. The site's index.md headline counter (site_function_count_at_build) is higher by a small residual not linked from any listing page; the enumerated set is a strict superset of the previous docset-based catalog and includes every function on the newest newinversionNNN.md pages.",
+  "count_note": "Independent review on 2026-10-27 found 7,859 unique function names in the primary tables of 169 component pages linked from index.md plus deprecated.md, exactly matching this catalog. The index headline advertises 7,971 (112 more). The cause is unresolved; this is not proof of 112 missing functions or that no other listing contains additional names. See coverage-review.json for method, hashes and limits.",
   "vendor": "Monkeybread Software (Christian Schmitz)",
   "source": "Live crawl of https://www.mbsplugins.eu (enumerated via the markdown mirror index.md/component_X.md, detail parsed from the .shtml pages).",
-  "license": "comprehensive catalog -- every function tagged with a status field (free / licensed / unknown_license). See status_counts and status_meaning below.",
+  "license": "Cataloged functions have free/licensed/unknown_license status; vendor-wide completeness is not established. See status_counts and status_meaning.",
   "status_meaning": {
     "free": "Vendor doc page states this function is free to use (works unregistered).",
     "licensed": "Vendor doc page states this function checks for a license (requires the base MBS plugin to be registered).",

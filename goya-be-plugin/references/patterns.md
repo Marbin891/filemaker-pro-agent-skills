@@ -158,6 +158,30 @@ management scheme in a calculation; keys belong in a protected store.
 
 ## 10. Operational checklist
 
+### Execution hosts and compatibility evidence
+
+FileMaker Go does not support external plug-ins. Do not interpret the catalog's
+inherited `ios: true` as Go support. iOS App SDK apps are separate builds that
+may embed app-specific plug-ins; verify a compatible vendor build and function
+before promising that deployment. Current availability is not established here.
+
+For WebDirect, plug-in calls run in the server WPE, not in the browser. Install
+and enable a WPE-compatible plug-in there. The catalog's `fms` flag is not an
+independent WPE certification. For PSoS and schedules, calls run in FMSE with a
+server-installed plug-in. Paths, credentials, permissions and state belong to
+that server session, not the Go/WebDirect/Pro client that requested the work.
+No server plug-in is available while Go is disconnected. Do not equate FileMaker
+Server with FileMaker Cloud, which does not support plug-ins.
+
+Sources checked 2026-10-27 (summaries only; vendor rights remain unchanged):
+
+- [Claris: Go/Pro differences](https://help.claris.com/en/go-development-guide/content/go-pro-differences.html): Go excludes plug-ins.
+- [Claris: iOS App SDK project files](https://help.claris.com/en/ios-app-sdk-guide/content/add-files-to-project.html): app-specific plug-ins in Xcode's Plug-Ins folder.
+- [Claris: managing server plug-ins](https://help.claris.com/en/server-help/content/plugins-manage.html): FMSE/WPE execution on the host.
+- [Claris: enabling server plug-ins](https://help.claris.com/en/security-guide/content/enable-plug-ins-server.html): separate FMSE/web settings, PSoS and schedules; no Cloud support.
+- [Claris: WebDirect planning](https://help.claris.com/en/webdirect-guide/content/step-one-plan-your-filemaker-webdirect-custom-app.html): WPE-compatible/enabled plug-ins only.
+- [Goya: server FAQ](https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/FAQ.md): server function limits, permissions and thread safety.
+
 - [ ] Plug-in version and platform checked.
 - [ ] Exact signature and optional arguments checked in the catalog.
 - [ ] Error signal checked after every network, file, mail or PDF operation.

@@ -8,6 +8,10 @@ These are snapshot counts, not new device/engine tests or guarantees for later r
 
 Go runs custom apps on iOS/iPadOS. Author schema, layouts and scripts in FileMaker Pro.
 Go does not host databases, load FileMaker plug-ins, or provide a schema/script editor.
+An iOS App SDK app is a separate app build that may embed app-specific plug-ins;
+it is not the standard Go client. PSoS can request plug-in work on a connected
+FileMaker Server with a compatible plug-in installed/enabled in FMSE; that work
+runs on the server, never locally in Go or while Go is disconnected.
 Distinguish two deployments before designing any data-entry workflow:
 
 | Deployment | Data location and responsibility |

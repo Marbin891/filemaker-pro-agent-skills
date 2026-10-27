@@ -47,6 +47,18 @@ unexpected catalog shapes. They do not fetch, install or execute upstream code.
 If a catalog schema changes, update the transformer and the tests together. Do
 not silently drop unknown metadata; decide its treatment explicitly.
 
+Keep BaseElements' `compatibility_interpretation` and MBS's corrected `count_note`
+in the transformer, not only in generated JSON. Raw `ios` is not Go support;
+`fms` is not WPE certification. For a new MBS coverage review, use the method in
+`monkeybread-mbs-plugin/references/coverage-review.json`: explicitly download the
+linked vendor component pages and deprecated list as a maintainer action, hash
+the raw bytes, enumerate primary-table link labels, deduplicate and compare
+against local names. Record counts, sorted-name digest, differences, date and
+limits. Do not count release-note mentions twice or invent a cause for the
+headline residual. Live pages may change; no vendor prose snapshots are bundled.
+The pinned importer does not regenerate this separately dated evidence. Update
+it after changing the catalog roster; its name-set digest is regression-tested.
+
 ## 4. Update expectations
 
 After an import:

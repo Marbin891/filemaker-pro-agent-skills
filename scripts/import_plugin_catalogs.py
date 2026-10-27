@@ -112,6 +112,11 @@ def be_catalog(source):
             "category_count": len(categories),
             "content_policy": POLICY,
             "field_note": "Each entry retains signature, parameter names/flags/defaults, keywords, version history, platform support and the vendor URL. Prose and examples are not copied; see the URL.",
+            "compatibility_interpretation": {
+                "ios": "Inherited upstream flag; not FileMaker Go support. Go cannot load external plug-ins. iOS App SDK apps require a separately verified compatible plug-in build.",
+                "fms": "Inherited FileMaker Server flag; verify function, OS, build and FMSE permissions. It does not certify WPE/WebDirect support. PSoS executes on the server, not the requesting client.",
+                "webdirect": "Compatible plug-ins execute in the server WPE, not in the browser; install and enable them for that engine.",
+            },
         },
         "categories": categories,
         "deprecated": deprecated,
@@ -177,6 +182,14 @@ def mbs_catalog(source_dir, dest):
     reduced_index["adapted_from"] = "CadenceUX monkeybread-mbs-plugin 2.0.1"
     reduced_index["source_commit"] = PINS["monkeybread-mbs-plugin-skill"][1]
     reduced_index["content_policy"] = POLICY
+    reduced_index["count_note"] = (
+        "Independent review on 2026-10-27 found 7,859 unique function names in the primary "
+        "tables of 169 component pages linked from index.md plus deprecated.md, exactly "
+        "matching this catalog. The index headline advertises 7,971 (112 more). The cause "
+        "is unresolved; this is not proof of 112 missing functions or that no other listing "
+        "contains additional names. See coverage-review.json for method, hashes and limits."
+    )
+    reduced_index["license"] = "Cataloged functions have free/licensed/unknown_license status; vendor-wide completeness is not established. See status_counts and status_meaning."
     reduced_index["field_note"] = (
         "Each entry retains signature, parameter names/flags, result, version introduced, "
         "platform support, licensing status, deprecation flag, see-also links and the vendor URL. "

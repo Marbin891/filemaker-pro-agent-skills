@@ -89,9 +89,10 @@ formal prompt-injection defense or a legal audit.
 - Concurrent malicious local filesystem modification is outside the installer
   and builder threat model.
 - The project does not provide legal clearance for third-party material.
-- The supplied project logo has no separate licence/authorship metadata. Its
-  private use as project identity is not a determination of public artwork
-  redistribution rights; see `assets/README.md`.
+- The project owner reports that the logo was generated through ChatGPT for
+  this project. This does not establish exclusive rights or third-party clearance.
+  Private use is not a determination of public artwork redistribution rights;
+  see `assets/README.md`.
 
 See `docs/TEST-RESULTS.md` and `docs/STATIC-AUDIT.json` for the checks that were
 run.

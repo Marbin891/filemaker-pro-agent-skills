@@ -24,7 +24,7 @@ limits. It is not a legal opinion or a guarantee of runtime equivalence.
 | Security | Bounded static review | AST and text checks; no network imports, dynamic execution or `shell=True` in project helpers |
 | Plugin identity | Implemented and checked | Unmodified RGBA PNG master; Lanczos 512px logo and 128px composer icon; 48px visual review on light/dark backgrounds |
 | Official manifest schema | Checked | Agent Plugins 1.0.0 schema plus OpenAI listing and image rules; see TEST-RESULTS.md |
-| Cross-platform CI | PASS | Ubuntu, macOS and Windows; 104 tests per job, no skips; [run 40574499264](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40574499264) |
+| Cross-platform CI | Baseline PASS | Ubuntu, macOS and Windows; 104 tests per job, no skips; [observed run 40575076816](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40575076816). [Current workflow runs](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/workflows/validate.yml); audit-correction local suite: 149 tests |
 
 ## Not executed here
 
@@ -54,9 +54,16 @@ reports `PRIVATE`. No release, tag or OpenAI directory publication was created.
 - Vendor documentation prose and vendor examples are not redistributed. Each
   entry links to the vendor page for full detail.
 - Claris documentation rights are not claimed. See `THIRD-PARTY.md`.
-- Logo authorship and public redistribution rights are not established by the
-  supplied artwork. See `assets/README.md`; the CC BY text/code notice does not
-  independently license the artwork.
+- The project owner reports that the logo was generated through ChatGPT for
+  this project. This does not establish exclusive rights or third-party clearance.
+  See `assets/README.md`; the CC BY text/code notice does not independently
+  license the artwork.
+- MBS's headline advertises 7,971 functions. Independent enumeration of 169
+  component pages plus deprecated.md matches all 7,859 catalog names. The cause
+  of the 112-function residual remains unresolved; see the packaged
+  `monkeybread-mbs-plugin/references/coverage-review.json` evidence.
+- Intent search uses bounded English/Spanish hints, not a semantic model.
+  Arbitrary phrasing and negation are not fully interpreted by search or routing.
 - The security audit is a bounded static review, not malware detection or a
   runtime sandbox.
 

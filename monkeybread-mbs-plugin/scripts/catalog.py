@@ -2,11 +2,62 @@
 """Read-only MBS catalog lookup. Resolves one group file per component; no network."""
 import argparse
 import json
+import re
+import unicodedata
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 INDEX = ROOT / "references" / "index.json"
+
+# Curated EN/ES retrieval hints. Results still need function/platform/licence lookup.
+INTENTS = (
+    (r"(?=.*\b(create|generate|crear|generar)\b)(?=.*\b(pdf)\b)", ("DynaPDF.New", "DynaPDF.AppendPage", "DynaPDF.Save")),
+    (r"(?=.*\b(extract|extraer)\b)(?=.*\b(text|texto)\b)(?=.*\b(pdf)\b)", ("DynaPDF.ExtractText", "DynaPDF.ExtractDocumentText")),
+    (r"(?=.*\b(read|open|leer|abrir)\b)(?=.*\b(excel|xlsx|spreadsheet)\b)", ("XL.LoadBook", "XL.Sheet.CellReadText")),
+    (r"(?=.*\b(write|save|escribir|guardar)\b)(?=.*\b(file|archivo)\b)", ("Files.WriteFile",)),
+    (r"(?=.*\b(read|leer)\b)(?=.*\b(file|archivo)\b)", ("Files.ReadFile",)),
+    (r"\b(http|request|peticion|solicitud)\b", ("CURL.New", "CURL.SetOptionURL", "CURL.Perform")),
+    (r"(?=.*\b(send|enviar|mandar)\b)(?=.*\b(email|mail|correo)\b)", ("SendMail.CreateEmail", "SendMail.PrepareCURL", "CURL.Perform")),
+    (r"\b(regex|regexp|regular expression|expresion regular)\b", ("RegEx.ReplaceAll", "RegEx.Replace", "RegEx.Execute")),
+    (r"(?=.*\b(parse|analizar)\b)(?=.*\b(json)\b)", ("JSON.Parse",)),
+)
+
+
+def normalize(text):
+    return " ".join("".join(c for c in unicodedata.normalize("NFKD", text.casefold())
+                            if not unicodedata.combining(c)).split())
+
+
+def search_score(query, name, haystack):
+    if not query:
+        return 0
+    if query == name.casefold():
+        return 1000
+    if query in haystack:
+        return 900
+    hints = [names.index(name) for pattern, names in INTENTS
+             if name in names and re.search(pattern, query)]
+    if hints:
+        return 800 - min(hints)
+    tokens = [t for t in re.findall(r"\w+", query)
+              if t not in {"a", "an", "the", "to", "with", "using", "in", "de", "un", "una", "con", "en", "el", "la"}]
+    return 100 if tokens and all(t in haystack for t in tokens) else 0
+
+
+def search(index, query, limit):
+    needle = normalize(query)
+    matches = []
+    for relative in sorted({summary["file"] for summary in index["components"].values()}):
+        group = json.loads((ROOT / relative).read_text(encoding="utf-8"))
+        for block in group["components"].values():
+            for entry in block["functions"]:
+                haystack = normalize(" ".join([entry["name"], entry["signature"], entry["status"], block["component"]]))
+                score = search_score(needle, entry["name"], haystack)
+                if score:
+                    matches.append((score, {"name": entry["name"], "component": block["component"],
+                                            "signature": entry["signature"], "status": entry["status"]}))
+    return [entry for _, entry in sorted(matches, key=lambda item: (-item[0], item[1]["name"]))[:limit]]
 
 
 def load_index():
@@ -69,27 +120,11 @@ def main():
                      "functions": [{"name": x["name"], "signature": x["signature"],
                                     "status": x["status"]} for x in block["functions"]]})
     if args.command == "search":
+        if not args.query.strip():
+            parser.error("search query must not be blank")
         if not 1 <= args.limit <= 50:
             parser.error("--limit must be between 1 and 50")
-        needle = args.query.casefold()
-        matches = []
-        seen = set()
-        for component, summary in index["components"].items():
-            path = ROOT / summary["file"]
-            if path in seen:
-                continue
-            seen.add(path)
-            group = json.loads(path.read_text(encoding="utf-8"))
-            for block in group["components"].values():
-                for entry in block["functions"]:
-                    haystack = " ".join([entry["name"], entry["signature"], entry["status"],
-                                         block["component"]]).casefold()
-                    if needle in haystack:
-                        matches.append({"name": entry["name"], "component": block["component"],
-                                        "signature": entry["signature"], "status": entry["status"]})
-                        if len(matches) >= args.limit:
-                            return emit({"query": args.query, "matches": matches})
-        return emit({"query": args.query, "matches": matches})
+        return emit({"query": args.query, "matches": search(index, args.query, args.limit)})
     if args.command == "components":
         return emit({"components": {
             name: {"function_count": value["function_count"],

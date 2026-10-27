@@ -36,6 +36,10 @@ native equivalent.
 
 - Catalog baseline: MBS FileMaker Plugin **16.4**, built 2026-10-11.
 - The catalog covers **7,859 documented functions in 245 components**.
+  A 2026-10-27 independent review matched all 7,859 names from the primary
+  tables of 169 vendor component pages plus the deprecated list. The headline
+  advertises 7,971; the remaining difference of 112 is unresolved, not a proven
+  omission. Method, page hashes and limits: `references/coverage-review.json`.
 - The base plug-in is commercial. Functions are tagged:
   - `free`: works unregistered without a reminder dialog;
   - `licensed`: works unregistered but triggers a periodic reminder dialog
@@ -47,6 +51,9 @@ native equivalent.
 - Platform support is per function. Most dialog and UI functions are
   macOS/Windows-only and do not work on Server or the iOS SDK. Check the
   `compatibility` object before recommending a function for server-side use.
+- An `ios_sdk` flag refers to a separately built iOS App SDK app, not FileMaker
+  Go, which cannot load external plug-ins. WebDirect calls require compatible
+  server WPE plug-ins; PSoS calls require server FMSE plug-ins, not client ones.
 - The plug-in must be installed and permitted by the file and by FileMaker
   Server. This skill bundles no binary, licence key or installer.
 
@@ -59,13 +66,17 @@ whole 7.6 MB corpus. Resolve the component through `index.json` first.
 python3 scripts/catalog.py function "Dialog.SetMessage"
 python3 scripts/catalog.py component Dialog
 python3 scripts/catalog.py search "pdf merge" --limit 8
+python3 scripts/catalog.py search "crear pdf" --limit 3
 python3 scripts/catalog.py components
 python3 scripts/catalog.py stats
 ```
 
 `function` reads only the group that contains the component. `component` lists
 the functions in one component without descriptions. `search` scans names,
-signatures and status fields, not vendor prose.
+signatures and status fields, not vendor prose. Search ranks exact names,
+literal matches, curated English/Spanish intent hints and token matches. A hint
+is a starting point, not an executable workflow; check each function, platform,
+handle lifecycle and add-on licence before using it.
 
 Without Python, open `references/index.json`, find the component key, then open
 the group file listed for it and read the matching entry. A top-level function

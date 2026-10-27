@@ -11,7 +11,7 @@ running Codex host was used.
 | Check | Result |
 |---|---|
 | `python3 scripts/validate.py` | PASS: frontmatter, links, catalog counts, plugin manifest and notices |
-| `python3 -m unittest discover -s tests -v` | **104 tests passed**, 0 failures, 0 errors, 0 skips |
+| `python3 -m unittest discover -s tests -v` | **149 tests passed**, 0 failures, 0 errors, 0 skips |
 | `python3 scripts/lint_examples.py` | PASS: native/plug-in call inventory and bounded BE/MBS argument counts |
 | `python3 scripts/audit.py` | PASS: no automated findings in the bounded checks |
 | `python3 scripts/verify_provenance.py ../sources` | PASS: 43 source hashes; 368 functions, 216 steps and 292 errors preserved |
@@ -27,8 +27,10 @@ running Codex host was used.
 
 ## GitHub Actions
 
-[Run 40574499264](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40574499264)
-validated commit `36cadcb0b9743965fe63bcc0fa811b09011c4832` successfully:
+[Current workflow runs](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/workflows/validate.yml)
+are the stable entry point for the latest commit. The last observed baseline,
+[run 40575076816](https://github.com/Marbin891/filemaker-pro-agent-skills/actions/runs/40575076816),
+validated commit `f03db8ab080550ce9db4a103e7fe63714d04aa6a` successfully:
 
 | Runner | Python | Test result | Full job |
 |---|---|---|---|
@@ -39,8 +41,8 @@ validated commit `36cadcb0b9743965fe63bcc0fa811b09011c4832` successfully:
 All three jobs checked source provenance, exact catalog transformations,
 Lanczos pixels, skill/package structure, deterministic rebuilds and the bounded
 audit. Ubuntu additionally validated the hash-pinned official manifest schema.
-The first two runs stopped during workflow definition validation; the YAML and
-path-initialization corrections are covered by the successful run above.
+This baseline predates the audit corrections and the 149-test local run above;
+new CI evidence is recorded only after it completes, not inferred from local tests.
 
 Raw unittest output: [TEST-RUN.txt](TEST-RUN.txt).
 Machine-readable static report: [STATIC-AUDIT.json](STATIC-AUDIT.json).
@@ -64,12 +66,18 @@ and `assets/icon-128.png`. The PNG master and preview sheet are not packaged.
 - **Native catalogs:** 368 functions, 216 steps, 292 errors, field types,
   version comparison, platform `Partial`/`No`, errata and offline lookup.
 - **BaseElements:** 133 entries, 129 unique functions, 11 deprecated entries,
-  10 constants, lookup/search/constants CLI and catalog field policy.
+  10 constants, lookup/search/constants CLI and catalog field policy; distinct
+  Go/SDK/WPE/FMSE/PSoS deployment boundaries and inherited compatibility flags.
 - **MBS:** 7,859 functions, 245 components, index-to-group integrity,
-  licensing status, add-ons and component/function/search CLI.
+  licensing status, add-ons and component/function/search CLI; dated vendor
+  enumeration, 170 page hashes and catalog name-set digest. Headline residual
+  of 112 is unresolved, not a proved omission.
 - **bBox:** 87 entries, 39 full + 48 demo-confirmed, shared reference tables,
   lookup and mode-flag access.
-- **Routing:** 15 positive/negative/ambiguity cases, deterministic helper,
+- **Intent lookup:** 32 representative English/Spanish cases across BE, MBS
+  and bBox; exact names rank first, deduplication, stable limits, unknown/blank
+  inputs, real catalog targets and extracted-package execution from unrelated paths.
+- **Routing:** 31 positive/negative/ambiguity/combined cases, deterministic helper,
   orchestrator contract and native/plug-in boundary.
 - **Packages:** deterministic rebuild, manifest hashes, one-folder skill ZIPs,
   root-manifest plugin ZIP, extracted-package lookup and installers.

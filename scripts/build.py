@@ -55,7 +55,7 @@ SKILLS = {
     "monkeybread-mbs-plugin": (
         "SKILL.md", "agents/openai.yaml", "LICENSE", "ATTRIBUTION.md", "THIRD-PARTY.md",
         "scripts/catalog.py", "references/index.json", "references/provenance.json",
-        "references/component-guide.md",
+        "references/component-guide.md", "references/coverage-review.json",
     ) + tuple(f"references/group-{number:02}.json" for number in range(1, 21)),
     "fmp-dev-orchestrator": (
         "SKILL.md", "agents/openai.yaml", "LICENSE", "ATTRIBUTION.md", "THIRD-PARTY.md",

@@ -15,7 +15,12 @@
       "omitted": "Vendor documentation prose, vendor parameter descriptions, vendor notes and vendor example code",
       "reason": "The vendor documentation sites do not declare a redistribution licence. Consult the linked vendor page for full prose and examples."
     },
-    "field_note": "Each entry retains signature, parameter names/flags/defaults, keywords, version history, platform support and the vendor URL. Prose and examples are not copied; see the URL."
+    "field_note": "Each entry retains signature, parameter names/flags/defaults, keywords, version history, platform support and the vendor URL. Prose and examples are not copied; see the URL.",
+    "compatibility_interpretation": {
+      "ios": "Inherited upstream flag; not FileMaker Go support. Go cannot load external plug-ins. iOS App SDK apps require a separately verified compatible plug-in build.",
+      "fms": "Inherited FileMaker Server flag; verify function, OS, build and FMSE permissions. It does not certify WPE/WebDirect support. PSoS executes on the server, not the requesting client.",
+      "webdirect": "Compatible plug-ins execute in the server WPE, not in the browser; install and enable them for that engine."
+    }
   },
   "categories": {
     "Arrays": {

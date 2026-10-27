@@ -18,6 +18,29 @@ the native FileMaker inventory is in `filemaker-pro/references/source-inventory.
 Catalog baselines: FileMaker 26.0.3 (upstream snapshot checked 2026-10-02),
 BaseElements 5.1.0.6, MBS 16.4 and bBox 1.06.7.
 
+## Audit corrections: vendor checks on 2026-10-27
+
+- **Execution hosts:** Claris explicitly excludes plug-ins from Go. Its iOS App
+  SDK guide permits app-specific plug-ins in separate Xcode app builds; this is
+  not Go support or evidence of a currently available BaseElements iOS binary.
+  WebDirect uses compatible server WPE plug-ins, while PSoS/schedules use FMSE.
+  Sources and operational limits are in
+  [BaseElements patterns](../goya-be-plugin/references/patterns.md#execution-hosts-and-compatibility-evidence).
+- **MBS coverage:** the live index still advertises 7,971 functions. All 169
+  linked component pages produce 7,593 distinct primary-table names. The
+  deprecated table contains 400 names, of which 134 overlap: the union is exactly
+  **7,859**, equal to the local catalog. No omissions were proved in that scope.
+  `Plugin.LibXSLTVersion`, mentioned in Plugin release notes, is already in the
+  XML primary table and local Plugin namespace bucket. The catalog's 245 buckets
+  are not the same unit as the vendor's 169 pages. The cause of the 112-function
+  headline residual is unresolved; neither a stale counter nor hidden functions
+  are established explanations. [Packaged evidence](../monkeybread-mbs-plugin/references/coverage-review.json)
+  records the method, index/page hashes, name-set digest and limits. Full vendor
+  page prose is not redistributed; live pages may change.
+- **Artwork provenance:** the project owner reports ChatGPT generation for this
+  project. This establishes the reported origin only, not exclusive rights,
+  copyright eligibility or third-party clearance. Claris legal notices remain.
+
 ## Native catalog
 
 The native snapshot contains **368 distinct functions**, **216 distinct script

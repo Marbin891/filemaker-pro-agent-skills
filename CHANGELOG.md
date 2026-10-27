@@ -2,6 +2,15 @@
 
 ## 2.0.0 — 2026-10-27
 
+- Corrected FileMaker Go/SDK/WebDirect/PSoS plug-in execution boundaries and
+  explained inherited BaseElements compatibility flags without changing them.
+- Independently matched all 7,859 MBS catalog names to vendor primary tables;
+  recorded page hashes and the unresolved 112-function headline residual.
+- Added bounded English/Spanish intent retrieval, 32 representative lookup cases
+  and expanded ambiguous/combined routing coverage without changing skill layout.
+- Recorded owner-reported ChatGPT logo provenance without claiming exclusive
+  rights; preserved Claris and third-party legal boundaries.
+
 - Added the supplied project logo, transparent 512px/128px Lanczos derivatives,
   OpenAI branding metadata, reproducible image generation and 48px review checks.
 - Strengthened package integrity and installer validation; fixed BaseElements

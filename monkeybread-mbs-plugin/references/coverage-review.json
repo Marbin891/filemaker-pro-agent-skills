@@ -1,0 +1,1067 @@
+{
+  "reviewed_at_utc": "2026-10-27T21:15:54.776620+00:00",
+  "index_url": "https://www.mbsplugins.eu/index.md",
+  "index_sha256": "028d75047155d7b48a2e0c49168a4e7f8f874d297296c6d70595a689d526bd74",
+  "advertised_function_count": 7971,
+  "catalog_unique_function_count": 7859,
+  "vendor_component_page_count": 169,
+  "catalog_namespace_bucket_count": 245,
+  "enumerated_unique_function_count": 7859,
+  "component_table_unique_function_count": 7593,
+  "deprecated_table_unique_function_count": 400,
+  "component_and_deprecated_overlap": 134,
+  "deprecated_only_function_count": 266,
+  "headline_minus_enumerated": 112,
+  "missing_from_catalog": [],
+  "catalog_names_absent_from_primary_tables": [],
+  "name_set_sha256": "c2195947c5f0ea6b22d70742aeaf8160c43d739d2171d39cd68fdf7e857f0413",
+  "name_set_digest_format": "SHA-256 of UTF-8 names, deduplicated and sorted by Python string ordering, joined with LF and one trailing LF.",
+  "method": [
+    "Download index.md; extract unique component links using \\]\\((component_\\w+\\.md)\\).",
+    "Download all 169 linked component pages plus deprecated.md. Use raw response byte SHA-256 hashes below.",
+    "For each page, keep text before the first \\n\\d+ functions shown\\. or \\n### Release notes.",
+    "Extract first-column Markdown table links with ^\\| \\[([^\\]]+)\\]\\(([^)]+\\.md)\\) in multiline mode. Use the link label as the function name.",
+    "Union exact function names, then compare against the union of all local group-*.json components/functions/name values.",
+    "Primary tables only: do not count duplicate release-note or see-also mentions as additional functions."
+  ],
+  "spot_checks": [
+    {
+      "name": "Plugin.LibXSLTVersion",
+      "url": "https://www.mbsplugins.eu/PluginLibXSLTVersion.md",
+      "vendor_listing": "component_XML.md",
+      "catalog_namespace": "Plugin",
+      "finding": "Present in the XML primary table and the local Plugin bucket; the Plugin-page release-note mention is not an omission."
+    }
+  ],
+  "conclusion": "No omissions proved within the enumerated listings. The cause of the 112-function headline residual is unresolved.",
+  "limitations": [
+    "This is a dated observation, not vendor-wide completeness certification or a runtime test.",
+    "The 169 vendor pages are not the same unit as the 245 local namespace buckets.",
+    "No assertion that every other listing, release page or unlinked vendor page has been enumerated.",
+    "No evidence that the residual is explained by prereleases, removed functions, aliases or a stale counter; vendor clarification is still needed.",
+    "Vendor prose and full page snapshots are not redistributed. Hashes identify reviewed bytes; live pages may later differ.",
+    "The probe was an explicit maintainer network action. Installed helpers remain offline."
+  ],
+  "pages": [
+    {
+      "path": "component_AVAsset.md",
+      "sha256": "63e35d5346ee5239fe700d6adf27e6c2c95d8b6c702b423ea48a860b9b40156b",
+      "primary_table_unique_names": 29,
+      "name_set_sha256": "053a1c937c53060e2861c3ca51893e98d478662e31cbbb66f679eeaf6c7a04dd"
+    },
+    {
+      "path": "component_AVExport.md",
+      "sha256": "ab4b0901e80f05618a3d29d3701354db776069aaecbc490f186e8bc250604399",
+      "primary_table_unique_names": 26,
+      "name_set_sha256": "3cb6ca531120acb53181348fd06d8873de5fe35416fe1c27f5146efc9bca0466"
+    },
+    {
+      "path": "component_AVPlayer.md",
+      "sha256": "be8bf5715c7364fa61e8ab896579914349ce1818098d7fad00e535fd81821f0e",
+      "primary_table_unique_names": 47,
+      "name_set_sha256": "ab24f8b54cacd2d16fe4c47e8bef4cb698ae6f6db1dcbf8cfe80e2e48f25b195"
+    },
+    {
+      "path": "component_AVRecorder.md",
+      "sha256": "44f832f65ac1eacb8cc51a493b4c23efffc3410d664084fc0acac4d749f8d6a0",
+      "primary_table_unique_names": 47,
+      "name_set_sha256": "f44286ba3acd1aac2704d302109e9298481095475f3f5cf6ff6c3dd9197ec9c2"
+    },
+    {
+      "path": "component_App.md",
+      "sha256": "9e6707d593a8ed64b0c0a9c4d51a589ea1aa8822c5b3c5511b0cbf1cbd260569",
+      "primary_table_unique_names": 19,
+      "name_set_sha256": "7b20ca3ea5d73cd9b6f020955ee76357e3b22dd07ae703637f62a107e7df86ee"
+    },
+    {
+      "path": "component_AppleScript.md",
+      "sha256": "4433366af7482018bc82babe5eb527c00163337de04512369746e7e7cefd0429",
+      "primary_table_unique_names": 13,
+      "name_set_sha256": "992e6f88e9f36625cf7310287ed16623056adb64bad4c4b4ee50bb3d2ac4ce98"
+    },
+    {
+      "path": "component_Archive.md",
+      "sha256": "4630f3285163a85f5fbe3f02b699ffa81c16407bc10b98204538f82706276c45",
+      "primary_table_unique_names": 23,
+      "name_set_sha256": "c6157ad5360bab8e4b544c1b57509a3c25d76d8984d03103f0c1df916dc78b81"
+    },
+    {
+      "path": "component_Audit.md",
+      "sha256": "3165d2f9b9ecae9e74683efe62de23997132dbd37a36c4a7fec91693f3ae8755",
+      "primary_table_unique_names": 41,
+      "name_set_sha256": "4d99077f957ad42ae3f016e4a325e89b4972dab4b087a622e62f6879d775e1ca"
+    },
+    {
+      "path": "component_Backdrop.md",
+      "sha256": "08d20508e25b1fa7603410ecfda39fbdea534c3cdba081c3170a14596c17b43b",
+      "primary_table_unique_names": 2,
+      "name_set_sha256": "8eae520af085d128fb251d7027de7179b3b68e9fd0519428b4e60ff66fb95d8e"
+    },
+    {
+      "path": "component_Barcode.md",
+      "sha256": "c8c6a5b4eb5ec0acbee93c6b4b60ac29fb6ec19e467e0773a5f3043271f078a7",
+      "primary_table_unique_names": 23,
+      "name_set_sha256": "ecdfa1430facdb3c29c886927f378b264ae5c1fb3be84d6ae76b6ce413112cb5"
+    },
+    {
+      "path": "component_BinaryFile.md",
+      "sha256": "6533a311a41391b80b415ca57450d1ffdd0923b84c9adba0fa426d618182d494",
+      "primary_table_unique_names": 22,
+      "name_set_sha256": "46870b5c1562df5812e3fa7c3bbc7af497208a1743ff81618aec5fc80f60676b"
+    },
+    {
+      "path": "component_Bonjour.md",
+      "sha256": "dfcdf276e655f0dcae4b74222bbe0d39fa6bcde5b13e08f130d845dadf7fda1a",
+      "primary_table_unique_names": 4,
+      "name_set_sha256": "bad3cd24a6c09261e0a7892190495a3cdc68f43a28aa4edac719636befef6393"
+    },
+    {
+      "path": "component_CFunction.md",
+      "sha256": "2b02ead412be131128591915c33f5167a229e1442a6218eb844f418f664a48e4",
+      "primary_table_unique_names": 24,
+      "name_set_sha256": "b2241be802c57c3a1250ff796f348296d6226fc9ffdcc4e5136c09bf38e7d064"
+    },
+    {
+      "path": "component_CGImageSource.md",
+      "sha256": "1f65496ec06e9cb03a98d356976972e075db7a033d67f0481aa731c7c19d3d6c",
+      "primary_table_unique_names": 21,
+      "name_set_sha256": "f48dba5cc284790a350726b42d0d7b4d975d29ac067bdaaf8b4e6e6d7169a5fd"
+    },
+    {
+      "path": "component_CLGeocoder.md",
+      "sha256": "0fa9ea164800b47c78374cd03e0cbc3c6f04d1553877cddb17997e032ee98c74",
+      "primary_table_unique_names": 12,
+      "name_set_sha256": "d78ebf8d81c3718e7eaa8ecc0f80e4be20b1bee5b34e8a79bdc28a53f2ad6958"
+    },
+    {
+      "path": "component_CUPS.md",
+      "sha256": "0f81da2208fec01f6812ac7607d69518e848aff5b5fe206264776bde5568f668",
+      "primary_table_unique_names": 25,
+      "name_set_sha256": "f1ce2d3c202af01b22f509d3931f175942cd5e17609cd504b7a1142c453f34c7"
+    },
+    {
+      "path": "component_CURL.md",
+      "sha256": "a9bc5c0e8bfd023cf853970ad83ef74b4855396ed71cfebb1937abd9afc9253e",
+      "primary_table_unique_names": 459,
+      "name_set_sha256": "3ba06627f810d7182936ec535399ef9d3020af5b48521dd833029b7f09322e19"
+    },
+    {
+      "path": "component_Certificates.md",
+      "sha256": "796eed76bd5523c8d40b2b6c08de16844b1917b16251ced0e3348f78681e523a",
+      "primary_table_unique_names": 48,
+      "name_set_sha256": "82ec6b77a13e19001ea05dab8963c12ab6768a655f276d05b35dfa7814b8b3d1"
+    },
+    {
+      "path": "component_Clipboard.md",
+      "sha256": "131ef7b1f76883a7a489d023a40a73075b62c5040bcd9d5ab2da18a548926bc2",
+      "primary_table_unique_names": 21,
+      "name_set_sha256": "f7350cd62bc543a922973df4d30124b507a798b6a4eb6f2192d70e84eb2f306c"
+    },
+    {
+      "path": "component_ColorPanel.md",
+      "sha256": "e62cbc20988c73bd056902fbfae70e0ab9ddbe8ab7ca037db927f723acda6242",
+      "primary_table_unique_names": 14,
+      "name_set_sha256": "267529574ad120967175b7eb2b9a7d04df9678e63e86d34be68bcc747e41a82e"
+    },
+    {
+      "path": "component_Compression.md",
+      "sha256": "ee1094047675d44e686d7c6f00334b227cea6f21b334349557ca0869a003683e",
+      "primary_table_unique_names": 43,
+      "name_set_sha256": "716e6839006fcee093d30e85567a68642e562f9b4a65a40b8dfc11fffaf43274"
+    },
+    {
+      "path": "component_Contacts.md",
+      "sha256": "17b5f391e5f3c99e312bd8d3784baef02a9e4a075140d4983b3d641f8ed739ef",
+      "primary_table_unique_names": 72,
+      "name_set_sha256": "a2b0920d45770983ebc7c89c13a0b6c36a69340bfaaa334d7307f9b3d7adb8b2"
+    },
+    {
+      "path": "component_Container.md",
+      "sha256": "dc7720a757b9dad096d004d63554954e82e407467b842a69ee76976b73767ce9",
+      "primary_table_unique_names": 40,
+      "name_set_sha256": "9dba274a6108613370ebbd597b06db9657505b9f875c566c64fefb2e4775dba1"
+    },
+    {
+      "path": "component_ContinuityCamera.md",
+      "sha256": "6b130c4e39776e57814f4942c35c7db5bf5e33127d1c8e806dc2fedd6be0a9a9",
+      "primary_table_unique_names": 10,
+      "name_set_sha256": "c0e1d03c3302cab333b87fc9d8b66322dbb46e1da4c805029ce5f9e2c34005f8"
+    },
+    {
+      "path": "component_CoreLocation.md",
+      "sha256": "46832abe8b7a7e4d182d01e6cedd8b8ad2b8ad04ea57fe25f59a97862057d228",
+      "primary_table_unique_names": 40,
+      "name_set_sha256": "8aebe09e568ba586b3241b5d9ac18ec291d500b8f2a25971b98a77b975988cbf"
+    },
+    {
+      "path": "component_CoreML.md",
+      "sha256": "abaa57eb746f7e6e53e2576c8c6b0812a1b4d88d55ddfb7ed31bf701e4cdc9db",
+      "primary_table_unique_names": 21,
+      "name_set_sha256": "dabd6f1cdcbec8dcea2cdc02ceb565a753029a8f699902d59fba7f93c25dd7a9"
+    },
+    {
+      "path": "component_DNSLookup.md",
+      "sha256": "ed1eb402596dd14a950215ea6e0390c4dc4ef7a43f0cc2f21881877cfd387261",
+      "primary_table_unique_names": 11,
+      "name_set_sha256": "4859695d6ca848a8c4dd3ab186fa09ca37e6b53fa3a8baed227254f869b06aaf"
+    },
+    {
+      "path": "component_Debugger.md",
+      "sha256": "70b8a7c7571c222dd7c772ca0ee65f9ad00f8555dfebe37b9b5d860c876a8bc6",
+      "primary_table_unique_names": 7,
+      "name_set_sha256": "1a5760bcd351d9d931d539069c3b1c266bd99a6ea1c3b6388dde8211c6d830f5"
+    },
+    {
+      "path": "component_Dialog.md",
+      "sha256": "e1912954c498eee80d82555c8eee292ce8dcc9990f5dc5e84eb4d779c8ecae59",
+      "primary_table_unique_names": 54,
+      "name_set_sha256": "c0e6a31d92cfad7e74ea3639b4ccc321cfd5f7f4825e8f369d12e5c62e62831f"
+    },
+    {
+      "path": "component_DialogModifications.md",
+      "sha256": "d816993de887dec4610cf257af39e7745a2cb41e67e8f7752c709448fa786cd6",
+      "primary_table_unique_names": 5,
+      "name_set_sha256": "b0fc4f85d27f9f7c7431e366791a14fb3204c987cb68f1fd8cf7ec8dc5142100"
+    },
+    {
+      "path": "component_Dictionary.md",
+      "sha256": "32373da974dca8cb452de881bd6a1cf6a7cd4d12991c410a1c52898d67024495",
+      "primary_table_unique_names": 38,
+      "name_set_sha256": "526dc5fa167453223a9cee081482021a8e51aeb65265bd176650fe0172fc5598"
+    },
+    {
+      "path": "component_DirectoryWatcher.md",
+      "sha256": "abeac67daa22418c40d7ab6fa3fd4e5c23fceb5a75412990d8e9d30589fe5b72",
+      "primary_table_unique_names": 13,
+      "name_set_sha256": "3c022aceb2ed211669f23f931190e705cb4c467820b76a368906cbcb0c1fb1ce"
+    },
+    {
+      "path": "component_DocumentCameraScan.md",
+      "sha256": "48b5f4fa37b7dcf23ed0d69d9359e2e3e52380dd183f793f9738af2641bac0d1",
+      "primary_table_unique_names": 12,
+      "name_set_sha256": "de710ce7caeae1a1582cb7d2afe5f2d1afc30550d7114ac7a4c26d61fc520381"
+    },
+    {
+      "path": "component_DragDrop.md",
+      "sha256": "e62ecfdeedf4f3cee945c43724e75a26a3ac327c5234dcf76b2d64fda4010cef",
+      "primary_table_unique_names": 53,
+      "name_set_sha256": "f510b047809f731b19d027018c10a6599148db9c002e11ad2b70648630c69c54"
+    },
+    {
+      "path": "component_DynaPDF.md",
+      "sha256": "da4c7277a2e127f54ac7cd6d11c8d0a4b1b8f9acb66a828a6ad2a3c6f68d76e9",
+      "primary_table_unique_names": 664,
+      "name_set_sha256": "0854be098d1adbaf7c2afb9b2f3c9311432f5d95f1092a3628885a0578e5dc8b"
+    },
+    {
+      "path": "component_EIDSDK.md",
+      "sha256": "14bd06305b2460c68a29572dd77d8fd7246c0511dc89bf7e1cab7d9f78c9cb04",
+      "primary_table_unique_names": 36,
+      "name_set_sha256": "8e32be94503ab2904b3c1ed4d222f658b5f43c14ef48a406ef05367914afa565"
+    },
+    {
+      "path": "component_EmailParser.md",
+      "sha256": "b06b81a5cc3842d94176c2644937ed225f32502cea758368b63fab13296d2d4a",
+      "primary_table_unique_names": 30,
+      "name_set_sha256": "b76470533721780c3ea688965d343d0ef49f48aff47629ba14280a3e91a3b67a"
+    },
+    {
+      "path": "component_Encryption.md",
+      "sha256": "5e14da906e19e1b952b7ae1b3e7ea96ff199d01495ba823973009989e6864196",
+      "primary_table_unique_names": 29,
+      "name_set_sha256": "0c13920aade42569c9090ec3c3f05a6c038f025ac490cf90c05448bd9fc8da80"
+    },
+    {
+      "path": "component_EnvironmentVariables.md",
+      "sha256": "3ede81bffd90198727d8011104af9728961ef052f660a61271670c14b5a833c9",
+      "primary_table_unique_names": 7,
+      "name_set_sha256": "615c018fcdf9769b4b566d4a68943b7004a3cd373a8d122c2da977f1279339af"
+    },
+    {
+      "path": "component_EventMonitor.md",
+      "sha256": "2f8be0fbf52e017ca6ded9f713dbd5c4c7570b6b9cfaedd52d5bb86a2b09eac6",
+      "primary_table_unique_names": 10,
+      "name_set_sha256": "a90889fade7a925c3c285cb1e082c5ae3b7294b98ac4f0802d8ffefd52087858"
+    },
+    {
+      "path": "component_Events.md",
+      "sha256": "309335230a9d85b923321264298d44a2f82b438bcd61c19dfcf79a5e22eba1cf",
+      "primary_table_unique_names": 178,
+      "name_set_sha256": "957fbf404f2264671360b6997f9aa418a7ca7e96842697e15691c9569ba005da"
+    },
+    {
+      "path": "component_FM.md",
+      "sha256": "4dca8053ec62bd9477bf657d3aa660db25076ec015124ea64d9489bc79679eed",
+      "primary_table_unique_names": 121,
+      "name_set_sha256": "d36f6000c37c019dbaeba7475225521f7f6b649de6537a8f6630b0f4687b7dbe"
+    },
+    {
+      "path": "component_FMSQL.md",
+      "sha256": "df6de474dde33878bf598668ce3e789c45bb42174636109d8515381cb8984262",
+      "primary_table_unique_names": 67,
+      "name_set_sha256": "d29df4fb24f0d58c511bbac85e7753597e000e13911de07d75f384dca385bb70"
+    },
+    {
+      "path": "component_FSEvents.md",
+      "sha256": "695cf43d5bb2ca19e2beb0e78a0150b05071a3c2b2098eacff440d986037a247",
+      "primary_table_unique_names": 30,
+      "name_set_sha256": "309c34f9a9acc818f637c99131a391a3ca21d5dd4c066c3ad4e4d0a1968942a3"
+    },
+    {
+      "path": "component_FileDialog.md",
+      "sha256": "863752a0dba5b38984b7229dff3057d93fb58e762fbdb345f97976f8d61642f9",
+      "primary_table_unique_names": 50,
+      "name_set_sha256": "40864c8d966e90a4800c24dcbf486dac887ea3dbbf239affdec5b86af29b3469"
+    },
+    {
+      "path": "component_Files.md",
+      "sha256": "1f154ef5dd65501f7b305dd84742867d1c9f23bc662461d610732d21e6b21bb9",
+      "primary_table_unique_names": 100,
+      "name_set_sha256": "6ad30e80cc7cb53b3d80a286330eb4e02a4319980aa3c9a7aa50c46a02b000a4"
+    },
+    {
+      "path": "component_Folders.md",
+      "sha256": "cbf622ff7c3dd441991a0c263bf64159cc51c12438f7f65b27700e6cc956426e",
+      "primary_table_unique_names": 20,
+      "name_set_sha256": "7025c372a8fc45df68fb504db0396db8eebbe217557f046da3c2c75697971b77"
+    },
+    {
+      "path": "component_Font.md",
+      "sha256": "107b3b25ce782b7cda917ca98adbfece2e8ede1316d03f317af5d06edcaea507",
+      "primary_table_unique_names": 9,
+      "name_set_sha256": "2d20b330b87cc9b862ac8d4fae1ba94186042b76b8d2d85bc93c6f4f0c9e70d8"
+    },
+    {
+      "path": "component_FoundationModels.md",
+      "sha256": "94cf7bbbdc34f5229e5c55e38bf490a53321ef8624495dd43be1b63ecc0b97b0",
+      "primary_table_unique_names": 19,
+      "name_set_sha256": "f2e5e793f06c15507669d9f3e6757dee1d23549d244481dbb97bf3e0f69eecac"
+    },
+    {
+      "path": "component_GameKit.md",
+      "sha256": "7ef11c7d9f95c2d8bd0b7adfbd8efb1f6454bac4f862a10e9781d418aedb935e",
+      "primary_table_unique_names": 97,
+      "name_set_sha256": "37b67cbec748fe39ace4e2f9daf556947892b080857b82e0f0d928afafebf0e7"
+    },
+    {
+      "path": "component_GraphicsMagick.md",
+      "sha256": "7477bbbf911bc892025fb4897e853c59c910b666b2b74b5127f55370ef9059fa",
+      "primary_table_unique_names": 366,
+      "name_set_sha256": "5ca27652cee64d50372d98c6ffdd377cfa6068b6068f462defb31bc7d20106db"
+    },
+    {
+      "path": "component_Hash.md",
+      "sha256": "448527e6819401833aede7b00054b27fbe8d8862aff2b117cb310a2701df4ade",
+      "primary_table_unique_names": 15,
+      "name_set_sha256": "220abeb0c10f4263bea699b32f226ffdbdf9b97a0aaba8156f7cc8e6c8cb1be8"
+    },
+    {
+      "path": "component_HealthKit.md",
+      "sha256": "bb66c008dcde527beaf1a1993e73d05f13bb1833fca6323ba225316a341aa82f",
+      "primary_table_unique_names": 10,
+      "name_set_sha256": "506a848653c9902affade9508830d412a6f10b0b1d1826395c81ef4e722f105c"
+    },
+    {
+      "path": "component_HotKey.md",
+      "sha256": "f196608c9c1621dc51c48ec302b6b290654293a940b5fd934cb953f03a2e4eb5",
+      "primary_table_unique_names": 29,
+      "name_set_sha256": "86096fc7660f8d465774c44a32e6e9d79f496c63c4a716968ac20cab9dfb97ea"
+    },
+    {
+      "path": "component_IBAN.md",
+      "sha256": "5b0bbe21ba96c24dea2c9e71225f166d6fc5916937926ee2fa39014c95036c67",
+      "primary_table_unique_names": 7,
+      "name_set_sha256": "855298fb0eea5e874f549d492b8670ee33ee4ca03836c3dea2e3a79f56961a07"
+    },
+    {
+      "path": "component_IKPictureTaker.md",
+      "sha256": "dd8703028475d8a87da7d1eb4c8e45209a195cd35841bda7d823e15d16eccd56",
+      "primary_table_unique_names": 31,
+      "name_set_sha256": "651dc42de3919a8141353b8722aa301c832fe88c4d18256b04ed051ce1c2226c"
+    },
+    {
+      "path": "component_IKSlideShow.md",
+      "sha256": "b877edc2779fe3e0d6c01ec0cd3382241a5a5926b614e837c056501c7954b0fc",
+      "primary_table_unique_names": 27,
+      "name_set_sha256": "0af37f0cdb1cc07e2e585087a111c89d13d14f80247ca473ef2c4754dca23bac"
+    },
+    {
+      "path": "component_ImageCapture.md",
+      "sha256": "faf4c265330d2448623e2d8a4315e74733f5a3720c860be1f4f7d119455d99e0",
+      "primary_table_unique_names": 94,
+      "name_set_sha256": "aea50a8fd3b134e986fa86b04f0bf0944fe04bcb775d6f6a7f1fd39721516ed5"
+    },
+    {
+      "path": "component_ImagePicker.md",
+      "sha256": "af14030c98cf2e66978bd88062c58e19e0aa87926eb6ec6c392df00d52d5d236",
+      "primary_table_unique_names": 55,
+      "name_set_sha256": "6a3f0b47796fc2023eac94faf4adb6f73814db55fb8c31b7585a982ebad7597a"
+    },
+    {
+      "path": "component_ImagePlayground.md",
+      "sha256": "d7cbdc14e103bd9c63e32d449689288b923fcc7b2fafaaa9903029556d7a3bc6",
+      "primary_table_unique_names": 13,
+      "name_set_sha256": "b3b2eef46b9e1098ffbdcbff7af9dc485b7323beeecee6384a341ba2e98e3107"
+    },
+    {
+      "path": "component_ImageView.md",
+      "sha256": "740c9208f59efff5401266b8a03a4493e645a5ee39cf49c3e1139645e364ec6b",
+      "primary_table_unique_names": 20,
+      "name_set_sha256": "789b8298fa51d6cea2025ebaf2b8920cfa7b24fead1313981bfff793d4ebd5c1"
+    },
+    {
+      "path": "component_JSON.md",
+      "sha256": "6e5c7ee1f2344e712a574c05e2d5f5cf390d40651823207d213d3c419d13e09d",
+      "primary_table_unique_names": 115,
+      "name_set_sha256": "d529b2f6569a74698ce035fa9a90e8dd2f59475d88c6846c3cfd37f77727ee5e"
+    },
+    {
+      "path": "component_Java.md",
+      "sha256": "fb5b7600cc8d605bfa66aa1ef36cc289ca1215d94760e9dc86cb52b36f75d37a",
+      "primary_table_unique_names": 22,
+      "name_set_sha256": "3189f15df97b805dc8860c1ad3e16a4ab6ff0013620b4a17a181630ef5d1d93f"
+    },
+    {
+      "path": "component_JavaScript.md",
+      "sha256": "1acb1451e637f1cc0a45238afd20f0e4ac99fd3b09fe21194854d1c0fbed4abd",
+      "primary_table_unique_names": 24,
+      "name_set_sha256": "018b77add8d361807971304d2bb0c92a82a8bfde3b1126387bcdf7f9d4b52956"
+    },
+    {
+      "path": "component_JavaScriptWebKit.md",
+      "sha256": "93cec81ed2c7eec51b7ddd21d2401d364c4d4f41e290cafc29566b60d42a5c9e",
+      "primary_table_unique_names": 19,
+      "name_set_sha256": "963ddd61e90142980880e918659595d0124a7444a3b593c71e42372605c18f3c"
+    },
+    {
+      "path": "component_Keychain.md",
+      "sha256": "a9b5472d0fda8232e263aaa88abd403e55c398beba14e761becd241052931ab4",
+      "primary_table_unique_names": 10,
+      "name_set_sha256": "4916062c807a5a6e598487224991b12872babbb4bd261abb28962b738f48d9f8"
+    },
+    {
+      "path": "component_LDAP.md",
+      "sha256": "1aa42af9da33c8aeba04c109f3e3668797ca8d7df9b83cf69533d6ecc2365368",
+      "primary_table_unique_names": 38,
+      "name_set_sha256": "63a505f80e878de841a396be462cec98d48e61d35aa12b1f33f56ee12628e87f"
+    },
+    {
+      "path": "component_List.md",
+      "sha256": "13f79f943f39082c1e0f38dbcf3780de9dbb46a9b99f79a32ab8047f7b8cfcc0",
+      "primary_table_unique_names": 122,
+      "name_set_sha256": "3c3fb70ee4c33d432bb1b51f6d78e1f1eff2fad17e9a015c86ac4399fc0f3c7f"
+    },
+    {
+      "path": "component_ListDialog.md",
+      "sha256": "f1e25e40189640d3bdf5314aa61fd69b475b8177d4d18d3504117702378bee4e",
+      "primary_table_unique_names": 75,
+      "name_set_sha256": "3b3c0e924846a23fb9657bc7391488dd5a2b19605c9615cfbfea079336eb680d"
+    },
+    {
+      "path": "component_Llama.md",
+      "sha256": "259a9e943db9e2d11c079c6084a67db26596ba1a5aa8e3a80c91f010be0b00ae",
+      "primary_table_unique_names": 28,
+      "name_set_sha256": "40e4d2569a6434adc991d65cf8d51c953a2a6e8f9469e219de15e096d585839b"
+    },
+    {
+      "path": "component_MailComposer.md",
+      "sha256": "147dc5998e649ad3493047771564d885332e8c42ec70020b90c2e6fc0b9475cf",
+      "primary_table_unique_names": 25,
+      "name_set_sha256": "c164add204dcd0027263baa8d69f8a173812da8361786074b2a2b267d84a89c6"
+    },
+    {
+      "path": "component_MapView.md",
+      "sha256": "78f728835b12bf0cee81270a81234f70b538a5262996e699d95820dbcbd4d4c5",
+      "primary_table_unique_names": 99,
+      "name_set_sha256": "dd892225e334bc7638d0c1f479d7e6754c5b8c964de398c357e7cb5e72bc1117"
+    },
+    {
+      "path": "component_MarkDown.md",
+      "sha256": "3d4d883eaf67d2323bba1c5a205ab711bed25705ed2d7713c93934c581082461",
+      "primary_table_unique_names": 9,
+      "name_set_sha256": "43234df66c36c3b3a281757f3770615b5def2f5915bed8b45e7d044d29d65dd8"
+    },
+    {
+      "path": "component_Math.md",
+      "sha256": "425b1578e019e5eb44ca87aa61b418c9b8749690ae4ca12819f357c305f67ed4",
+      "primary_table_unique_names": 39,
+      "name_set_sha256": "85dcf2a96cfac4725a2e8833d605028594aa0bca6377af9151164a28ac706bdc"
+    },
+    {
+      "path": "component_Matrix.md",
+      "sha256": "aafb6827de506bca281f6488ca5d2d1abb7f0baaa9810463f3f4bc77dfd6b021",
+      "primary_table_unique_names": 64,
+      "name_set_sha256": "949a6ed221a0ffbd805f4a164aab7a16246b60b3a96566259452d739a1520286"
+    },
+    {
+      "path": "component_MediaLibraryBrowser.md",
+      "sha256": "a17270371d8244de9d203f5757437133f0f1d6448eab607b2d5cb26aa9df2e6e",
+      "primary_table_unique_names": 6,
+      "name_set_sha256": "632274980e7b9356ce14ca9e083bd2fe50cd58f388d3102ac5ea301c70f132be"
+    },
+    {
+      "path": "component_Menu.md",
+      "sha256": "63e5e10bc9ad7834a24a097c8ea17e1ce6f821a935d2170aa8ea5ff24fd293d0",
+      "primary_table_unique_names": 113,
+      "name_set_sha256": "e4772fb8e1071fa1c8068f08b1098c9efa301951607f0c04a28ac929f97c136f"
+    },
+    {
+      "path": "component_Menubar.md",
+      "sha256": "455f9e0cd0ce12a98b197e759200bd54c9fc04c13e6abfbdc39a0698d3a83c59",
+      "primary_table_unique_names": 8,
+      "name_set_sha256": "4769bd503a3ec1acabc10e4589c91b88df43c0be6afec905a96f907b24b548b7"
+    },
+    {
+      "path": "component_MessageComposer.md",
+      "sha256": "cd32d4e7c211e961c4a3e99d2b203181cb336ed70dd436193684d9473ec2c068",
+      "primary_table_unique_names": 23,
+      "name_set_sha256": "8efe04c2f1d10f6bd6270d36d1ba9acfdffe643f920e5514b31a53c7888fe0c9"
+    },
+    {
+      "path": "component_MetaDataQuery.md",
+      "sha256": "3c0ccef74e9208cb822551513007693d7615356303c92972c7eb5d65dae7b180",
+      "primary_table_unique_names": 23,
+      "name_set_sha256": "fb07c6a9ca606d451f99fd42873b8683eabb9b19e782cf287d2f057980c5de1b"
+    },
+    {
+      "path": "component_MongoDB.md",
+      "sha256": "dca98d9419e54b24b1e28ce0a6fa2da082cd52d17e0fd68250f1b3950016fa0c",
+      "primary_table_unique_names": 128,
+      "name_set_sha256": "aab8cd31d7e2bff000cd5491579b8afccd50fb8f308c72bdb0fa0c40d2daa6fe"
+    },
+    {
+      "path": "component_Mutex.md",
+      "sha256": "25f45f07856c26a8a5682f37e183fe65d221ac4075ad83dad92f8a2e01e64b55",
+      "primary_table_unique_names": 10,
+      "name_set_sha256": "b334bd0866b494b5501c704f7a72203355c514e8b3998980710eb3025c49f2ab"
+    },
+    {
+      "path": "component_NSEventFilter.md",
+      "sha256": "b56da87b2c8c228b4f9da07c792bca9b713048f8910dd23d701303cee5996b53",
+      "primary_table_unique_names": 3,
+      "name_set_sha256": "d9734228269d52e8dff9b009e4316a39dde561a4013b61e791e7cf938eb74c45"
+    },
+    {
+      "path": "component_NetworkInterfaces.md",
+      "sha256": "d2615060bca77d3b4bbfd872ea8f8c931c4fadd7ee2090658dc0038f30ddce26",
+      "primary_table_unique_names": 5,
+      "name_set_sha256": "a290854713340a6bc829d6b32898dac04c8b3676be58cef9a2ccb75f6d263a9b"
+    },
+    {
+      "path": "component_Notification.md",
+      "sha256": "ef68ba764e701412b94ee5aef7859a6252ac83259c3b6f1cf3cb21da43b576d7",
+      "primary_table_unique_names": 6,
+      "name_set_sha256": "f3c01a2200758b7c507c60c3435083b586ecc837f9ff9472aa66de2daa41cc26"
+    },
+    {
+      "path": "component_OCR.md",
+      "sha256": "2cf22d84bfacd0611242fe50e0e0623292707d8e305adc5e79e16c064df77a3b",
+      "primary_table_unique_names": 26,
+      "name_set_sha256": "7f9c23d9e5bba74c4b9eed951b8fe209fd5b781b2ea6b3d94432493f5ce363c0"
+    },
+    {
+      "path": "component_Overlay.md",
+      "sha256": "f51981049a97f55984cccb35c8fbb3f0bd327e651d92c81fcee9c9ca18dab8ab",
+      "primary_table_unique_names": 45,
+      "name_set_sha256": "8ffd8b3184d9d7e994944f43afdf797d19bd17450d218578f61abbceb908c5ce"
+    },
+    {
+      "path": "component_PDFKit.md",
+      "sha256": "43ddf286f84c8d9fe94e0062385b97869299743dc9d234a436bbf6587fe9206a",
+      "primary_table_unique_names": 56,
+      "name_set_sha256": "d5093a69bc22ed00b66bf1da2e23e3fc7cdb5b78c414ee572e3a13bd280fabfa"
+    },
+    {
+      "path": "component_PList.md",
+      "sha256": "e97fc85e7776d689b977883405e8437581f0519b9f66445ff2f5f82434b0cffc",
+      "primary_table_unique_names": 3,
+      "name_set_sha256": "2aab700c6477c2c86c69ef16178ce2ec49e79a1b4169e3fefbfc4a070720d462"
+    },
+    {
+      "path": "component_Path.md",
+      "sha256": "e2cc661f2780f6eb7b56b46d149daf6e259b77207390097b3cb7be54d79a5cb6",
+      "primary_table_unique_names": 9,
+      "name_set_sha256": "20bf3f692a1fcc5896afe02ba14aefe369030c7cd649838b207d248da18b3a68"
+    },
+    {
+      "path": "component_Phidget.md",
+      "sha256": "a717355899305048bde503f07c902cd25df558263f79599a336db8eec2d12117",
+      "primary_table_unique_names": 31,
+      "name_set_sha256": "b7e49d8c94d065c98b8e7d3d6a0367d45987ef8ccbc2a446e61611ff165780ec"
+    },
+    {
+      "path": "component_PhotoPicker.md",
+      "sha256": "178979721ae72fcf5702b9895867330fbead538cbb935a723c941574e5e68ee3",
+      "primary_table_unique_names": 21,
+      "name_set_sha256": "9fa7ddeb254a2252cc75439583d2e9815af253363d0ea9b2e1ec8381c0ac6580"
+    },
+    {
+      "path": "component_Plugin.md",
+      "sha256": "d32bfb0caa9c581cc05e10e0a9b676758b71056e1e44b4304857f7751bfd2720",
+      "primary_table_unique_names": 82,
+      "name_set_sha256": "08ecd5ff875b74f377476ec5806c84dd54913786a7d098f367309d9ad84799b1"
+    },
+    {
+      "path": "component_PortMidi.md",
+      "sha256": "c54e9d21a5682459ef0d076fb2dbb4b2403d0904364dd65c1869642a5e6e823f",
+      "primary_table_unique_names": 27,
+      "name_set_sha256": "b2a9431b43e3e16af850a78e3c9980eb9e4229ef15f87c1a4d930b984b248485"
+    },
+    {
+      "path": "component_Preferences.md",
+      "sha256": "f49a25b6236231fef55bc883dc6355cb1ca71774ef845c1bb5a051bcc0ae1d40",
+      "primary_table_unique_names": 9,
+      "name_set_sha256": "3d6e4c9280d6fd7d6e47ad0178f952a6e3d0bc02952f175206fd972e0f3c6110"
+    },
+    {
+      "path": "component_Preview.md",
+      "sha256": "88d3beff864894a2ec139b66259c5d9eb0082d22f1a1ee887b0ebac70fd02629",
+      "primary_table_unique_names": 15,
+      "name_set_sha256": "57e3b18e7f05b297593239d3c99ea3f1a9f0c55c73481099a418762834a41b1f"
+    },
+    {
+      "path": "component_PrintDialog.md",
+      "sha256": "bf08e9a65c78406ef53edb61388413a4b64ebfd42099243d0a05f316302ce872",
+      "primary_table_unique_names": 70,
+      "name_set_sha256": "402b468e983ff967fd705d0c6b7e25cee4bbf5c638fa16aa166ae34d9152975f"
+    },
+    {
+      "path": "component_Printer.md",
+      "sha256": "08f9a2e11ae84f11bc982da8e10e3fb888b94046824412f68be2377086669086",
+      "primary_table_unique_names": 17,
+      "name_set_sha256": "04caae9834c3e91eecc497cc6c93f4af8ae183be1be535deb083e14d62256dc6"
+    },
+    {
+      "path": "component_Process.md",
+      "sha256": "7291fc9b906a71a594075c779b3ce2a6c979a81daba4a4121d62d5a0b21f1012",
+      "primary_table_unique_names": 21,
+      "name_set_sha256": "af181841e699ac69afe0ab6f30451dd2b10ec896723ea4c1251798ae7fc05f9f"
+    },
+    {
+      "path": "component_ProgressDialog.md",
+      "sha256": "26874cbc8278cd560f5321223a1d4686dcdbe7bfad0223124f9ea0d4a567ce04",
+      "primary_table_unique_names": 38,
+      "name_set_sha256": "31b74d5a9a6cd8bcb21b098fdd020f96028207c37ddbe461d858b8b6f7629ab6"
+    },
+    {
+      "path": "component_Python.md",
+      "sha256": "88a8ffae734ec4161fe75ab462d58cdcd4c794f41460b6daa97ac8aa3eba891a",
+      "primary_table_unique_names": 38,
+      "name_set_sha256": "f69f5787152eb4883cc8e77157b40b4dadbfade59c78d2c07c5462cfd5987e6c"
+    },
+    {
+      "path": "component_QuickLook.md",
+      "sha256": "a967d9215625e02a794e957df63a240fe103b16b83b1ea266d3de1ee6acc1e69",
+      "primary_table_unique_names": 28,
+      "name_set_sha256": "002f57443084a1bcdb0bdf181202831507a3b6fa00922f44b9446e2c0ffb55af"
+    },
+    {
+      "path": "component_RegEx.md",
+      "sha256": "0a1abeb4acb85a07003ea6c743e7bdc11a2e0a87cfaea7b5303ce07d85a31b66",
+      "primary_table_unique_names": 26,
+      "name_set_sha256": "92c634e72f6f526b65617f30446d0723efbb9d551b15335430f9c73aae206e94"
+    },
+    {
+      "path": "component_Registry.md",
+      "sha256": "f3e40f8f6ec0212a0a79c3aba117ea93f7b1b1789d9ce2a0aac2b1b5e52dec6b",
+      "primary_table_unique_names": 10,
+      "name_set_sha256": "b69306be061a582d91cfa4c90aed51428e23bbd2da20a88c5bcb89b63507d976"
+    },
+    {
+      "path": "component_RemoteControl.md",
+      "sha256": "0af58d29cf238fc22af2ac2b0d4f412f28c24b889b39026197e61d865e763849",
+      "primary_table_unique_names": 25,
+      "name_set_sha256": "5c3a9621e54bd94d07f7bf23198d8e279d134dd8357520fced4e9e209f8e041d"
+    },
+    {
+      "path": "component_RichText.md",
+      "sha256": "e422158cfe6f697722a7c24993296d26139af024c8daaf18b41438fe2eb1a70e",
+      "primary_table_unique_names": 30,
+      "name_set_sha256": "6f53afb1a4e5614cb3cecb9e0dbeaf91dc0f10ead58f4b2ec614dedae3a1d389"
+    },
+    {
+      "path": "component_SQL.md",
+      "sha256": "baa909262a3b9eac872b34cc866c85fd1657284f3f589eda81af471a8db96e31",
+      "primary_table_unique_names": 144,
+      "name_set_sha256": "670fcdac50fc4c71938b83758599dce46c51d450cdc4f92a0f86c858f231df16"
+    },
+    {
+      "path": "component_SSH.md",
+      "sha256": "59d37420600df2e9f71335f39f8fe33b88541fda59afebfd24a142d16663693d",
+      "primary_table_unique_names": 51,
+      "name_set_sha256": "0cf57d192905f84028fc0c8bf972f13b3df4915bf093f99951ee6856a66c6d30"
+    },
+    {
+      "path": "component_Saxon.md",
+      "sha256": "2cf3a9a187c07f6d14ede93e7e6559503ba85c44fbcf8fe83e50f9ad3ad0c61b",
+      "primary_table_unique_names": 30,
+      "name_set_sha256": "98bbbda95989821eb5be06dc2efb34ad107251912a39aed5a61ba52ba4c90d17"
+    },
+    {
+      "path": "component_Schedule.md",
+      "sha256": "9d22a6849fb3762fab961f933759e4669f3e0d0fd1d35acde21c7a8c0c2f0543",
+      "primary_table_unique_names": 44,
+      "name_set_sha256": "7f95b11bdda22ef4334cb50e70d30b7913b39af51401e84119fc92919a0d2f3a"
+    },
+    {
+      "path": "component_SchemaChange.md",
+      "sha256": "e8878c1694dd9e9f2e575f4dbdbc1f127c156b5eda0731b9052272783faa94f2",
+      "primary_table_unique_names": 7,
+      "name_set_sha256": "2e216870e028a2b8d905e0c714a70ec95ea8b82da1355e314f448263b77497b9"
+    },
+    {
+      "path": "component_Screenshot.md",
+      "sha256": "a0e780a18c0fc4d00592d67858e7c6a917c5085005a497618fd88c870dd67b9c",
+      "primary_table_unique_names": 10,
+      "name_set_sha256": "b044b73c686b7087e271aac35a9f49f0b6f1330fc00f2f943bba3fea5a32efba"
+    },
+    {
+      "path": "component_ScriptWorkspace.md",
+      "sha256": "218a8a8f72d72d07e2cf0924170e2bdc1bcfb51f3c31d02ea17580c92f2230d1",
+      "primary_table_unique_names": 37,
+      "name_set_sha256": "c6608897978033d5583d45f785d9cfbf7729dab4b37a5bab1f5bfb512f9719f9"
+    },
+    {
+      "path": "component_SendMail.md",
+      "sha256": "7e809bd7a220c0519059ca773e070bf28103205dcd162657899e52aec75b55de",
+      "primary_table_unique_names": 43,
+      "name_set_sha256": "bcfbcb1e0380425f624e0f52fcb6a510bcf5e7a60555b17dcb0bf98590913988"
+    },
+    {
+      "path": "component_SerialPort.md",
+      "sha256": "96a2fb3a3bd6ed122aaeae3b20b6199fa2fd3939c179511c93244c60526fdc02",
+      "primary_table_unique_names": 45,
+      "name_set_sha256": "389038a668c1a4bf56d3b754138cc4cb98a5b6b93fa9585ac54d161809a1116e"
+    },
+    {
+      "path": "component_ServiceProvider.md",
+      "sha256": "cced7a74a66cc0c6f8a653e46f3010ce65d69a15db2d2361861e28ca14d03362",
+      "primary_table_unique_names": 3,
+      "name_set_sha256": "4b32f940fbc6675ca6925756f5bf2fd45f5d3424fd66eaad72c71c0328994974"
+    },
+    {
+      "path": "component_SharedMemory.md",
+      "sha256": "644bc909cc87d7a85306e8b947eb717b7107ecc16e49d0ec803deeb6f9e1312b",
+      "primary_table_unique_names": 5,
+      "name_set_sha256": "5f79a3862ee8eb056a38d23fd3a98b1f9ba9d7fd5b45d98520c89bf17cf3657c"
+    },
+    {
+      "path": "component_SharingPanel.md",
+      "sha256": "176003b6f3586985235a0d4495bf34e4b372fbe33c5294be60d6722de5195fdc",
+      "primary_table_unique_names": 24,
+      "name_set_sha256": "d0425b673377b6daad240dfef2d860428ddca072b711c202fbb31b3b75e1e6c6"
+    },
+    {
+      "path": "component_SharingService.md",
+      "sha256": "9d3c56f5861842ec0480ca87209f263ed1087df66308cecaf360e47ece3a298b",
+      "primary_table_unique_names": 9,
+      "name_set_sha256": "da73c15eeeefaeacc20855d7451a71045f64953d3daaf28f85ef3b923660d584"
+    },
+    {
+      "path": "component_Shell.md",
+      "sha256": "22190260ad759698c7f8aad5c85ab3ed36dcbd0d028727ac5454d019d142f354",
+      "primary_table_unique_names": 56,
+      "name_set_sha256": "79dc836badba7e10c865387c82fff2d2678baeaef72e5b547270f6bfb44fb86d"
+    },
+    {
+      "path": "component_Sign.md",
+      "sha256": "7fcde9795d3561e797644165c6e73ab549dce7d3877dc2e132149ec1cfe8d872",
+      "primary_table_unique_names": 25,
+      "name_set_sha256": "e03edff3821e0bb45872d4d6906f18c720550eefa235067fa3bf95eb0ecc7d83"
+    },
+    {
+      "path": "component_SmartCard.md",
+      "sha256": "5ce696f45ee36e9b75602b67b16f558e0b7d3056130b6bd67c1549c27ca387d7",
+      "primary_table_unique_names": 26,
+      "name_set_sha256": "5a1e67903a06587ccad18f299358e7b366ae4589f40c479127cd37be97706479"
+    },
+    {
+      "path": "component_Socket.md",
+      "sha256": "5a29b1dd436a63aa1d53481ec6976d7d05e5eb870b0e4705b2a05dde9e0f9a1e",
+      "primary_table_unique_names": 76,
+      "name_set_sha256": "616d3f675afd2c8a8854f9a1ad92e638fbcc0d00b89a9aa405013ff0dded15f6"
+    },
+    {
+      "path": "component_Speech.md",
+      "sha256": "c92adaf68e73048cec52a7b2df39688c8241c6752e03cc53a4a4fd3c86264652",
+      "primary_table_unique_names": 15,
+      "name_set_sha256": "30ac236096efb0b4975bdba7603a6c796f50b7d0e3e83b86accc3f932e5b2416"
+    },
+    {
+      "path": "component_StoreKit.md",
+      "sha256": "9760c72c31cd78f27502b1b791fc414998aaadf677a350e27a5cf164169e3373",
+      "primary_table_unique_names": 17,
+      "name_set_sha256": "b1bde1a42351db15a5d6db458171f734cc200b13eebcb481f73463b950643e21"
+    },
+    {
+      "path": "component_SyntaxColoring.md",
+      "sha256": "25ee990cdcca821ecce354f0dc1f904dca56b60d87c887a309fe89b406158a64",
+      "primary_table_unique_names": 133,
+      "name_set_sha256": "3d37abaf525d1092a3878d1b5838f969b6e981350a1afe4fc438aec6f119228f"
+    },
+    {
+      "path": "component_System.md",
+      "sha256": "c49f4823272b7dcc2ca2e62ed8dbb3bbcbc1d139df7941d6643b12fbb183b65c",
+      "primary_table_unique_names": 4,
+      "name_set_sha256": "712766392579b7b745810f9983ad0ff97e1f0903366b44deb13b53138baa0659"
+    },
+    {
+      "path": "component_SystemInfo.md",
+      "sha256": "d1132d880b5aa6863a4ceb0186b5a94c389e4ae2f909ffd875f9a019a5d1f4f9",
+      "primary_table_unique_names": 87,
+      "name_set_sha256": "552eabd53aa9c7654270fa8379e13f5f6247ce19bc2838cdfe0474865a7a57d7"
+    },
+    {
+      "path": "component_SystemUIMode.md",
+      "sha256": "84ecb05585a1fbef2963e8fc37c5e5025ed1c0c07e71dc8e91aa5906e0b3148e",
+      "primary_table_unique_names": 3,
+      "name_set_sha256": "55c85bac57df9dd274e0ea6c4b9c3452c9805f4dd2615be97501b6815c140aba"
+    },
+    {
+      "path": "component_TAPI.md",
+      "sha256": "a6cbbbe4e295e76760ee2a1da21f10bbcf069ebeb66014dfd94a3f1dbc0375e5",
+      "primary_table_unique_names": 39,
+      "name_set_sha256": "e29cd0d6e1572d6dee9ed2fa8e614d43484d93edb1b0b2968237d7993768732c"
+    },
+    {
+      "path": "component_TOTP.md",
+      "sha256": "b1a4a3915f44056e4f19095b049f92ead6087858ddc3877b4819cfeef986aa48",
+      "primary_table_unique_names": 4,
+      "name_set_sha256": "60549e9e52242d515c6e534ab140a0a4948e96a7fe2fb2ffb92df22bed056f0f"
+    },
+    {
+      "path": "component_Text.md",
+      "sha256": "a5504dedab59a98d3fd665f899a31eaf726d623f3a224b50bcdee729a065fdf6",
+      "primary_table_unique_names": 87,
+      "name_set_sha256": "52109feea089cae5b1663edd7b3b05cbb5e761e701335f7d122c5f05dbfa2de4"
+    },
+    {
+      "path": "component_TextView.md",
+      "sha256": "46a2588a836b97ad814a878e709822062524adae33ee6ce987fcffb3654e4dc7",
+      "primary_table_unique_names": 57,
+      "name_set_sha256": "79cbf19cfabe8400415350406de160f23eecfc2cb4230afcef75d55e02fd5fad"
+    },
+    {
+      "path": "component_Time.md",
+      "sha256": "e431f2e764f3a14a6ac0e3aab9abad1a4275b87e8188c10c679118136b45bc50",
+      "primary_table_unique_names": 6,
+      "name_set_sha256": "24434b735b5f3fe496f7dd2ab6c815936ab8df96c54bcd9d7a330fa198fa94c5"
+    },
+    {
+      "path": "component_Toolbar.md",
+      "sha256": "46c818a4ce84d47aa6e3eba48e8a9cb226b4e2c2ecf250ad6f15c7759d845466",
+      "primary_table_unique_names": 19,
+      "name_set_sha256": "7a0f37e629bbda8305a8f9720465c2144be54465b1eeca5da8146a221d24e3e2"
+    },
+    {
+      "path": "component_TouchBar.md",
+      "sha256": "3b802325aff17911e211414ed0cbea6a4e6511d1d99deb2f59eefce0fb09c54f",
+      "primary_table_unique_names": 26,
+      "name_set_sha256": "08b82cdb17817452d10b0a9889bd7e79e5b21dec4acff06b44a3742239e40cc2"
+    },
+    {
+      "path": "component_Trace.md",
+      "sha256": "00b50daa47be899a9555f4cf4ee5dcd6509e8f00aa84ab985e23dbcf533db221",
+      "primary_table_unique_names": 17,
+      "name_set_sha256": "c6a2ef1497f93c7623cf37af96726817bded56f12f555745a8de422b08fcb9cb"
+    },
+    {
+      "path": "component_Translation.md",
+      "sha256": "c60ba267f6737ed98b4da8c35dc355481eda0737feee188e11b0adc75ed8cabd",
+      "primary_table_unique_names": 15,
+      "name_set_sha256": "02559893705cc1490e1d7a51d30729f33b724c952c42e71693274cccec01414b"
+    },
+    {
+      "path": "component_Twain.md",
+      "sha256": "49af8f27d1ce8b463110f390202713b5afe643a0815a51cc06a64e646ee3626d",
+      "primary_table_unique_names": 73,
+      "name_set_sha256": "2b0a7e6ce3f2b0b144d37d257b2be5712adfe5946589e10c40639c5f1e11ef3d"
+    },
+    {
+      "path": "component_UNNotification.md",
+      "sha256": "2d80536d7c88fd4db1bd7913fa9e3ca3c3327d9795fe0c83ea9d45cd1243a95e",
+      "primary_table_unique_names": 54,
+      "name_set_sha256": "f44d1348340dc175891de7aa4e5fb18a3c6d7ecee6b6380097e4b477e16c6625"
+    },
+    {
+      "path": "component_URLScheme.md",
+      "sha256": "bfe687f7e36fbc28460b8eb6393d1c3a1c4fa1464e4101b87b9b3b6701ba6476",
+      "primary_table_unique_names": 3,
+      "name_set_sha256": "e8e8bd763b306b86dd6113f8f643baf1d8cbe2486891de5cf5768aa6f9f33378"
+    },
+    {
+      "path": "component_USB.md",
+      "sha256": "fd59c463a7a4c69feb4b76c7ebb79cddaa165891d9ee8e01e63f4050a4d0a489",
+      "primary_table_unique_names": 8,
+      "name_set_sha256": "6cd620a2d404e4f4bfa9629b9a56d815294e2584e2b5df706304de18e1ae948e"
+    },
+    {
+      "path": "component_UUID.md",
+      "sha256": "a05505df315da0b3503e11b53bf46972374887614ef9b9d230801eb0783b58d6",
+      "primary_table_unique_names": 8,
+      "name_set_sha256": "fe34eb4133c71ac571a074bc69701cbf09d51f79f4e4c27e543c94614b3cc646"
+    },
+    {
+      "path": "component_Updater.md",
+      "sha256": "b93ec0e1d387cb2131dd4a1cf275f0dade2e12eda63799d09023d63388b5e94b",
+      "primary_table_unique_names": 11,
+      "name_set_sha256": "c3fb78a6b3a090b3e894db3e4188a9d2ff67ddcef024ce4518bd9bae64afe82a"
+    },
+    {
+      "path": "component_UserNotification.md",
+      "sha256": "41d73c5419a979d52ec3bdead4ef28d78e3f916c0ad28eb07040cac5f5dabb95",
+      "primary_table_unique_names": 66,
+      "name_set_sha256": "c8e74424054394015f8b02397473c37bcfd2b28dface0666c0f9cccc3d5a28ee"
+    },
+    {
+      "path": "component_Utility.md",
+      "sha256": "69166daa84413c0972951ccceb420ff71ba4dbde4c54b750bb25b8717701e9db",
+      "primary_table_unique_names": 14,
+      "name_set_sha256": "8f4671c270294a43f73cebf6892e24fa040ca9b81f92416034bd658d3e9e9190"
+    },
+    {
+      "path": "component_Variable.md",
+      "sha256": "b1a949b43f9244f911ab1a5c2b816ec6e5237216e22f2a330e3b4221792f88c8",
+      "primary_table_unique_names": 16,
+      "name_set_sha256": "ed64d40ce7a9c9406503fa8d9c9877732bf93cfece3ad9012cf357ea4dc8f345"
+    },
+    {
+      "path": "component_Vision.md",
+      "sha256": "5ad63c96d9d8bf03bc5293e63d7582db00267af97bf143042854c2ba9f02546e",
+      "primary_table_unique_names": 8,
+      "name_set_sha256": "7b29ba889ce9688e8621be3d7c995443e28f6953fa6e8db9f80a674275b2956c"
+    },
+    {
+      "path": "component_WIA.md",
+      "sha256": "14757f459bc24905445c9ce4d043d780724e0a7cb3f4cb90eb18e29fe6edbdb4",
+      "primary_table_unique_names": 21,
+      "name_set_sha256": "8d37855d53d18868eff454cce1485caddb2aab9e8d1c445fca8bb6e0b2298238"
+    },
+    {
+      "path": "component_WMFP.md",
+      "sha256": "bfaaae029cc843bb3a7b33fd5725cfd9c56763b1598a7086be53f31a913285fe",
+      "primary_table_unique_names": 37,
+      "name_set_sha256": "289d0c2c287fcacf3ca3c00b6ccdb023e58fd249e54ddca3415bb943cf223027"
+    },
+    {
+      "path": "component_WMIQuery.md",
+      "sha256": "3830119d0dd1f3fa215e70d7da5de1e8e08c44436df9579bce004dce82ef852b",
+      "primary_table_unique_names": 10,
+      "name_set_sha256": "befdc9dce8ddf802dd850eba1daffbc20fbb90d50995354abd2680299523d224"
+    },
+    {
+      "path": "component_WebDownloadDelegate.md",
+      "sha256": "03c681142d887b9844b7f60b88784b0439413e05002e7452d7b687ac864a53b4",
+      "primary_table_unique_names": 21,
+      "name_set_sha256": "87246c81b75709f7cb51b5b659b2b4eca8f4256e2b30898113f8577739a50ea7"
+    },
+    {
+      "path": "component_WebHook.md",
+      "sha256": "46b288ea4b82658a77693dd3e8afbdebab475f8330106f85f608772813126a2b",
+      "primary_table_unique_names": 49,
+      "name_set_sha256": "394e44d0038b0d1eb483d3455765635ac2d6718791eb6257fe9b0a094e29ab4e"
+    },
+    {
+      "path": "component_WebView.md",
+      "sha256": "6009b2b2de1dfd6ced971b31e79ada110a04a81a3a963e57295272e5f005d6de",
+      "primary_table_unique_names": 161,
+      "name_set_sha256": "28201e021ae19da61d5efaa5f12bb7071d496a4caa0fd5a6c7a60aa7535459aa"
+    },
+    {
+      "path": "component_WinPDF.md",
+      "sha256": "22fe79c79872a23c6489a422c4a6897dc2f720624ffdfeac6ec25760fe0280d6",
+      "primary_table_unique_names": 15,
+      "name_set_sha256": "98f5896c473c6f681a4c3ab2455601314ae99d9b3827d5444848b0a922726147"
+    },
+    {
+      "path": "component_WinPhotoAcquire.md",
+      "sha256": "4207a01af62251243f6dac3bd0de0b0e5e56233a8c0e3d5c106d78b661ace173",
+      "primary_table_unique_names": 6,
+      "name_set_sha256": "1db143d6b52effc1b9b4451bd5df538af9f3bf991f68a10fc0d2220557c21a6e"
+    },
+    {
+      "path": "component_WinSendMail.md",
+      "sha256": "b01a11e1a955ea486e0d37dfe86429c9ddf1155fd1641f41d39c46a9dc9dfa38",
+      "primary_table_unique_names": 21,
+      "name_set_sha256": "e52376b96171bb8eb3a430df9043aaa1589c851c8be66d71d1df63f4098d3a0d"
+    },
+    {
+      "path": "component_Window.md",
+      "sha256": "b86f53ec95868af7794cfab22daeb987a9ab0ec84ce7819f58bccbe0cfc30d0a",
+      "primary_table_unique_names": 130,
+      "name_set_sha256": "a631211024a4e4b79caca786c8ac2e27f81ba7b33b9565c444662fce10f706d3"
+    },
+    {
+      "path": "component_WindowsLocation.md",
+      "sha256": "72144cd7b51bde5a7250acafb7467bff1ee6b3e0f8c4954e18b932a354c74a8e",
+      "primary_table_unique_names": 4,
+      "name_set_sha256": "1365706d94e1371d728c1286cd8a500575e3a7aa5bf54cdf596e2d357f49802b"
+    },
+    {
+      "path": "component_WindowsML.md",
+      "sha256": "f08766deda628d9cc54fd2ed7d2ce5c6d2bde3b5bd608b97d32af3acf6bd8c1f",
+      "primary_table_unique_names": 19,
+      "name_set_sha256": "4ed09b68e99daf872abf1634883f73635db357114669e27d1dd6e6b59c37b49b"
+    },
+    {
+      "path": "component_WindowsOCR.md",
+      "sha256": "16a5dc381242339eb2b11b08075cc22e994e72389f1c63d68cb331b6fe131a75",
+      "primary_table_unique_names": 15,
+      "name_set_sha256": "73ed703a4b564c75e37dedb37186376274cf8a209a64b826b420d25a1f483ec5"
+    },
+    {
+      "path": "component_WindowsScript.md",
+      "sha256": "b8547c62f8db887d971de70b79907b654199c6e4b6f0207db6c253985982b841",
+      "primary_table_unique_names": 21,
+      "name_set_sha256": "10bc5d4925fe4827c6337ddaa52601670c3442b56dead2755ee100a331a87e54"
+    },
+    {
+      "path": "component_WindowsUserNotification.md",
+      "sha256": "9c29afb8c9c85e404e3867bca1f21e493f7789f3144828c083ab7876699a7622",
+      "primary_table_unique_names": 33,
+      "name_set_sha256": "344b0964434640e862c48f35f5c6321b781ea39b201f02cf1c0c9b4468b0851a"
+    },
+    {
+      "path": "component_WordFile.md",
+      "sha256": "b5d85a8d383a1a2b5cc866153c0574c0ce8af080060a1285a30bcd7559869049",
+      "primary_table_unique_names": 34,
+      "name_set_sha256": "36790c30f7a73bcd75f928534a0f10663a26a761ade3e5206f29b308274664d3"
+    },
+    {
+      "path": "component_XL.md",
+      "sha256": "9e1c7ceb4b508ce0b3d1056149c58d58e2d856775fe0b1c75acae91d18139c19",
+      "primary_table_unique_names": 471,
+      "name_set_sha256": "aa8a86d393becdd19687fa0d4c7f11020bda2dcf0e206d85adebfce792c8e2d9"
+    },
+    {
+      "path": "component_XML.md",
+      "sha256": "701d3999e7d0c1b85fd9e6ab15ea0c2004156558962339404e1bb17febdf4816",
+      "primary_table_unique_names": 52,
+      "name_set_sha256": "1b352f38ab106b3ca84367ac65e7e5b052d9e4e5b35dfa93106af2db8914d392"
+    },
+    {
+      "path": "component_iOSApp.md",
+      "sha256": "f0b7c44885f480f5bc8d48dc7a7a5eb726ff8d9aa1cc8d5f97af772fb70be345",
+      "primary_table_unique_names": 40,
+      "name_set_sha256": "41e2cea43b6c170f82aba8746b8594f5d0cec7afa218341debdceda845ff0981"
+    },
+    {
+      "path": "component_iOSDevice.md",
+      "sha256": "c437c926e0bcfe05efcf81eb51c3680c6906703a038623061e28ab553a925f4b",
+      "primary_table_unique_names": 14,
+      "name_set_sha256": "f89a5b43ab75ae0e82e41f6704f4ca447e19474a5d54294840aca2466363166a"
+    },
+    {
+      "path": "component_iOSKeyboard.md",
+      "sha256": "6f65db096033a05bbed44b8c24d1f8bfc9219c387c946deb19bb56166fbff061",
+      "primary_table_unique_names": 9,
+      "name_set_sha256": "6dced518c90752255a843c6e80147c1225b6afe305f70aea0fc49a21a588b6b3"
+    },
+    {
+      "path": "deprecated.md",
+      "sha256": "ae4118d0d6ac75e49272cd24704341023ab7114ab212559c0be254a4c9d8b36a",
+      "primary_table_unique_names": 400,
+      "name_set_sha256": "953f21645d153bef257e2f994bfb4f5fd9db9f3867ede3cb86d927ad36401ddb"
+    }
+  ]
+}

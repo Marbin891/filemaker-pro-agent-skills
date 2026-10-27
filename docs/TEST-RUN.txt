@@ -1,3 +1,48 @@
+test_catalog_warns_about_inherited_platform_flags (test_audit_regressions.CompatibilityAndEvidenceTests.test_catalog_warns_about_inherited_platform_flags) ... ok
+test_go_sdk_webdirect_and_psos_are_distinct (test_audit_regressions.CompatibilityAndEvidenceTests.test_go_sdk_webdirect_and_psos_are_distinct) ... ok
+test_logo_provenance_and_claris_warning_survive (test_audit_regressions.CompatibilityAndEvidenceTests.test_logo_provenance_and_claris_warning_survive) ... ok
+test_mbs_index_does_not_claim_unproved_residual_cause (test_audit_regressions.CompatibilityAndEvidenceTests.test_mbs_index_does_not_claim_unproved_residual_cause) ... ok
+test_mbs_review_binds_observed_set_to_catalog (test_audit_regressions.CompatibilityAndEvidenceTests.test_mbs_review_binds_observed_set_to_catalog) ... ok
+test_cli_rejects_blank_search_and_invalid_limits (test_audit_regressions.IntentCliAndPackageTests.test_cli_rejects_blank_search_and_invalid_limits) ... ok
+test_distributed_helpers_resolve_intents_outside_repository (test_audit_regressions.IntentCliAndPackageTests.test_distributed_helpers_resolve_intents_outside_repository) ... ok
+test_all_intent_targets_exist (test_audit_regressions.IntentLookupTests.test_all_intent_targets_exist) ... ok
+test_empty_unknown_and_stopword_queries_do_not_dump_catalogs (test_audit_regressions.IntentLookupTests.test_empty_unknown_and_stopword_queries_do_not_dump_catalogs) ... ok
+test_exact_names_rank_first_and_normalize_whitespace (test_audit_regressions.IntentLookupTests.test_exact_names_rank_first_and_normalize_whitespace) ... ok
+test_intent_00_BE_SMTPSend (test_audit_regressions.IntentLookupTests.test_intent_00_BE_SMTPSend) ... ok
+test_intent_01_BE_SMTPSend (test_audit_regressions.IntentLookupTests.test_intent_01_BE_SMTPSend) ... ok
+test_intent_02_BE_FileWriteText (test_audit_regressions.IntentLookupTests.test_intent_02_BE_FileWriteText) ... ok
+test_intent_03_BE_FileWriteText (test_audit_regressions.IntentLookupTests.test_intent_03_BE_FileWriteText) ... ok
+test_intent_04_BE_FileReadText (test_audit_regressions.IntentLookupTests.test_intent_04_BE_FileReadText) ... ok
+test_intent_05_BE_FileListFolder (test_audit_regressions.IntentLookupTests.test_intent_05_BE_FileListFolder) ... ok
+test_intent_06_BE_HTTP_GET (test_audit_regressions.IntentLookupTests.test_intent_06_BE_HTTP_GET) ... ok
+test_intent_07_BE_RegularExpression (test_audit_regressions.IntentLookupTests.test_intent_07_BE_RegularExpression) ... ok
+test_intent_08_BE_EvaluateJavaScript (test_audit_regressions.IntentLookupTests.test_intent_08_BE_EvaluateJavaScript) ... ok
+test_intent_09_BE_XSLTApply (test_audit_regressions.IntentLookupTests.test_intent_09_BE_XSLTApply) ... ok
+test_intent_10_BE_PDFAppend (test_audit_regressions.IntentLookupTests.test_intent_10_BE_PDFAppend) ... ok
+test_intent_11_DynaPDF_New (test_audit_regressions.IntentLookupTests.test_intent_11_DynaPDF_New) ... ok
+test_intent_12_DynaPDF_New (test_audit_regressions.IntentLookupTests.test_intent_12_DynaPDF_New) ... ok
+test_intent_13_DynaPDF_ExtractText (test_audit_regressions.IntentLookupTests.test_intent_13_DynaPDF_ExtractText) ... ok
+test_intent_14_DynaPDF_ExtractText (test_audit_regressions.IntentLookupTests.test_intent_14_DynaPDF_ExtractText) ... ok
+test_intent_15_XL_LoadBook (test_audit_regressions.IntentLookupTests.test_intent_15_XL_LoadBook) ... ok
+test_intent_16_XL_LoadBook (test_audit_regressions.IntentLookupTests.test_intent_16_XL_LoadBook) ... ok
+test_intent_17_Files_WriteFile (test_audit_regressions.IntentLookupTests.test_intent_17_Files_WriteFile) ... ok
+test_intent_18_CURL_New (test_audit_regressions.IntentLookupTests.test_intent_18_CURL_New) ... ok
+test_intent_19_SendMail_CreateEmail (test_audit_regressions.IntentLookupTests.test_intent_19_SendMail_CreateEmail) ... ok
+test_intent_20_RegEx_ReplaceAll (test_audit_regressions.IntentLookupTests.test_intent_20_RegEx_ReplaceAll) ... ok
+test_intent_21_JSON_Parse (test_audit_regressions.IntentLookupTests.test_intent_21_JSON_Parse) ... ok
+test_intent_22_bBox_Python3Run (test_audit_regressions.IntentLookupTests.test_intent_22_bBox_Python3Run) ... ok
+test_intent_23_bBox_Python3Run (test_audit_regressions.IntentLookupTests.test_intent_23_bBox_Python3Run) ... ok
+test_intent_24_bBox_Zsh (test_audit_regressions.IntentLookupTests.test_intent_24_bBox_Zsh) ... ok
+test_intent_25_bBox_DuckDBOpen (test_audit_regressions.IntentLookupTests.test_intent_25_bBox_DuckDBOpen) ... ok
+test_intent_26_bBox_FileWrite (test_audit_regressions.IntentLookupTests.test_intent_26_bBox_FileWrite) ... ok
+test_intent_27_bBox_FileRead (test_audit_regressions.IntentLookupTests.test_intent_27_bBox_FileRead) ... ok
+test_intent_28_bBox_HTTP_GET (test_audit_regressions.IntentLookupTests.test_intent_28_bBox_HTTP_GET) ... ok
+test_intent_29_bBox_GraphicsMagick (test_audit_regressions.IntentLookupTests.test_intent_29_bBox_GraphicsMagick) ... ok
+test_intent_30_bBox_WebViewLoadHTML (test_audit_regressions.IntentLookupTests.test_intent_30_bBox_WebViewLoadHTML) ... ok
+test_intent_31_bBox_JavaScript (test_audit_regressions.IntentLookupTests.test_intent_31_bBox_JavaScript) ... ok
+test_mbs_search_reads_each_group_once (test_audit_regressions.IntentLookupTests.test_mbs_search_reads_each_group_once) ... ok
+test_ranked_limits_are_stable_and_be_results_are_unique (test_audit_regressions.IntentLookupTests.test_ranked_limits_are_stable_and_be_results_are_unique) ... ok
+test_representative_metadata_not_just_search_hits (test_audit_regressions.IntentLookupTests.test_representative_metadata_not_just_search_hits) ... ok
 test_48px_preview_is_derived_from_the_composer_icon (test_branding.BrandingPixelTests.test_48px_preview_is_derived_from_the_composer_icon) ... ok
 test_lanczos_pixels_match_the_master (test_branding.BrandingPixelTests.test_lanczos_pixels_match_the_master) ... ok
 test_square_padding_does_not_stretch_or_crop (test_branding.BrandingPixelTests.test_square_padding_does_not_stretch_or_crop) ... ok
@@ -107,7 +152,7 @@ test_unicode_and_text_models (test_text_date_oracles.TextDateOracleTests.test_un
 test_weekday_numbering_and_next_business_day (test_text_date_oracles.TextDateOracleTests.test_weekday_numbering_and_next_business_day) ... ok
 
 ----------------------------------------------------------------------
-Ran 104 tests in 3.822s
+Ran 149 tests in 5.752s
 
 OK
 Independent Python oracle equality assertions executed: 374; no FileMaker engine invoked.

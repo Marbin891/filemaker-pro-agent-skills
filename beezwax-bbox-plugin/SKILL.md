@@ -49,6 +49,7 @@ Use the bundled read-only helper from this skill directory:
 ```sh
 python3 scripts/catalog.py function bBox_Shell
 python3 scripts/catalog.py search python --limit 8
+python3 scripts/catalog.py search "ejecutar python" --limit 3
 python3 scripts/catalog.py list
 python3 scripts/catalog.py shared mode_flags
 python3 scripts/catalog.py shared error_reference
@@ -57,6 +58,10 @@ python3 scripts/catalog.py stats
 
 Without Python, search `references/function-catalog.json` for the exact name or
 the category. Load only the entry you need.
+
+Search ranks exact names, literal matches, curated English/Spanish intent hints
+and token matches. Results are catalog suggestions, not executed shell/Python
+commands. Look up the selected entry's modes, error reference and platform limits.
 
 Every entry records:
 

@@ -9,7 +9,7 @@ perform their own implicit selection from the frontmatter descriptions.
 |---|---|---|
 | "Fix this FileMaker calculation" | `filemaker-pro` | — |
 | "Does Open Transaction work on Server 19.6.1?" | `filemaker-pro` | — |
-| "Build a JSON parameter for a script" | `filemaker-pro` | — |
+| "Build a JSON parameter for a FileMaker script" | `filemaker-pro` | — |
 | "Review this Data API / OData integration" | `filemaker-pro` | — |
 | "Why is my `BE_HTTP_POST` returning empty?" | `goya-be-plugin` | `filemaker-pro` if script steps are involved |
 | "Use BaseElements to write a CSV file" | `goya-be-plugin` | — |
@@ -17,7 +17,7 @@ perform their own implicit selection from the frontmatter descriptions.
 | "Is DynaPDF included in the MBS licence?" | `monkeybread-mbs-plugin` | — |
 | "Call `bBox_Zsh` from a server script" | `beezwax-bbox-plugin` | `filemaker-pro` for PSoS behaviour |
 | "Write a script that calls MBS and BE_" | all three | `filemaker-pro` for steps |
-| "Compare BE_, MBS and bBox for HTTP" | all three | `filemaker-pro` for native HTTP options |
+| "Compare BE_, MBS and bBox for HTTP" | all three plug-in skills | `filemaker-pro` only if native options are requested |
 | "Optimize PostgreSQL" | none | — |
 | "Format generic JSON" | none | — |
 | "Write an Excel formula" | none | — |
@@ -35,7 +35,7 @@ perform their own implicit selection from the frontmatter descriptions.
    Route to `beezwax-bbox-plugin`; add `filemaker-pro` only if the answer needs
    PSoS script-step behaviour. State the plug-in limitation first.
 4. **Several plug-ins.** "Compare `MBS( "Files.ReadFile" ... )` with
-   `BE_FileRead` for a server-side import."
+    `BE_FileReadText` for a server-side import."
    Load both plug-in skills. Compare only the looked-up entries. Do not invent a
    shared error model.
 5. **Plug-in plus native steps.** "Write a script that reads a file with bBox,
@@ -61,6 +61,12 @@ perform their own implicit selection from the frontmatter descriptions.
   for the code or select the product skill.
 - If a request names a generic capability ("HTTP", "PDF", "SQL"), do not load
   all plugin skills. Ask which product or inspect the code for a prefix.
+- A FileMaker-only capability request selects the native skill, not all
+  plug-ins. Generic Python scripts without FileMaker/product context do not
+  select it. An explicit plug-in plus `script`/`guion`, Go, SDK, WebDirect or
+  PSoS selects the plug-in and the native skill for execution-host behaviour.
+- The helper is a bounded marker router, not a natural-language parser. It does
+  not resolve arbitrary negation or choose a provider from performance claims.
 - If two skills disagree, prefer the owning skill's catalog for that dialect and
   `filemaker-pro` for native FileMaker behaviour. Report the conflict rather
   than merging incompatible facts.

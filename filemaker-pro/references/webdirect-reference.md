@@ -14,6 +14,13 @@ WebDirect is also not the Data API: a browser session and a REST session have se
 Record host patch version, browser/OS versions and privilege set in any compatibility claim.
 Exact supported browser versions and connection limits must be checked for that deployment.
 
+FileMaker plug-ins do not load in the browser. A compatible plug-in may execute
+in FileMaker Server's Web Publishing Engine (WPE) when installed/enabled there.
+PSoS instead runs in the server's FileMaker Script Engine (FMSE), with that
+engine's plug-in configuration and permissions. Neither path accesses a browser
+user's local plug-in or files. FileMaker Cloud does not support plug-ins.
+See [Claris server plug-in settings](https://help.claris.com/en/security-guide/content/enable-plug-ins-server.html).
+
 ## Compatibility means checking options
 
 Consult `script-steps-catalog.json` and `compatibility.md` for the actual step exceptions.

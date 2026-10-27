@@ -1,7 +1,8 @@
 # Project identity
 
-`logo.png` is the unmodified RGBA PNG master (1254 × 1254). The identity belongs
-to this project, not Claris, FileMaker, Goya, Monkeybread Software or Beezwax.
+`logo.png` is the unmodified RGBA PNG master (1254 × 1254), generated through
+ChatGPT for this project, as reported by the project owner. It is used as the
+project identity, not as a mark of Claris, FileMaker, Goya, Monkeybread Software or Beezwax.
 No third-party logo or endorsement is implied.
 
 | File | Use | Distributed in plugin |
@@ -20,6 +21,7 @@ palette reduction or alternate design is used.
 Lanczos render. `--preview /path/to/preview.png` creates a review sheet at 48px
 on light and dark backgrounds. Preview sheets are not distributed.
 
-The artwork was supplied as project identity without separate author or licence
-metadata. The documentation/code CC BY 4.0 notice does not independently grant
-artwork rights; confirm artwork redistribution rights before public release.
+The reported ChatGPT origin does not establish exclusive rights, copyright
+eligibility or third-party clearance. No exclusive artwork rights are claimed.
+The documentation/code CC BY 4.0 notice does not independently grant artwork
+rights; review applicable terms and redistribution rights before public release.

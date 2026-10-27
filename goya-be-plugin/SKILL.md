@@ -34,10 +34,21 @@ argument order and error reporting are plug-in-specific.
   CadenceUX catalog build, 2026-04-15).
 - The plug-in is free and open source. Obtain it from the vendor repository;
   this skill bundles no binary, installer or licence key.
-- BaseElements 5.x supports current FileMaker Pro, Go, WebDirect and Server
-  clients, but every function has its own platform matrix. Check the
-  `compatibility` object in the catalog before recommending a function for
-  Server-side scripts, FileMaker Go or Linux.
+- FileMaker Pro can load the appropriate desktop plug-in. **FileMaker Go does
+  not support external plug-ins**: a `BE_` call cannot execute locally in Go.
+- An **iOS App SDK** app is a separately built app, not FileMaker Go. The SDK
+  can embed an app-specific plug-in build; an inherited catalog `ios` flag is
+  not evidence that a current BaseElements iOS binary is available or supported.
+- **WebDirect** does not load a FileMaker plug-in in the browser. Compatible
+  calls execute in the server's Web Publishing Engine (WPE), with the plug-in
+  installed and enabled there. WPE support is not implied by an `fms` flag.
+- **PSoS** (Perform Script on Server) and server schedules execute in the
+  server's FileMaker Script Engine (FMSE). A Go or WebDirect client may request
+  that server work, but the plug-in and files must exist on the server; this
+  does not add local plug-in support to the client.
+- Check each function's `compatibility`, host/OS/build, permissions and engine
+  configuration. The raw `ios` and `fms` fields are inherited platform facts,
+  not universal deployment guarantees. See [patterns.md](references/patterns.md#execution-hosts-and-compatibility-evidence).
 - Plug-ins must be allowed by the file and by FileMaker Server. A documented
   function may still be unavailable in a locked-down deployment.
 - A `BE_` function is evaluated as a calculation expression, including inside
@@ -52,6 +63,7 @@ bundled read-only helper when Python 3.10+ is available:
 ```sh
 python3 scripts/catalog.py function BE_HTTP_POST
 python3 scripts/catalog.py search http --limit 8
+python3 scripts/catalog.py search "enviar correo" --limit 3
 python3 scripts/catalog.py list --category "Files and Folders"
 python3 scripts/catalog.py deprecated
 python3 scripts/catalog.py constants
@@ -61,6 +73,10 @@ python3 scripts/catalog.py stats
 Without Python, search `references/function-catalog.json` for the exact `name`
 or open the category that matches the task. Load one category or one entry at
 a time; do not read the whole catalog into context.
+
+Search ranks exact names, literal matches, curated English/Spanish intent hints
+and token matches. Hints suggest catalog entries, not validated execution plans;
+look up each returned function to check arguments, platform and version.
 
 The catalog retains:
 
