@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "purpose": "Evidence-backed corrections without altering the losslessly preserved upstream catalogs.",
+    "checked_on": "2026-10-27",
+    "evidence": "Official documentation inspection; not FileMaker engine validation."
+  },
+  "corrections": [
+    {
+      "kind": "step",
+      "name": "Exit Script",
+      "field": "syntax",
+      "upstream_value": "Exit Script [ Script Result: value ]",
+      "recommended_value": "Exit Script [ Text Result: value ]",
+      "reason": "The official Options section names this option Text Result. Preserve the original catalog for provenance, but use the documented label when generating Script Workspace instructions.",
+      "source_url": "https://help.claris.com/en/pro-help/content/exit-script.html"
+    }
+  ]
+}

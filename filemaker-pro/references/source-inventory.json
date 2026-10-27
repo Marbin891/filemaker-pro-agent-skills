@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    {
+      "repository": "https://github.com/CadenceUX/claris-filemaker-pro-skill",
+      "commit": "bda594e15f4a6981e93403c4b187d262ca820116",
+      "version": "2.2.1",
+      "license_declaration": "CC-BY-4.0 in README.md; does not grant Claris rights",
+      "files": [
+        {
+          "path": ".claude-plugin/plugin.json",
+          "bytes": 850,
+          "sha256": "97782cee863c1bf5c388d27724a9e2c0bed75f0210fd961cf4b3d50896a02b33",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": ".gitattributes",
+          "bytes": 106,
+          "sha256": "1e1a979bf4959805a6ee794c0c1399a246d0b1d3b85aefba54a45c93ca8994ca",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bytes": 62927,
+          "sha256": "7499a4d3054723af2374801d5151959eed55a5b1a18ea13ccabda6d2d48b4e64",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "README.md",
+          "bytes": 9090,
+          "sha256": "e18b53c44b920e6ec0251f229144e8a9e2220a5b80f041e120b1b08c3a3d8180",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 13250,
+          "sha256": "661b658e741f2fb17222fb997a9383d04a2a2b3e1d9a51a2aadb0ab9ed8758a6",
+          "distribution_paths": [
+            "filemaker-pro/SKILL.md"
+          ],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "VERSION",
+          "bytes": 6,
+          "sha256": "fe650098093fad42070e8a2cacfb216a6c416af57bd26dd6ff479fef69f8bc71",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "evals/evals.json",
+          "bytes": 5935,
+          "sha256": "aad438b1e2c1ffc1ae2077ddf7f3e1c1e540c9454dd2029601f8464ef8091721",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "evals/results-2026-10-02.md",
+          "bytes": 5268,
+          "sha256": "7467207036dbcd8e1f0573e3bf776b26e094adf65e949a64e4315aa0fa0a8f3a",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "evals/results-2026-10-11-v2.2.0.md",
+          "bytes": 524,
+          "sha256": "ce7447d9564ed1d87573601c27d0795a2d1f9d68d04fc9186f8d2bd9e3aaffa7",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "maintainer/README.md",
+          "bytes": 3115,
+          "sha256": "a9c6baf33a6e9f177ae2587d40222ee256b4daf427dd1986e1c24aa5f50a5b8b",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "maintainer/rebuild_extract.py",
+          "bytes": 3733,
+          "sha256": "aa85d59653d72002ab78eb55cc4fc976e9ee0072381254b005ab34ba8fc4642c",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "maintainer/rebuild_harvest.py",
+          "bytes": 4032,
+          "sha256": "66d49b5bde849ff02e8ac6dfcceaf12c49b6434a367f16ae303c69ceca6c1ddd",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "maintainer/verify_examples.py",
+          "bytes": 14950,
+          "sha256": "5aba8341ad698208af4d480399707ffa38ae2822d2c539343b51e4c06faa8ec4",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/adt-mode.md",
+          "bytes": 5477,
+          "sha256": "914148fce8f5033cf228ebd2a2486772e201601bb39f524d6bbe963d05cd6797",
+          "distribution_paths": [
+            "filemaker-pro/references/adt-integration.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/data-api-reference.md",
+          "bytes": 5786,
+          "sha256": "73bf49ca6d218c5274fdd06acbf39ee7a6f90b4e304f8c3720e057ce67a1ca17",
+          "distribution_paths": [
+            "filemaker-pro/references/data-api-reference.md",
+            "filemaker-pro/references/cadenceux-integration-details.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/date-time-functions-examples.md",
+          "bytes": 14147,
+          "sha256": "c429837c844de22e16716eef042208ce081fd06017421451a561e8bb2546aac0",
+          "distribution_paths": [
+            "filemaker-pro/references/date-time-functions-examples.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/design-container-functions-examples.md",
+          "bytes": 28467,
+          "sha256": "23362b1004f130221883bab1906f80fbc29b85137a2e87efcaa692c2afb48fd0",
+          "distribution_paths": [
+            "filemaker-pro/references/design-container-functions-examples.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/error-codes.md",
+          "bytes": 33398,
+          "sha256": "22cbf0ed9b1c9914fdf00561da7ba2b965b8b124c51c4ed216ce1b20a1b6c534",
+          "distribution_paths": [
+            "filemaker-pro/references/error-codes.md",
+            "filemaker-pro/references/error-codes.json"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/field-types-catalog.json",
+          "bytes": 10902,
+          "sha256": "27cc41ef6f9a406ffa2eb703eea78065c8850733497024ea4254199088126a4a",
+          "distribution_paths": [
+            "filemaker-pro/references/field-types-catalog.json"
+          ],
+          "treatment": "complete-technical-catalog",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/filemaker-go-reference.md",
+          "bytes": 4879,
+          "sha256": "00ed1bf9039a5ec3f98151549721718d6ac86f9c5d5510541379e3a95663a2cf",
+          "distribution_paths": [
+            "filemaker-pro/references/filemaker-go-reference.md",
+            "filemaker-pro/references/cadenceux-integration-details.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/function-catalog.json",
+          "bytes": 165126,
+          "sha256": "e6f95132070868c195a2f70ed468d2a657dd8c0fea4884faeddd5aa44b9abc09",
+          "distribution_paths": [
+            "filemaker-pro/references/function-catalog.json"
+          ],
+          "treatment": "complete-technical-catalog",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/get-functions-examples.md",
+          "bytes": 21377,
+          "sha256": "055f3f0fae01440ec282aa7f55f00165b66aba6ef10d15bdd7230115170d2089",
+          "distribution_paths": [
+            "filemaker-pro/references/get-functions-examples.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/help-sitemap.md",
+          "bytes": 7977,
+          "sha256": "d7f39e4c87e946bc3a192e4d2d2b0755385fed402ead63bbec081ddd4d4f9482",
+          "distribution_paths": [
+            "filemaker-pro/references/help-sitemap.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/logical-json-ai-functions-examples.md",
+          "bytes": 48781,
+          "sha256": "87b2d10e0010f7925d53e5ea4fa0c03968a35dd4abc1939f976af394ab15b864",
+          "distribution_paths": [
+            "filemaker-pro/references/logical-json-ai-functions-examples.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/numeric-functions-examples.md",
+          "bytes": 22762,
+          "sha256": "231e98e84cccd499651ad0b405d554887bf1e8a77bf946e74d88a476dcf6a608",
+          "distribution_paths": [
+            "filemaker-pro/references/numeric-functions-examples.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/odata-api-reference.md",
+          "bytes": 6440,
+          "sha256": "10c2ecfffebeb38d81c03b04c22f17b951bac5038a1e752a1515bb55ae50400e",
+          "distribution_paths": [
+            "filemaker-pro/references/odata-api-reference.md",
+            "filemaker-pro/references/cadenceux-integration-details.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/script-steps-catalog.json",
+          "bytes": 122208,
+          "sha256": "bd2ea1d8fe5ecf1741cfbe4755eb7d25fbe8973af13d8c65136bb5b7b4b99a15",
+          "distribution_paths": [
+            "filemaker-pro/references/script-steps-catalog.json"
+          ],
+          "treatment": "complete-technical-catalog",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/specialty-functions-examples.md",
+          "bytes": 27772,
+          "sha256": "757004e8d36f83e5f9f7563033c17975c504c69b562c59250c4d0ba9006de1cc",
+          "distribution_paths": [
+            "filemaker-pro/references/specialty-functions-examples.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/sql-reference.md",
+          "bytes": 5821,
+          "sha256": "5b2dac93b4153355a7b1703d0057dfa7c454717c9e564b6e494062956573199a",
+          "distribution_paths": [
+            "filemaker-pro/references/sql-reference.md",
+            "filemaker-pro/references/cadenceux-integration-details.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/text-functions-examples.md",
+          "bytes": 18326,
+          "sha256": "3f677819aca704339f4d978ac2735a4fee98bc068604149194f328ff4e681f38",
+          "distribution_paths": [
+            "filemaker-pro/references/text-functions-examples.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/webdirect-reference.md",
+          "bytes": 7185,
+          "sha256": "e1169180852f045568d2c339b44c86c9320781745af8d4a1593fdfe0e464f8c9",
+          "distribution_paths": [
+            "filemaker-pro/references/webdirect-reference.md",
+            "filemaker-pro/references/cadenceux-integration-details.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/CadenceUX/fmp-dev-design-patterns",
+      "commit": "17471d6d0a3fd1e53a1714d0c265dc3afad718cc",
+      "version": "2.1.1",
+      "license_declaration": "CC-BY-4.0 in README.md; does not grant Claris rights",
+      "files": [
+        {
+          "path": ".claude-plugin/plugin.json",
+          "bytes": 763,
+          "sha256": "d3bd9e867d5425c7a8ba2c4bec8568ae048831bb16093ea2ee71af7d34638124",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": ".gitattributes",
+          "bytes": 105,
+          "sha256": "ce724428cb737ffa3f869b5fb65affdc1527499472f4213a3a4a3c4104eca20b",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": ".gitignore",
+          "bytes": 24,
+          "sha256": "1bf79976242c4d467ae3196947ab77b3ef05a5064307ce4172cba40db9cfef57",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bytes": 13759,
+          "sha256": "7c41a6fb9acd5b3fbb2ce13973f33f0341f2ef94302777649566b04018a4ea16",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "README.md",
+          "bytes": 3362,
+          "sha256": "858b99b913a107260f46a6931ea2c28e7c3837bed7bfa26cdbfd266aeefa1afd",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 12982,
+          "sha256": "d2771360f97fc8f9e53bd786a6f8dcaf8d411d546f753ddc224d2e8875ddfd52",
+          "distribution_paths": [
+            "filemaker-pro/SKILL.md"
+          ],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "VERSION",
+          "bytes": 6,
+          "sha256": "7b3ff271f1373cfb97e9e53349794e1450f3794e4c0788c54a2060c7596da821",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "evals/evals.json",
+          "bytes": 2762,
+          "sha256": "0f12207bcec184c79dc4580e878b9d28743b2d763530dfd52684d2c92a6ada3c",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "evals/results-2026-10-11-v2.1.0.md",
+          "bytes": 529,
+          "sha256": "bc5203363a624b4073bd2000a2d557b9d45d5c92a687c1958b7f485bc7aa88b4",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "evals/results-2026-10-11.md",
+          "bytes": 732,
+          "sha256": "f53767731cb1f9e3ac676b83d44ee3baf3dd2010de2c1acf2aebe6151f9a96d7",
+          "distribution_paths": [],
+          "treatment": "development-source-not-bundled",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/pattern-audit.md",
+          "bytes": 5526,
+          "sha256": "3acc867b340462f6010cfa15189b2f0ae5dba165e7bcd8f3bc9d4fcc763c237a",
+          "distribution_paths": [
+            "filemaker-pro/references/cadenceux-patterns.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        },
+        {
+          "path": "references/scripting-patterns.md",
+          "bytes": 8225,
+          "sha256": "e14aa9f4c6e405235ff93019af7aa6a7976f29410db9661101777f6e1eb9d62c",
+          "distribution_paths": [
+            "filemaker-pro/references/cadenceux-patterns.md"
+          ],
+          "treatment": "adapted-local-reference",
+          "reason": "Preserve technical facts and CC BY CadenceUX synthesis; rewrite expressive examples and host-specific instructions. See replacement ledgers."
+        }
+      ]
+    }
+  ],
+  "rights_status": "Technical facts preserved; CadenceUX CC BY synthesis attributed; expressive Claris examples rewritten. Specific residual questions are documented in ATTRIBUTION.md and THIRD-PARTY.md."
+}

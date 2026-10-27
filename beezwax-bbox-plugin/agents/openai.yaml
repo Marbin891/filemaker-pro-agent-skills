@@ -1,0 +1,4 @@
+interface:
+  display_name: "bBox Plug-in"
+  short_description: "bBox function, mode-flag and platform reference"
+  default_prompt: "Use $beezwax-bbox-plugin to look up this bBox function, its mode flags and its error reference."

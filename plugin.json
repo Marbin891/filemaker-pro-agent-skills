@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "filemaker-pro-agent-skills",
+  "version": "2.0.0",
+  "description": "Modular FileMaker development skills for native calculations, scripts, BaseElements, MBS and bBox.",
+  "author": {
+    "name": "FileMaker Pro Agent Skills contributors"
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "filemaker",
+    "claris",
+    "baseelements",
+    "mbs",
+    "bbox",
+    "skills"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "FileMaker Pro Agent Skills",
+        "shortDescription": "FileMaker developer reference",
+        "longDescription": "A modular reference set for Claris FileMaker developers. It covers native calculation functions, script steps, errors and APIs, plus the BaseElements, MBS and bBox plug-in dialects. An orchestrator routes each request to the owning skill and loads catalogs only when needed.",
+        "developerName": "FileMaker Pro Agent Skills contributors",
+        "category": "Developer Tools",
+        "logo": "./assets/logo-512.png",
+        "composerIcon": "./assets/icon-128.png",
+        "capabilities": [
+          "FileMaker calculation and script guidance",
+          "BaseElements function lookup",
+          "MBS function lookup",
+          "bBox function lookup",
+          "Skill routing"
+        ],
+        "defaultPrompt": [
+          "Review this FileMaker script and explain its errors and platform limits.",
+          "Look up a BaseElements function and show its parameters and compatibility.",
+          "Find the right MBS or bBox function for a FileMaker task."
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "FileMaker Pro"
+  short_description: "Version-aware FileMaker development and diagnosis"
+  default_prompt: "Use $filemaker-pro to help with this Claris FileMaker task, checking local syntax, version and execution platform."

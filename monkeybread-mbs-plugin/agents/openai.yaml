@@ -1,0 +1,4 @@
+interface:
+  display_name: "MBS Plug-in"
+  short_description: "MBS function, component and licensing reference"
+  default_prompt: "Use $monkeybread-mbs-plugin to find this MBS function and check its signature, platform and licence status."

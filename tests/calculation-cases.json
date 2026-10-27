@@ -1,0 +1,17 @@
+{
+  "verification": "Original synthetic cases. Catalog/lexical checks and independent Python expected-value oracles; not evaluated by FileMaker.",
+  "cases": [
+    {"id":"packing-json","formula":"JSONSetElement ( \"{}\" ; [ \"unitCount\" ; 7 * 6 ; JSONNumber ] ; [ \"batchKey\" ; \"DEMO-042\" ; JSONString ] )","functions":["JSONSetElement"],"expected":{"unitCount":42,"batchKey":"DEMO-042"}},
+    {"id":"normalize-key","formula":"Upper ( Trim ( \"  queue-k9  \" ) )","functions":["Upper","Trim"],"expected":"QUEUE-K9"},
+    {"id":"exact-secret-comparison","formula":"Exact ( \"Case7\" ; \"case7\" )","functions":["Exact"],"expected":0},
+    {"id":"bounded-suffix","formula":"Right ( \"DISPATCH-082\" ; 3 )","functions":["Right"],"expected":"082"},
+    {"id":"case-classification","formula":"Case ( 7 > 10 ; \"bulk\" ; \"standard\" )","functions":["Case"],"expected":"standard"},
+    {"id":"modulo-bucket","formula":"Mod ( 47 ; 6 )","functions":["Mod"],"expected":5},
+    {"id":"absolute-delta","formula":"Abs ( 13 - 31 )","functions":["Abs"],"expected":18},
+    {"id":"binomial-selection","formula":"Combination ( 8 ; 3 )","functions":["Combination"],"expected":56},
+    {"id":"date-component","formula":"Year ( Date ( 11 ; 23 ; 2041 ) )","functions":["Year","Date"],"expected":2041},
+    {"id":"elapsed-seconds","formula":"Time ( 2 ; 17 ; 9 )","functions":["Time"],"expected_seconds":8229},
+    {"id":"safe-character-filter","formula":"Filter ( \"Q9-R2\" ; \"0123456789\" )","functions":["Filter"],"expected":"92"},
+    {"id":"json-typed-read","formula":"JSONGetElement ( \"{\\\"attempt\\\":3}\" ; \"attempt\" )","functions":["JSONGetElement"],"expected":3}
+  ]
+}

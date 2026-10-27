@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.zip -text
+*.png -text
+# Markdown uses two trailing spaces for intentional hard line breaks.
+*.md whitespace=-blank-at-eol

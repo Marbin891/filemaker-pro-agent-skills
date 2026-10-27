@@ -1,0 +1,4 @@
+interface:
+  display_name: "BaseElements Plug-in"
+  short_description: "BE_ function, version and compatibility reference"
+  default_prompt: "Use $goya-be-plugin to look up this BaseElements function and check its platform and version requirements."
