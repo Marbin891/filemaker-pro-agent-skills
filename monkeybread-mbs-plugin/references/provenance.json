@@ -1,0 +1,129 @@
+{
+  "repository": "https://github.com/CadenceUX/monkeybread-mbs-plugin-skill",
+  "commit": "946bdca12c2117defb4dc2b8959ee00f04c74086",
+  "version": "2.0.1",
+  "license_declaration": "CC-BY-4.0 declared in README.md; vendor documentation rights remain with each vendor",
+  "treatment": "Adapted factual catalog plus CadenceUX CC BY synthesis; vendor prose and examples omitted",
+  "source_files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 14130,
+      "sha256": "cdaf06de69dfaca7923874faeeeaebc70f9928a53faa5bbf72f54ba02c77aa84"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "fe840f52fb5578d3f77eb497115eb02c6036601c3a53e60df7995c7276baa77a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3652,
+      "sha256": "9a8281e0be7e9700bdeb59525ce643165320ed7287880de06e2c1f84c0f249da"
+    },
+    {
+      "path": "references/index.json",
+      "bytes": 58012,
+      "sha256": "d831977bb95e00452626334ca5b85cc400c1e47cd89b94b7a2446f0483b34ca1"
+    },
+    {
+      "path": "references/group-01.json",
+      "bytes": 1523067,
+      "sha256": "10807191ac4b704db49e786e99e7ac6cc8e58015573f1c3306c6a1f677efa48d"
+    },
+    {
+      "path": "references/group-02.json",
+      "bytes": 887152,
+      "sha256": "805f4809f74317b395cec79a9a9a1354477e1e9e5896c9837d1cab1365feb593"
+    },
+    {
+      "path": "references/group-03.json",
+      "bytes": 821776,
+      "sha256": "b8bfe68a803c0ff967b6abd3f94112c3cbd03b318f0caef18aaf7837b4dc0011"
+    },
+    {
+      "path": "references/group-04.json",
+      "bytes": 585392,
+      "sha256": "d61e291b4b09f9d19080d080edec922f438cbfe2744fb7276d625085231d3524"
+    },
+    {
+      "path": "references/group-05.json",
+      "bytes": 567930,
+      "sha256": "8fe4c46e6bd53b2f6511cad1198b4bdcf35a0f9619a0172e7ceed69afc2edc82"
+    },
+    {
+      "path": "references/group-06.json",
+      "bytes": 577578,
+      "sha256": "40368c098b38a59b35d2690d20727b208b753e0867ba6f4c1690eb2357e20b61"
+    },
+    {
+      "path": "references/group-07.json",
+      "bytes": 575716,
+      "sha256": "9125cc6da7fc942ad6027803512e3f420053b2e9951239717a0c273dea36c95b"
+    },
+    {
+      "path": "references/group-08.json",
+      "bytes": 580367,
+      "sha256": "e20a42ac18cfd157eeaf5941c46532880bcca0f8a6d83488c77e2fd5de95f63a"
+    },
+    {
+      "path": "references/group-09.json",
+      "bytes": 582153,
+      "sha256": "1d44a3558e7428c5553a673ec9d5f45ebc49ad600f327ccdd43122cd052bd6f8"
+    },
+    {
+      "path": "references/group-10.json",
+      "bytes": 582731,
+      "sha256": "3770174587a1ebddbdda0b15ed1c64165251e034a996fe6cf735e6f5761be2a9"
+    },
+    {
+      "path": "references/group-11.json",
+      "bytes": 577655,
+      "sha256": "13151a410c4eba541f9a96869c1937e7ec355f8ad61854cadf7919eba659ec96"
+    },
+    {
+      "path": "references/group-12.json",
+      "bytes": 579707,
+      "sha256": "ba42a3942d2de85ea5c3f564785a9f73c099483548ef03a0e917c1e3b61f7000"
+    },
+    {
+      "path": "references/group-13.json",
+      "bytes": 574022,
+      "sha256": "c9ef66675ea139ce59b736e14ce0dc17ce123e8db3d8e645c9377f8f9d0a3820"
+    },
+    {
+      "path": "references/group-14.json",
+      "bytes": 565786,
+      "sha256": "8c8dbfa48869a3ba1ebe22a139f68c3a08431f2cec6a583f67d209280f0306d2"
+    },
+    {
+      "path": "references/group-15.json",
+      "bytes": 580036,
+      "sha256": "6f22935371dcf82bcde2941b523c1eb5f4989826bcef1857663939f16719f2ee"
+    },
+    {
+      "path": "references/group-16.json",
+      "bytes": 577783,
+      "sha256": "82568074b4fd4edfc5e241f29327c72dcd17255bd6a7bac1e486784159ebe021"
+    },
+    {
+      "path": "references/group-17.json",
+      "bytes": 579286,
+      "sha256": "f74ae0d6f3baf205c8b77549b4780c2577910892aa7dd127e37113cb1661a0b9"
+    },
+    {
+      "path": "references/group-18.json",
+      "bytes": 585236,
+      "sha256": "1963e12b9b27d4d57aedca0437b2bed7ef7e6f2f3a7af55105bfa884be58878b"
+    },
+    {
+      "path": "references/group-19.json",
+      "bytes": 582904,
+      "sha256": "d1bcfadc77d546e2a57cbf9d293636d8152e2e90f8214d2a6de11a73cbe2a136"
+    },
+    {
+      "path": "references/group-20.json",
+      "bytes": 580681,
+      "sha256": "bf3395c101a8aabc08f588c587e4bc214391b2bf55d94beddea6e71af1c30755"
+    }
+  ]
+}

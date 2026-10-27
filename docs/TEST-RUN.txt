@@ -1,0 +1,112 @@
+test_48px_preview_is_derived_from_the_composer_icon (test_branding.BrandingPixelTests.test_48px_preview_is_derived_from_the_composer_icon) ... ok
+test_lanczos_pixels_match_the_master (test_branding.BrandingPixelTests.test_lanczos_pixels_match_the_master) ... ok
+test_square_padding_does_not_stretch_or_crop (test_branding.BrandingPixelTests.test_square_padding_does_not_stretch_or_crop) ... ok
+test_variants_are_decodable_rgba_without_metadata (test_branding.BrandingPixelTests.test_variants_are_decodable_rgba_without_metadata) ... ok
+test_corrupt_png_is_rejected (test_branding.BrandingStructureTests.test_corrupt_png_is_rejected) ... ok
+test_installed_plugin_copies_visual_resources (test_branding.BrandingStructureTests.test_installed_plugin_copies_visual_resources) ... ok
+test_master_is_unchanged (test_branding.BrandingStructureTests.test_master_is_unchanged) ... ok
+test_plugin_contains_only_required_variants (test_branding.BrandingStructureTests.test_plugin_contains_only_required_variants) ... ok
+test_png_structure_and_limits (test_branding.BrandingStructureTests.test_png_structure_and_limits) ... ok
+test_readmes_use_the_same_project_identity (test_branding.BrandingStructureTests.test_readmes_use_the_same_project_identity) ... ok
+test_standalone_skills_do_not_depend_on_plugin_icons (test_branding.BrandingStructureTests.test_standalone_skills_do_not_depend_on_plugin_icons) ... ok
+test_wrong_dimensions_are_rejected (test_branding.BrandingStructureTests.test_wrong_dimensions_are_rejected) ... ok
+test_builder_preflights_before_overwriting_notices (test_branding.FinalReviewRegressionTests.test_builder_preflights_before_overwriting_notices) ... ok
+test_linter_rejects_missing_smtp_arguments (test_branding.FinalReviewRegressionTests.test_linter_rejects_missing_smtp_arguments) ... ok
+test_linter_rejects_unknown_plugin_function (test_branding.FinalReviewRegressionTests.test_linter_rejects_unknown_plugin_function) ... ok
+test_marketplace_rejects_traversal (test_branding.FinalReviewRegressionTests.test_marketplace_rejects_traversal) ... ok
+test_mbs_lookup_normalizes_component_case (test_branding.FinalReviewRegressionTests.test_mbs_lookup_normalizes_component_case) ... ok
+test_all_138_get_functions_locally_documented (test_coverage.CoverageTests.test_all_138_get_functions_locally_documented) ... ok
+test_complete_catalogs_semantic_hashes (test_coverage.CoverageTests.test_complete_catalogs_semantic_hashes) ... ok
+test_every_original_native_function_section_retained (test_coverage.CoverageTests.test_every_original_native_function_section_retained) ... ok
+test_example_native_call_inventory (test_coverage.CoverageTests.test_example_native_call_inventory) ... ok
+test_full_field_capability_sections (test_coverage.CoverageTests.test_full_field_capability_sections) ... ok
+test_independent_expected_value_oracles_not_engine (test_coverage.CoverageTests.test_independent_expected_value_oracles_not_engine) ... ok
+test_json_example_fixtures_parse (test_coverage.CoverageTests.test_json_example_fixtures_parse) ... ok
+test_long_original_fenced_examples_not_copied_unchanged (test_coverage.CoverageTests.test_long_original_fenced_examples_not_copied_unchanged) ... ok
+test_original_calculation_catalog_and_lexical_checks (test_coverage.CoverageTests.test_original_calculation_catalog_and_lexical_checks) ... ok
+test_purposes_notes_and_variants_retained (test_coverage.CoverageTests.test_purposes_notes_and_variants_retained) ... ok
+test_replacement_ledger_complete_and_no_engine_claim (test_coverage.CoverageTests.test_replacement_ledger_complete_and_no_engine_claim) ... ok
+test_source_coverage_refs_present (test_coverage.CoverageTests.test_source_coverage_refs_present) ... ok
+test_additional_catalog_signature_comparison_72_functions (test_numeric_specialty_oracles.NumericSpecialtyOracles.test_additional_catalog_signature_comparison_72_functions)
+New catalog check, separate from the original 417 static assertions. ... ok
+test_local_coverage_contract (test_numeric_specialty_oracles.NumericSpecialtyOracles.test_local_coverage_contract) ... ok
+test_original_134_oracle_subcases (test_numeric_specialty_oracles.NumericSpecialtyOracles.test_original_134_oracle_subcases) ... ok
+test_original_417_source_dependent_static_assertions (test_numeric_specialty_oracles.NumericSpecialtyOracles.test_original_417_source_dependent_static_assertions) ... ok
+test_baseelements_matches_pinned_transform (test_plugin_provenance.PluginProvenanceTests.test_baseelements_matches_pinned_transform) ... ok
+test_bbox_matches_pinned_transform (test_plugin_provenance.PluginProvenanceTests.test_bbox_matches_pinned_transform) ... ok
+test_mbs_matches_pinned_transform (test_plugin_provenance.PluginProvenanceTests.test_mbs_matches_pinned_transform) ... ok
+test_exact_pinned_object_passes (test_provenance.ProvenanceTests.test_exact_pinned_object_passes) ... ok
+test_forged_inventory_hash_rejected (test_provenance.ProvenanceTests.test_forged_inventory_hash_rejected) ... ok
+test_missing_inventory_file_rejected (test_provenance.ProvenanceTests.test_missing_inventory_file_rejected) ... ok
+test_modified_source_and_matching_inventory_still_rejected (test_provenance.ProvenanceTests.test_modified_source_and_matching_inventory_still_rejected) ... ok
+test_unexpected_pin_rejected (test_provenance.ProvenanceTests.test_unexpected_pin_rejected) ... ok
+test_baseelements_cli (test_skill.CliTests.test_baseelements_cli) ... ok
+test_bbox_cli (test_skill.CliTests.test_bbox_cli) ... ok
+test_mbs_cli (test_skill.CliTests.test_mbs_cli) ... ok
+test_route_cli (test_skill.CliTests.test_route_cli) ... ok
+test_search_limits (test_skill.CliTests.test_search_limits) ... ok
+test_competing_lock (test_skill.DistributionTests.test_competing_lock) ... ok
+test_deterministic_build (test_skill.DistributionTests.test_deterministic_build) ... ok
+test_extracted_skill_works_without_repo (test_skill.DistributionTests.test_extracted_skill_works_without_repo) ... ok
+test_failed_install_leaves_no_discoverable_skill (test_skill.DistributionTests.test_failed_install_leaves_no_discoverable_skill) ... ok
+test_install_each_skill (test_skill.DistributionTests.test_install_each_skill) ... ok
+test_install_plugin_and_marketplace (test_skill.DistributionTests.test_install_plugin_and_marketplace) ... ok
+test_install_refuses_symlink (test_skill.DistributionTests.test_install_refuses_symlink) ... ok
+test_manifest_hashes (test_skill.DistributionTests.test_manifest_hashes) ... ok
+test_plugin_package_works_without_repo (test_skill.DistributionTests.test_plugin_package_works_without_repo) ... ok
+test_plugin_zip_is_multi_skill (test_skill.DistributionTests.test_plugin_zip_is_multi_skill) ... ok
+test_skill_zips_are_single_skill (test_skill.DistributionTests.test_skill_zips_are_single_skill) ... ok
+test_errors_full_roster (test_skill.NativeCatalogTests.test_errors_full_roster) ... ok
+test_function_count_unique (test_skill.NativeCatalogTests.test_function_count_unique) ... ok
+test_function_schema (test_skill.NativeCatalogTests.test_function_schema) ... ok
+test_function_signature (test_skill.NativeCatalogTests.test_function_signature) ... ok
+test_offline_lookup (test_skill.NativeCatalogTests.test_offline_lookup) ... ok
+test_step_count_unique (test_skill.NativeCatalogTests.test_step_count_unique) ... ok
+test_step_schema (test_skill.NativeCatalogTests.test_step_schema) ... ok
+test_version_and_platform_checks (test_skill.NativeCatalogTests.test_version_and_platform_checks) ... ok
+test_baseelements_counts (test_skill.PluginCatalogTests.test_baseelements_counts) ... ok
+test_baseelements_queries (test_skill.PluginCatalogTests.test_baseelements_queries) ... ok
+test_bbox_counts (test_skill.PluginCatalogTests.test_bbox_counts) ... ok
+test_bbox_queries (test_skill.PluginCatalogTests.test_bbox_queries) ... ok
+test_factual_catalog_policy (test_skill.PluginCatalogTests.test_factual_catalog_policy) ... ok
+test_mbs_counts_and_groups (test_skill.PluginCatalogTests.test_mbs_counts_and_groups) ... ok
+test_mbs_queries (test_skill.PluginCatalogTests.test_mbs_queries) ... ok
+test_provenance_pins (test_skill.PluginCatalogTests.test_provenance_pins) ... ok
+test_urls_are_https (test_skill.PluginCatalogTests.test_urls_are_https) ... ok
+test_native_boundary (test_skill.RoutingTests.test_native_boundary) ... ok
+test_orchestrator_contract (test_skill.RoutingTests.test_orchestrator_contract) ... ok
+test_routing_cases (test_skill.RoutingTests.test_routing_cases) ... ok
+test_no_binaries_in_packages (test_skill.SecurityTests.test_no_binaries_in_packages) ... ok
+test_no_network_imports (test_skill.SecurityTests.test_no_network_imports) ... ok
+test_skill_safety_contract (test_skill.SecurityTests.test_skill_safety_contract) ... ok
+test_untrusted_lookup_text_is_not_executed (test_skill.SecurityTests.test_untrusted_lookup_text_is_not_executed) ... ok
+test_all_json (test_skill.StructureTests.test_all_json) ... ok
+test_attribution_covers_all_sources (test_skill.StructureTests.test_attribution_covers_all_sources) ... ok
+test_descriptions_have_boundaries (test_skill.StructureTests.test_descriptions_have_boundaries) ... ok
+test_frontmatter_profile (test_skill.StructureTests.test_frontmatter_profile) ... ok
+test_invalid_frontmatter_rejected (test_skill.StructureTests.test_invalid_frontmatter_rejected) ... ok
+test_links_all_skills (test_skill.StructureTests.test_links_all_skills) ... ok
+test_no_duplicate_references (test_skill.StructureTests.test_no_duplicate_references) ... ok
+test_no_symlinks (test_skill.StructureTests.test_no_symlinks) ... ok
+test_notice_copies (test_skill.StructureTests.test_notice_copies) ... ok
+test_openai_metadata (test_skill.StructureTests.test_openai_metadata) ... ok
+test_plugin_manifest (test_skill.StructureTests.test_plugin_manifest) ... ok
+test_python_310_grammar (test_skill.StructureTests.test_python_310_grammar) ... ok
+test_readme_parity_and_sections (test_skill.StructureTests.test_readme_parity_and_sections) ... ok
+test_version_body (test_skill.StructureTests.test_version_body) ... ok
+test_calendar_and_july_fiscal_quarters (test_text_date_oracles.TextDateOracleTests.test_calendar_and_july_fiscal_quarters) ... ok
+test_date_overflow_and_clamped_months (test_text_date_oracles.TextDateOracleTests.test_date_overflow_and_clamped_months) ... ok
+test_final_business_day_expression_140_intervals (test_text_date_oracles.TextDateOracleTests.test_final_business_day_expression_140_intervals)
+Check the final tail endpoint semantics against daily enumeration. ... ok
+test_fiscal_week_assumptions (test_text_date_oracles.TextDateOracleTests.test_fiscal_week_assumptions) ... ok
+test_initial_business_day_model_140_intervals (test_text_date_oracles.TextDateOracleTests.test_initial_business_day_model_140_intervals)
+Reproduce the initial full-week/remainder versus daily-count checks. ... ok
+test_time_overflow_and_duration_arithmetic (test_text_date_oracles.TextDateOracleTests.test_time_overflow_and_duration_arithmetic) ... ok
+test_unicode_and_text_models (test_text_date_oracles.TextDateOracleTests.test_unicode_and_text_models) ... ok
+test_weekday_numbering_and_next_business_day (test_text_date_oracles.TextDateOracleTests.test_weekday_numbering_and_next_business_day) ... ok
+
+----------------------------------------------------------------------
+Ran 103 tests in 4.340s
+
+OK
+Independent Python oracle equality assertions executed: 374; no FileMaker engine invoked.

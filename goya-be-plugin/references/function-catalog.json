@@ -1,0 +1,5844 @@
+{
+  "meta": {
+    "adapted_from": "CadenceUX goya-be-plugin 1.4.1",
+    "source_commit": "29579288cba843286b5c15275cd5d23e7bb37f40",
+    "vendor": "Goya Pty Ltd",
+    "source_repo": "https://github.com/GoyaPtyLtd/BaseElements-Plugin",
+    "plugin_version_at_build": "5.1.0.6",
+    "active_function_count": 129,
+    "unique_function_count": 129,
+    "catalog_entry_count": 133,
+    "deprecated_count": 11,
+    "category_count": 18,
+    "content_policy": {
+      "retained": "Factual API metadata and CadenceUX CC BY 4.0 synthesis",
+      "omitted": "Vendor documentation prose, vendor parameter descriptions, vendor notes and vendor example code",
+      "reason": "The vendor documentation sites do not declare a redistribution licence. Consult the linked vendor page for full prose and examples."
+    },
+    "field_note": "Each entry retains signature, parameter names/flags/defaults, keywords, version history, platform support and the vendor URL. Prose and examples are not copied; see the URL."
+  },
+  "categories": {
+    "Arrays": {
+      "notes": "1-based indexing throughout. BE_ArrayFind returns -1 if not found.",
+      "functions": [
+        {
+          "name": "BE_ArrayChangeValue",
+          "signature": "BE_ArrayChangeValue ( array ; valueNumber ; newValue )",
+          "parameters": [
+            {
+              "name": "array",
+              "optional": false
+            },
+            {
+              "name": "valueNumber",
+              "optional": false
+            },
+            {
+              "name": "newValue",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Array",
+            "Change",
+            "Value"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from 'BE_Array_Change_Value'"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ArrayChangeValue.md"
+        },
+        {
+          "name": "BE_ArrayDelete",
+          "signature": "BE_ArrayDelete ( array )",
+          "parameters": [
+            {
+              "name": "array",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Array",
+            "Delete"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from 'BE_Array_Delete'"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ArrayDelete.md"
+        },
+        {
+          "name": "BE_ArrayFind",
+          "signature": "BE_ArrayFind ( array ; value )",
+          "parameters": [
+            {
+              "name": "array",
+              "optional": false
+            },
+            {
+              "name": "value",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Array",
+            "Find"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Array_Find"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ArrayFind.md"
+        },
+        {
+          "name": "BE_ArrayGetSize",
+          "signature": "BE_ArrayGetSize ( array )",
+          "parameters": [
+            {
+              "name": "array",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Array",
+            "Size",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "3.3.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ArrayGetSize.md"
+        },
+        {
+          "name": "BE_ArrayGetValue",
+          "signature": "BE_ArrayGetValue ( array ; valueNumber )",
+          "parameters": [
+            {
+              "name": "array",
+              "optional": false
+            },
+            {
+              "name": "valueNumber",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Array",
+            "Value",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "3.3.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ArrayGetValue.md"
+        },
+        {
+          "name": "BE_ArraySetFromValueList",
+          "signature": "BE_ArraySetFromValueList ( valueList ; { retainEmptyValues } )",
+          "parameters": [
+            {
+              "name": "valueList",
+              "optional": false
+            },
+            {
+              "name": "retainEmptyValues",
+              "optional": true,
+              "default": "False"
+            }
+          ],
+          "keywords": [
+            "Array",
+            "Set",
+            "ValueList"
+          ],
+          "version_history": [
+            {
+              "version": "3.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "added the *retainEmptyValues* parameter"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ArraySetFromValueList.md"
+        }
+      ]
+    },
+    "Clipboard": {
+      "notes": "BE_ClipboardFormats returns a value list of available formats. Widely used with ProofKit / agentic-fm for fmxmlsnippet clipboard operations.",
+      "functions": [
+        {
+          "name": "BE_ClipboardFormats",
+          "signature": "BE_ClipboardFormats",
+          "parameters": [],
+          "keywords": [
+            "Clipboard",
+            "Formats"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Returns error 3, command not available on iOS and Linux"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ClipboardFormats.md"
+        },
+        {
+          "name": "BE_ClipboardGetFile",
+          "signature": "BE_ClipboardGetFile ( format ; { fileName } )",
+          "parameters": [
+            {
+              "name": "format",
+              "optional": false
+            },
+            {
+              "name": "fileName",
+              "optional": true,
+              "default": "existing file name if included"
+            }
+          ],
+          "keywords": [
+            "Clipboard",
+            "Data",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.3",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ClipboardGetFile.md"
+        },
+        {
+          "name": "BE_ClipboardGetText",
+          "signature": "BE_ClipboardGetText ( format )",
+          "parameters": [
+            {
+              "name": "format",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Clipboard",
+            "Text",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release."
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on Linux."
+            },
+            {
+              "version": "4.0.0",
+              "change": "Add utf16 support on Mac."
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_ClipboardText."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ClipboardGetText.md"
+        },
+        {
+          "name": "BE_ClipboardSetFile",
+          "signature": "BE_ClipboardSetFile ( fileData ; format )",
+          "parameters": [
+            {
+              "name": "fileData",
+              "optional": false
+            },
+            {
+              "name": "format",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Clipboard",
+            "Data",
+            "Set"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.3",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ClipboardSetFile.md"
+        },
+        {
+          "name": "BE_ClipboardSetText",
+          "signature": "BE_ClipboardSetText ( text ; format )",
+          "parameters": [
+            {
+              "name": "text",
+              "optional": false
+            },
+            {
+              "name": "format",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Clipboard",
+            "Text",
+            "Set"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on Linux."
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SetClipboardText"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ClipboardSetText.md"
+        }
+      ]
+    },
+    "Containers": {
+      "notes": "BE_ExportFieldContents writes a container to a native OS path and returns that path. BE_JPEGRecompress quality is 0–100.",
+      "functions": [
+        {
+          "name": "BE_ContainerCompress",
+          "signature": "BE_ContainerCompress ( data ; { filename } )",
+          "parameters": [
+            {
+              "name": "data",
+              "optional": false
+            },
+            {
+              "name": "filename",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Container",
+            "Compress",
+            "Gzip"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.2.0",
+              "change": "Changed name from BE_Gzip to BE_ContainerCompress"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ContainerCompress.md"
+        },
+        {
+          "name": "BE_ContainerGetType",
+          "signature": "BE_ContainerGetType ( container ; type )",
+          "parameters": [
+            {
+              "name": "container",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "keyword",
+            "keyword"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ContainerGetType.md"
+        },
+        {
+          "name": "BE_ContainerIsCompressed",
+          "signature": "BE_ContainerIsCompressed ( containerField )",
+          "parameters": [
+            {
+              "name": "containerField",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Container",
+            "Compress"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ContainerIsCompressed.md"
+        },
+        {
+          "name": "BE_ContainerListTypes",
+          "signature": "BE_ContainerListTypes ( container )",
+          "parameters": [
+            {
+              "name": "container",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Container",
+            "List",
+            "Types"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ContainerListTypes.md"
+        },
+        {
+          "name": "BE_ContainerUncompress",
+          "signature": "BE_ContainerUncompress ( gzip_data ; { filename } )",
+          "parameters": [
+            {
+              "name": "gzip_data",
+              "optional": false
+            },
+            {
+              "name": "filename",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Container",
+            "Compress",
+            "Uncompress"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.2.0",
+              "change": "Changed name to BE_ContainerUncompress from BE_UnGzip."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ContainerUncompress.md"
+        },
+        {
+          "name": "BE_ConvertContainer",
+          "signature": "BE_ConvertContainer ( field ; { type } )",
+          "parameters": [
+            {
+              "name": "field",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "optional": true,
+              "default": "empty"
+            }
+          ],
+          "keywords": [
+            "Container",
+            "Convert"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.2.0",
+              "change": "Removed the width and height parameters, the plugin now performs this natively."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ConvertContainer.md"
+        },
+        {
+          "name": "BE_ExportFieldContents",
+          "signature": "BE_ExportFieldContents ( field ; { outputPath }  )",
+          "parameters": [
+            {
+              "name": "field",
+              "optional": false
+            },
+            {
+              "name": "outputPath",
+              "optional": true,
+              "default": "temp"
+            }
+          ],
+          "keywords": [
+            "keyword",
+            "keyword"
+          ],
+          "version_history": [
+            {
+              "version": "3.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.3.0",
+              "change": "Recursively create any directories needed"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Allowed for images with resource forks"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Changed the outputPath parameter to be optional."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ExportFieldContents.md"
+        },
+        {
+          "name": "BE_JPEGRecompress",
+          "signature": "BE_JPEGRecompress ( jpeg ; { compressionLevel ; scale } )",
+          "parameters": [
+            {
+              "name": "jpeg",
+              "optional": false
+            },
+            {
+              "name": "compressionLevel",
+              "optional": true,
+              "default": "75"
+            },
+            {
+              "name": "scale",
+              "optional": true,
+              "default": "0.125"
+            }
+          ],
+          "keywords": [
+            "JPEG",
+            "Compress",
+            "Recompress"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.2.0",
+              "change": "Changed the height and width to a scaling factor to better match the actual workings of the library used."
+            },
+            {
+              "version": "3.1.0",
+              "change": "Renamed from BE_JPEG_Recompress."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_JPEGRecompress.md"
+        }
+      ]
+    },
+    "Data Manipulation": {
+      "notes": "Stack and variable names are case-insensitive. Stacks are LIFO and persist across scripts within the same session.",
+      "functions": [
+        {
+          "name": "BE_StackCount",
+          "signature": "BE_StackCount ( name )",
+          "parameters": [
+            {
+              "name": "name",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Stack",
+            "Count"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_StackCount.md"
+        },
+        {
+          "name": "BE_StackDelete",
+          "signature": "BE_StackDelete ( name )",
+          "parameters": [
+            {
+              "name": "name",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Stack",
+            "Delete"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_StackDelete.md"
+        },
+        {
+          "name": "BE_StackPop",
+          "signature": "BE_StackPop ( name )",
+          "parameters": [
+            {
+              "name": "name",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Stack",
+            "Pop"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_StackPop.md"
+        },
+        {
+          "name": "BE_StackPush",
+          "signature": "BE_StackPush ( name ; value )",
+          "parameters": [
+            {
+              "name": "name",
+              "optional": false
+            },
+            {
+              "name": "value",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Stack",
+            "Push"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_StackPush.md"
+        },
+        {
+          "name": "BE_TextExtractWords",
+          "signature": "BE_TextExtractWords ( text ; { wordPrefix } )",
+          "parameters": [
+            {
+              "name": "text",
+              "optional": false
+            },
+            {
+              "name": "wordPrefix",
+              "optional": true,
+              "default": "$ or @"
+            }
+          ],
+          "keywords": [
+            "keyword",
+            "keyword"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_TextExtractWords.md"
+        },
+        {
+          "name": "BE_VariableGet",
+          "signature": "BE_VariableGet ( name )",
+          "parameters": [
+            {
+              "name": "name",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Variable",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_VariableGet.md"
+        },
+        {
+          "name": "BE_VariableSet",
+          "signature": "BE_VariableSet ( name ; { value } )",
+          "parameters": [
+            {
+              "name": "name",
+              "optional": false
+            },
+            {
+              "name": "value",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Variable",
+            "Set"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_VariableSet.md"
+        }
+      ]
+    },
+    "Dialogs": {
+      "notes": "All dialog functions block script execution. BE_DialogDisplay returns the button number clicked (1, 2, or 3).",
+      "functions": [
+        {
+          "name": "BE_DialogDisplay",
+          "signature": "BE_DialogDisplay ( title ; message ; defaultButton ; { cancelButton ; alternateButton } )",
+          "parameters": [
+            {
+              "name": "title",
+              "optional": false
+            },
+            {
+              "name": "message",
+              "optional": false
+            },
+            {
+              "name": "defaultButton",
+              "optional": false
+            },
+            {
+              "name": "cancelButton",
+              "optional": true
+            },
+            {
+              "name": "alternateButton",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Dialog",
+            "Display"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_DisplayDialog"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_DialogDisplay.md"
+        },
+        {
+          "name": "BE_DialogProgress",
+          "signature": "BE_DialogProgress ( title ; description ; { maximum } )",
+          "parameters": [
+            {
+              "name": "title",
+              "optional": false
+            },
+            {
+              "name": "description",
+              "optional": false
+            },
+            {
+              "name": "maximum",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Dialog",
+            "Progress"
+          ],
+          "version_history": [
+            {
+              "version": "2.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on iOS, Linux and under FMS."
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_ProgressDialog"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_DialogProgress.md"
+        },
+        {
+          "name": "BE_DialogProgressUpdate",
+          "signature": "BE_DialogProgressUpdate ( number ; { description } )",
+          "parameters": [
+            {
+              "name": "number",
+              "optional": false
+            },
+            {
+              "name": "description",
+              "optional": true,
+              "default": "previous value"
+            }
+          ],
+          "keywords": [
+            "Dialog",
+            "Progress",
+            "Update"
+          ],
+          "version_history": [
+            {
+              "version": "2.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on iOS, Linux and under FMS."
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_ProgressDialog_Update"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_DialogProgressUpdate.md"
+        },
+        {
+          "name": "BE_FileSaveDialog",
+          "signature": "BE_FileSaveDialog ( prompt ; { fileName ; inFolder } )",
+          "parameters": [
+            {
+              "name": "prompt",
+              "optional": false
+            },
+            {
+              "name": "fileName",
+              "optional": true
+            },
+            {
+              "name": "inFolder",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Dialog",
+            "File",
+            "Save"
+          ],
+          "version_history": [
+            {
+              "version": "2.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on iOS, Linux and under FMS"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SaveFileDialog"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileSaveDialog.md"
+        },
+        {
+          "name": "BE_FileSelectDialog",
+          "signature": "BE_FileSelectDialog ( prompt { ; inFolderPath } )",
+          "parameters": [
+            {
+              "name": "prompt",
+              "optional": false
+            },
+            {
+              "name": "inFolderPath",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "File",
+            "Select",
+            "Dialog"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "2.0.0",
+              "change": "Added the optional inFolderPath parameter."
+            },
+            {
+              "version": "2.2.0",
+              "change": "Added the ability to select multiple files."
+            },
+            {
+              "version": "2.2.0",
+              "change": "Update dialogs for new Windows OS versions"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on iOS, Linux and under FMS"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SelectFile"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileSelectDialog.md",
+          "doc_bug_note": "⚠️ Doc bug (parameter #2): parameters section names this parameter 'nainFolderPathme' but the signature and version history indicate the correct name is 'inFolderPath'. Original as-fetched: 'nainFolderPathme'"
+        },
+        {
+          "name": "BE_FolderSelectDialog",
+          "signature": "BE_FolderSelectDialog ( prompt { ; inFolderPath } )",
+          "parameters": [
+            {
+              "name": "prompt",
+              "optional": false
+            },
+            {
+              "name": "inFolderPath",
+              "optional": true,
+              "default": "last used folder"
+            }
+          ],
+          "keywords": [
+            "File",
+            "Select",
+            "Dialog"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "1.3.0",
+              "change": "Added the optional inFolderPath parameter."
+            },
+            {
+              "version": "2.0.0",
+              "change": "Add New Folder button."
+            },
+            {
+              "version": "2.2.0",
+              "change": "Update dialogs for new Windows OS versions"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on iOS, Linux and under FMS"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SelectFolder"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FolderSelectDialog.md",
+          "doc_bug_note": "⚠️ Doc bug (parameter #2): parameters section names this parameter 'nainFolderPathme' but the signature and version history indicate the correct name is 'inFolderPath'. Original as-fetched: 'nainFolderPathme'"
+        }
+      ]
+    },
+    "Encoding and Encryption": {
+      "notes": "BE_Encrypt_AES / BE_Decrypt_AES use AES-256-CBC; results are base64-encoded. BE_CipherEncrypt supports a wider range of OpenSSL cipher algorithms. BE_MessageDigest algorithm values: MD5, SHA1, SHA224, SHA256, SHA384, SHA512.",
+      "functions": [
+        {
+          "name": "BE_CipherDecrypt",
+          "signature": "BE_CipherDecrypt ( cipher ; encryptedData ; key ; iv ; { paddingBoolean ; fileNameWithExtension } )",
+          "parameters": [
+            {
+              "name": "cipher",
+              "optional": false,
+              "default": "AES-256-CBC"
+            },
+            {
+              "name": "encryptedData",
+              "optional": false
+            },
+            {
+              "name": "key",
+              "optional": false
+            },
+            {
+              "name": "iv",
+              "optional": false
+            },
+            {
+              "name": "paddingBoolean",
+              "optional": true,
+              "default": "True"
+            },
+            {
+              "name": "fileNameWithExtension",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Cipher",
+            "Decrypt"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_CipherDecrypt.md"
+        },
+        {
+          "name": "BE_CipherEncrypt",
+          "signature": "BE_CipherEncrypt ( cipher ; data ; key ; iv ; { paddingBoolean ; fileNameWithExtension } )",
+          "parameters": [
+            {
+              "name": "cipher",
+              "optional": false,
+              "default": "AES-256-CBC"
+            },
+            {
+              "name": "data",
+              "optional": false
+            },
+            {
+              "name": "key",
+              "optional": false
+            },
+            {
+              "name": "iv",
+              "optional": false
+            },
+            {
+              "name": "paddingBoolean",
+              "optional": true,
+              "default": "True"
+            },
+            {
+              "name": "fileNameWithExtension",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Cipher",
+            "Encrypt"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_CipherEncrypt.md"
+        },
+        {
+          "name": "BE_CreateKeyPair",
+          "signature": "BE_CreateKeyPair",
+          "parameters": [],
+          "keywords": [
+            "RSA",
+            "PrivateKey",
+            "PublicKey"
+          ],
+          "version_history": [
+            {
+              "version": "5.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_CreateKeyPair.md"
+        },
+        {
+          "name": "BE_DecryptWithKey",
+          "signature": "BE_DecryptWithKey ( encryptedText ; keyText )",
+          "parameters": [
+            {
+              "name": "encryptedText",
+              "optional": false
+            },
+            {
+              "name": "keyText",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "encrypt",
+            "decrypt",
+            "rsa",
+            "publicKey",
+            "privateKey",
+            "base64"
+          ],
+          "version_history": [
+            {
+              "version": "5.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_DecryptWithKey.md"
+        },
+        {
+          "name": "BE_Decrypt_AES",
+          "signature": "BE_Decrypt_AES ( key ; text )",
+          "parameters": [
+            {
+              "name": "key",
+              "optional": false
+            },
+            {
+              "name": "text",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Decrypt",
+            "AES"
+          ],
+          "version_history": [
+            {
+              "version": "2.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Deprecated with a recommendation to use the FileMaker 16 function *CryptDecrypt* ( data ; key ) instead."
+            },
+            {
+              "version": "4.1.0",
+              "change": "Removed the deprecation."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_Decrypt_AES.md"
+        },
+        {
+          "name": "BE_EncryptWithKey",
+          "signature": "BE_EncryptWithKey ( text ; keyText )",
+          "parameters": [
+            {
+              "name": "text",
+              "optional": false
+            },
+            {
+              "name": "keyText",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "encrypt",
+            "decrypt",
+            "rsa",
+            "publicKey",
+            "privateKey"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_EncryptWithKey.md"
+        },
+        {
+          "name": "BE_Encrypt_AES",
+          "signature": "BE_Encrypt_AES ( key ; text )",
+          "parameters": [
+            {
+              "name": "key",
+              "optional": false
+            },
+            {
+              "name": "text",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Decrypt",
+            "AES"
+          ],
+          "version_history": [
+            {
+              "version": "2.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Deprecated with a recommendation to use the FileMaker 16 function *CryptEncrypt* ( data ; key ) instead."
+            },
+            {
+              "version": "4.1.0",
+              "change": "Removed the deprecation."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_Encrypt_AES.md",
+          "doc_bug_note": "⚠️ Doc bug (signature): the code-block signature names 'BE_Decrypt_AES' but this page's heading/filename is 'BE_Encrypt_AES'. Likely a copy/paste error upstream. Function name corrected to 'BE_Encrypt_AES' here; original signature as-fetched: 'BE_Decrypt_AES ( key ; text )'"
+        },
+        {
+          "name": "BE_GetPublicKey",
+          "signature": "BE_GetPublicKey ( privateKey )",
+          "parameters": [
+            {
+              "name": "privateKey",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "RSA",
+            "PrivateKey",
+            "PublicKey"
+          ],
+          "version_history": [
+            {
+              "version": "5.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_GetPublicKey.md"
+        },
+        {
+          "name": "BE_MessageDigest",
+          "signature": "BE_MessageDigest ( text ; { algorithm ; encoding } )",
+          "parameters": [
+            {
+              "name": "text",
+              "optional": false
+            },
+            {
+              "name": "algorithm",
+              "optional": true,
+              "default": "BE_MessageDigestAlgorithmSHA256"
+            },
+            {
+              "name": "encoding",
+              "optional": true,
+              "default": "none"
+            }
+          ],
+          "keywords": [
+            "Message",
+            "Digest"
+          ],
+          "version_history": [
+            {
+              "version": "1.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.0.0",
+              "change": "Added the optional encoding parameter"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_MessageDigest.md"
+        },
+        {
+          "name": "BE_SignatureGenerateRSA",
+          "signature": "BE_SignatureGenerateRSA ( data ; privateKey ; { privateKeyPassword ; algorithm ; fileNameWithExtension } )",
+          "parameters": [
+            {
+              "name": "data",
+              "optional": false
+            },
+            {
+              "name": "privateKey",
+              "optional": false
+            },
+            {
+              "name": "privateKeyPassword",
+              "optional": true,
+              "default": "empty"
+            },
+            {
+              "name": "algorithm",
+              "optional": true,
+              "default": "SHA256"
+            },
+            {
+              "name": "fileNameWithExtension",
+              "optional": true,
+              "default": "BE_MessageDigestAlgorithmSHA256"
+            }
+          ],
+          "keywords": [
+            "Signature",
+            "RSA"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SignatureGenerate_RSA"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_SignatureGenerateRSA.md"
+        },
+        {
+          "name": "BE_SignatureVerifyRSA",
+          "signature": "BE_SignatureVerifyRSA ( data ; publicKey ; { signature ; algorithm )",
+          "parameters": [
+            {
+              "name": "data",
+              "optional": false
+            },
+            {
+              "name": "publicKey",
+              "optional": false
+            },
+            {
+              "name": "signature",
+              "optional": false
+            },
+            {
+              "name": "algorithm",
+              "optional": true,
+              "default": "SHA256"
+            }
+          ],
+          "keywords": [
+            "Signature",
+            "RSA",
+            "Verify"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SignatureVerify_RSA"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_SignatureVerifyRSA.md",
+          "doc_bug_note": "⚠️ Doc bug (signature): signature has an unmatched brace — opens '{' but closes with ')' instead of '}'. Left as-is rather than guessed at."
+        }
+      ]
+    },
+    "Error Checking": {
+      "notes": "Always check BE_GetLastError immediately after every HTTP/FTP/SMTP call — it resets on the next call. BE_CurlTrace is expensive; use only when standard error checks are insufficient.",
+      "functions": [
+        {
+          "name": "BE_CurlTrace",
+          "signature": "BE_CurlTrace",
+          "parameters": [],
+          "keywords": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "Curl",
+            "Trace"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Curl_Trace"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_CurlTrace.md"
+        },
+        {
+          "name": "BE_GetLastDDLError",
+          "signature": "BE_GetLastDDLError",
+          "parameters": [],
+          "keywords": [
+            "Error",
+            "DDL"
+          ],
+          "version_history": [
+            {
+              "version": "2.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_GetLastDDLError.md"
+        },
+        {
+          "name": "BE_GetLastError",
+          "signature": "BE_GetLastError",
+          "parameters": [],
+          "keywords": [
+            "Error",
+            "Last",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "1.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "2.0.0",
+              "change": "Changed the way this works so that successive calls to the BE_GetLastError function don't reset the value that is returned, it's only reset when performing any other function call."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_GetLastError.md"
+        },
+        {
+          "name": "BE_DebugInformation",
+          "signature": "BE_DebugInformation",
+          "parameters": [],
+          "keywords": [
+            "Debug",
+            "Information"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_DebugInformation.md"
+        }
+      ]
+    },
+    "Files and Folders": {
+      "notes": "All paths are native OS paths (POSIX on Mac/Linux, backslash on Windows). Do NOT use FileMaker Get() paths directly — strip the 'file:/' prefix first. BE_FileListFolder returns file names only, not full paths.",
+      "functions": [
+        {
+          "name": "BE_FileCopy",
+          "signature": "BE_FileCopy ( fromFilePath ; toFilePath {; replaceDestinationFile } )",
+          "parameters": [
+            {
+              "name": "fromFilePath",
+              "optional": false
+            },
+            {
+              "name": "toFilePath",
+              "optional": false
+            },
+            {
+              "name": "replaceDestinationFile",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "File",
+            "Copy",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "1.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "1.2.0",
+              "change": "Added support for copying directories"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_CopyFiles"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileCopy.md"
+        },
+        {
+          "name": "BE_FileDelete",
+          "signature": "BE_FileDelete ( path )",
+          "parameters": [
+            {
+              "name": "path",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "File",
+            "Delete",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_DeleteFile"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileDelete.md"
+        },
+        {
+          "name": "BE_FileExists",
+          "signature": "BE_FileExists ( path )",
+          "parameters": [
+            {
+              "name": "path",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "File",
+            "Exists",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileExists.md"
+        },
+        {
+          "name": "BE_FileImport",
+          "signature": "BE_FileImport ( filePath ; { compressBoolean } )",
+          "parameters": [
+            {
+              "name": "filePath",
+              "optional": false
+            },
+            {
+              "name": "compressBoolean",
+              "optional": true,
+              "default": "True"
+            }
+          ],
+          "keywords": [
+            "File",
+            "Import",
+            "Compression"
+          ],
+          "version_history": [
+            {
+              "version": "3.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_ImportFile"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileImport.md"
+        },
+        {
+          "name": "BE_FileListFolder",
+          "signature": "BE_FileListFolder ( path { ; type ; includeSubdirBoolean ; useFullPathBoolean ; includeHiddenBoolean } )",
+          "parameters": [
+            {
+              "name": "path",
+              "optional": false
+            },
+            {
+              "name": "type",
+              "optional": true,
+              "default": "BE_FileTypeAll"
+            },
+            {
+              "name": "includeSubdirBoolean",
+              "optional": true,
+              "default": "False"
+            },
+            {
+              "name": "useFullPathBoolean",
+              "optional": true,
+              "default": "False"
+            },
+            {
+              "name": "includeHiddenBoolean",
+              "optional": true,
+              "default": "False"
+            }
+          ],
+          "keywords": [
+            "File",
+            "Folder",
+            "List",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "1.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "1.2.0",
+              "change": "Added the optional type parameter"
+            },
+            {
+              "version": "2.3.0",
+              "change": "Added the optional includeSubdirectories and useFullPath parameters"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Added the optional includeHidden parameter"
+            },
+            {
+              "version": "4.1.3",
+              "change": "Correctly handle file names containing Unicode Characters on Windows"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileListFolder.md"
+        },
+        {
+          "name": "BE_FileModificationTimestamp",
+          "signature": "BE_FileModificationTimestamp ( path )",
+          "parameters": [
+            {
+              "name": "path",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "File",
+            "Modification",
+            "Timestamp",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.2",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_File_Modification_Timestamp"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileModificationTimestamp.md"
+        },
+        {
+          "name": "BE_FileMove",
+          "signature": "BE_FileMove ( fromFilePath ; toFilePath {; replaceDestinationFile } )",
+          "parameters": [
+            {
+              "name": "fromFilePath",
+              "optional": false
+            },
+            {
+              "name": "toFilePath",
+              "optional": false
+            },
+            {
+              "name": "replaceDestinationFile",
+              "optional": true,
+              "default": "False"
+            }
+          ],
+          "keywords": [
+            "File",
+            "Move",
+            "Replace",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "1.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_MoveFile"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileMove.md"
+        },
+        {
+          "name": "BE_FileOpen",
+          "signature": "BE_FileOpen ( path )",
+          "parameters": [
+            {
+              "name": "path",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "File",
+            "Open",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "1.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "return error 3, command not available on iOS and Linux"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_OpenFile"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileOpen.md"
+        },
+        {
+          "name": "BE_FilePatternCount",
+          "signature": "BE_FilePatternCount ( path ; searchText )",
+          "parameters": [
+            {
+              "name": "path",
+              "optional": false
+            },
+            {
+              "name": "searchText",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "File",
+            "Pattern",
+            "Count",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "4.2.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FilePatternCount.md"
+        },
+        {
+          "name": "BE_FileReadText",
+          "signature": "BE_FileReadText ( pathOrContainer { ; start ; to ; eolChar } )",
+          "parameters": [
+            {
+              "name": "pathOrContainer",
+              "optional": false
+            },
+            {
+              "name": "start",
+              "optional": true
+            },
+            {
+              "name": "to",
+              "optional": true
+            },
+            {
+              "name": "eolChar",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "File",
+            "Text",
+            "Read",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Allow reading text from a container file instead of a path"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_ReadTextFromFile"
+            },
+            {
+              "version": "4.2.0",
+              "change": "added start, to and eolChar parameters"
+            },
+            {
+              "version": "5.0.0",
+              "change": "Fixed a bug in the way that the function works on container fields to match the external files behaviour"
+            },
+            {
+              "version": "5.0.0",
+              "change": "Fixed a bug in the eolChar to allow multiple character eol values"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileReadText.md"
+        },
+        {
+          "name": "BE_FileReplaceText",
+          "signature": "BE_FileReplaceText ( pathOrContainer ; expression ; replaceString { ; options } )",
+          "parameters": [
+            {
+              "name": "pathOrContainer",
+              "optional": false
+            },
+            {
+              "name": "expression",
+              "optional": false
+            },
+            {
+              "name": "replaceString",
+              "optional": false
+            },
+            {
+              "name": "options",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "File",
+            "Replace",
+            "Text",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "4.2.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileReplaceText.md"
+        },
+        {
+          "name": "BE_FileSaveDialog",
+          "signature": "BE_FileSaveDialog ( prompt ; { fileName ; inFolder } )",
+          "parameters": [
+            {
+              "name": "prompt",
+              "optional": false
+            },
+            {
+              "name": "fileName",
+              "optional": true
+            },
+            {
+              "name": "inFolder",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Dialog",
+            "File",
+            "Save"
+          ],
+          "version_history": [
+            {
+              "version": "2.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on iOS, Linux and under FMS"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SaveFileDialog"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileSaveDialog.md"
+        },
+        {
+          "name": "BE_FileSelectDialog",
+          "signature": "BE_FileSelectDialog ( prompt { ; inFolderPath } )",
+          "parameters": [
+            {
+              "name": "prompt",
+              "optional": false
+            },
+            {
+              "name": "inFolderPath",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "File",
+            "Select",
+            "Dialog"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "2.0.0",
+              "change": "Added the optional inFolderPath parameter."
+            },
+            {
+              "version": "2.2.0",
+              "change": "Added the ability to select multiple files."
+            },
+            {
+              "version": "2.2.0",
+              "change": "Update dialogs for new Windows OS versions"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on iOS, Linux and under FMS"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SelectFile"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileSelectDialog.md",
+          "doc_bug_note": "⚠️ Doc bug (parameter #2): parameters section names this parameter 'nainFolderPathme' but the signature and version history indicate the correct name is 'inFolderPath'. Original as-fetched: 'nainFolderPathme'"
+        },
+        {
+          "name": "BE_FileSize",
+          "signature": "BE_FileSize ( path )",
+          "parameters": [
+            {
+              "name": "path",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "File",
+            "Size",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "2.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileSize.md"
+        },
+        {
+          "name": "BE_FileWriteText",
+          "signature": "BE_FileWriteText ( pathOrContainer ; text ; { appendBoolean } )",
+          "parameters": [
+            {
+              "name": "pathOrContainer",
+              "optional": false
+            },
+            {
+              "name": "text",
+              "optional": false
+            },
+            {
+              "name": "appendBoolean",
+              "optional": true,
+              "default": "False"
+            }
+          ],
+          "keywords": [
+            "File",
+            "Text",
+            "Write",
+            "Path",
+            "Container"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "1.1.0",
+              "change": "Adds appendBoolean option"
+            },
+            {
+              "version": "3.3.0",
+              "change": "Recursively create any directories needed"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_WriteTextToFile"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Allows writing to container fields as well as paths"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileWriteText.md"
+        },
+        {
+          "name": "BE_FolderCreate",
+          "signature": "BE_FolderCreate ( path )",
+          "parameters": [
+            {
+              "name": "path",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Path",
+            "Create"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "2.1.0",
+              "change": "changed the folder to be recursive, so any required subfolders are also created"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_CreateFolder"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FolderCreate.md"
+        },
+        {
+          "name": "BE_FolderSelectDialog",
+          "signature": "BE_FolderSelectDialog ( prompt { ; inFolderPath } )",
+          "parameters": [
+            {
+              "name": "prompt",
+              "optional": false
+            },
+            {
+              "name": "inFolderPath",
+              "optional": true,
+              "default": "last used folder"
+            }
+          ],
+          "keywords": [
+            "File",
+            "Select",
+            "Dialog"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "1.3.0",
+              "change": "Added the optional inFolderPath parameter."
+            },
+            {
+              "version": "2.0.0",
+              "change": "Add New Folder button."
+            },
+            {
+              "version": "2.2.0",
+              "change": "Update dialogs for new Windows OS versions"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on iOS, Linux and under FMS"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SelectFolder"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FolderSelectDialog.md",
+          "doc_bug_note": "⚠️ Doc bug (parameter #2): parameters section names this parameter 'nainFolderPathme' but the signature and version history indicate the correct name is 'inFolderPath'. Original as-fetched: 'nainFolderPathme'"
+        }
+      ]
+    },
+    "HTTP and URLs": {
+      "notes": "Headers set with BE_HTTP_SetCustomHeader persist across all subsequent HTTP calls until cleared or overwritten. Always check BE_GetLastError and BE_HTTP_ResponseCode immediately after each call — they reset on the next call. Calling BE_CurlSetOption with no parameters resets all curl options to defaults.",
+      "functions": [
+        {
+          "name": "BE_CurlGetInfo",
+          "signature": "BE_CurlGetInfo ( getInfoOption )",
+          "parameters": [
+            {
+              "name": "getInfoOption",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "curl",
+            "option",
+            "get",
+            "set",
+            "http",
+            "ftp",
+            "sftp",
+            "smtp"
+          ],
+          "version_history": [
+            {
+              "version": "5.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_CurlGetInfo.md"
+        },
+        {
+          "name": "BE_CurlSetOption",
+          "signature": "BE_CurlSetOption ( { option ; value } )",
+          "parameters": [
+            {
+              "name": "option",
+              "optional": true
+            },
+            {
+              "name": "value",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "Curl",
+            "Option",
+            "Set"
+          ],
+          "version_history": [
+            {
+              "version": "2.1.0",
+              "change": "First Release."
+            },
+            {
+              "version": "3.1.0",
+              "change": "Made the *option* value optional and added named constants."
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Curl_Set_Option."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_CurlSetOption.md"
+        },
+        {
+          "name": "BE_CurlTrace",
+          "signature": "BE_CurlTrace",
+          "parameters": [],
+          "keywords": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "Curl",
+            "Trace"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Curl_Trace"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_CurlTrace.md"
+        },
+        {
+          "name": "BE_FTP_Delete",
+          "signature": "BE_FTP_Delete ( url ; { username ; password } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "FTP",
+            "Delete",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "3.2.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FTP_Delete.md"
+        },
+        {
+          "name": "BE_FTP_Upload",
+          "signature": "BE_FTP_Upload ( url ; data ; { username ; password } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "data",
+              "optional": false
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "FTP",
+            "Upload",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "3.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FTP_Upload.md"
+        },
+        {
+          "name": "BE_FTP_UploadFile",
+          "signature": "BE_FTP_UploadFile ( url ; pathToFile ; { username ; password } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "pathToFile",
+              "optional": false
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "FTP",
+            "Upload",
+            "File",
+            "Path",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "4.2.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FTP_UploadFile.md"
+        },
+        {
+          "name": "BE_HTTP_DELETE",
+          "signature": "BE_HTTP_DELETE ( url ; { username ; password } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "Delete",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "2.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_DELETE.md"
+        },
+        {
+          "name": "BE_HTTP_GET",
+          "signature": "BE_HTTP_GET ( url ; { filename ; username ; password } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "filename",
+              "optional": true
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "GET",
+            "Curl",
+            "FTP"
+          ],
+          "version_history": [
+            {
+              "version": "1.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.3.0",
+              "change": "Renamed to BE_HTTP_GET from BE_GetURL"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_GET.md",
+          "doc_bug_note": "⚠️ Doc bug (parameter #2): parameters section names this parameter 'username' but the signature and version history indicate the correct name is 'filename'. Original as-fetched: 'username'"
+        },
+        {
+          "name": "BE_HTTP_GET_File",
+          "signature": "BE_HTTP_GET_File ( url ; { path ; username ; password } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "path",
+              "optional": true
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "GET",
+            "Curl",
+            "FTP"
+          ],
+          "version_history": [
+            {
+              "version": "1.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.3.0",
+              "change": "Renamed to BE_HTTP_GET_File from BE_SaveURLToFile"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_GET_File.md",
+          "doc_bug_note": "⚠️ Doc bug (signature): the code-block signature names 'BE_HTTP_GET' but this page's heading/filename is 'BE_HTTP_GET_File'. Likely a copy/paste error upstream. Function name corrected to 'BE_HTTP_GET_File' here; original signature as-fetched: 'BE_HTTP_GET ( url ; { path ; username ; password } )'"
+        },
+        {
+          "name": "BE_HTTP_PATCH",
+          "signature": "BE_HTTP_PATCH ( url ; parameters ; { username ; password } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "parameters",
+              "optional": false
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "Patch",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "3.3.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_PATCH.md"
+        },
+        {
+          "name": "BE_HTTP_POST",
+          "signature": "BE_HTTP_POST ( url ; parameters ; { username ; password ; fileName } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "parameters",
+              "optional": false
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            },
+            {
+              "name": "fileName",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "POST",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "1.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "2.0.0",
+              "change": "Added optional username and password parameters"
+            },
+            {
+              "version": "3.1.0",
+              "change": "Allowed the use of file=@path for file parameters"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Added the optional filename parameter"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_POST.md"
+        },
+        {
+          "name": "BE_HTTP_PUTData",
+          "signature": "BE_HTTP_PUTData ( url ; data ; { username ; password } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "data",
+              "optional": false
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "PUT",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "2.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_HTTP_PUT_DATA"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_PUTData.md"
+        },
+        {
+          "name": "BE_HTTP_PUTFile",
+          "signature": "BE_HTTP_PUTFile ( url ; path ; { username ; password } )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            },
+            {
+              "name": "path",
+              "optional": false
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "PUT",
+            "File",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "2.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "2.1.0",
+              "change": "Changed the name to BE_HTTP_PUT_DATA to reflect the actual use of the function parameters"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_HTTP_PUTData"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_PUTFile.md",
+          "doc_bug_note": "⚠️ Doc bug (signature): the code-block signature names 'BE_HTTP_PUTData' but this page's heading/filename is 'BE_HTTP_PUTFile'. Likely a copy/paste error upstream. Function name corrected to 'BE_HTTP_PUTFile' here; original signature as-fetched: 'BE_HTTP_PUTData ( url ; path ; { username ; password } )'"
+        },
+        {
+          "name": "BE_HTTP_ResponseCode",
+          "signature": "BE_HTTP_ResponseCode",
+          "parameters": [],
+          "keywords": [
+            "HTTP",
+            "Response",
+            "Code",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "1.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_HTTP_Response_Code"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_ResponseCode.md"
+        },
+        {
+          "name": "BE_HTTP_ResponseHeaders",
+          "signature": "BE_HTTP_ResponseHeaders ( { header } )",
+          "parameters": [
+            {
+              "name": "header",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "Response",
+            "Headers",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "1.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.3.2",
+              "change": "Added the *header* parameter so that the named header only is returned"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed BE_HTTP_Response_Code to BE_HTTP_ResponseCode"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_ResponseHeaders.md"
+        },
+        {
+          "name": "BE_HTTP_SetCustomHeader",
+          "signature": "BE_HTTP_SetCustomHeader ( { header ; value } )",
+          "parameters": [
+            {
+              "name": "header",
+              "optional": true
+            },
+            {
+              "name": "value",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "HTTP",
+            "Header",
+            "Set",
+            "Custom",
+            "Curl"
+          ],
+          "version_history": [
+            {
+              "version": "1.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.1",
+              "change": "Added option to call with no parameters to delete all Headers"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_HTTP_Set_Custom_Header"
+            },
+            {
+              "version": "4.1.3",
+              "change": "**Breaking Change** : Change the way empty string headers vs missing value parameters are used - see notes."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_SetCustomHeader.md"
+        },
+        {
+          "name": "BE_HTTP_Set_Proxy",
+          "signature": "BE_HTTP_Set_Proxy ( proxy { ; port ; userName ; password } )",
+          "parameters": [
+            {
+              "name": "proxy",
+              "optional": false
+            },
+            {
+              "name": "port",
+              "optional": true,
+              "default": "80"
+            },
+            {
+              "name": "userName",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "keyword",
+            "keyword"
+          ],
+          "version_history": [
+            {
+              "version": "2.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_HTTP_Set_Proxy"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_HTTP_Set_Proxy.md",
+          "doc_bug_note": "⚠️ Doc bug (signature): the code-block signature names 'BE_HTTP_SetProxy' but this page's heading/filename is 'BE_HTTP_Set_Proxy'. Likely a copy/paste error upstream. Function name corrected to 'BE_HTTP_Set_Proxy' here; original signature as-fetched: 'BE_HTTP_SetProxy ( proxy { ; port ; userName ; password } )'"
+        },
+        {
+          "name": "BE_OpenURL",
+          "signature": "BE_OpenURL ( url )",
+          "parameters": [
+            {
+              "name": "url",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "URL"
+          ],
+          "version_history": [
+            {
+              "version": "1.1.0",
+              "change": "URL Open"
+            },
+            {
+              "version": "4.0.0",
+              "change": "return error 3, command not available on Linux"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": true,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_OpenURL.md"
+        }
+      ]
+    },
+    "Miscellaneous": {
+      "notes": "",
+      "functions": [
+        {
+          "name": "BE_EvaluateJavaScript",
+          "signature": "BE_EvaluateJavaScript ( javaScript )",
+          "parameters": [
+            {
+              "name": "javaScript",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "JavaScript"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Testing",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": false,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_EvaluateJavaScript.md"
+        },
+        {
+          "name": "BE_ExecuteSystemCommand",
+          "signature": "BE_ExecuteSystemCommand ( command ; { timeout ; executeUsingShell } )",
+          "parameters": [
+            {
+              "name": "command",
+              "optional": false
+            },
+            {
+              "name": "timeout",
+              "optional": true,
+              "default": "empty"
+            },
+            {
+              "name": "executeUsingShell",
+              "optional": true,
+              "default": "True"
+            }
+          ],
+          "keywords": [
+            "Execute",
+            "System",
+            "Command",
+            "Shell"
+          ],
+          "version_history": [
+            {
+              "version": "2.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.6",
+              "change": "Switched to a different library to perform the command, which broke a lot of things, and meant it could only run one command at a time"
+            },
+            {
+              "version": "4.1.3",
+              "change": "Do not crash when attempting to execute an empty command."
+            },
+            {
+              "version": "4.1.3",
+              "change": "macOS, Linux and iOS enable multiple calls to shell like version 4.0.5"
+            },
+            {
+              "version": "4.2.0",
+              "change": "Reverted back to the 4.0.5 option and fixed the crash issue, and added executeUsingShell as an option"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": false,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ExecuteSystemCommand.md"
+        },
+        {
+          "name": "BE_FileMakerSQL",
+          "signature": "BE_FileMakerSQL ( sqlStatement ; { columnSeparator ; rowSeparator ; databaseName ; asText ; outputPath } )",
+          "parameters": [
+            {
+              "name": "sqlStatement",
+              "optional": false
+            },
+            {
+              "name": "columnSeparator",
+              "optional": true
+            },
+            {
+              "name": "rowSeparator",
+              "optional": true
+            },
+            {
+              "name": "databaseName",
+              "optional": true
+            },
+            {
+              "name": "asText",
+              "optional": true,
+              "default": "True"
+            },
+            {
+              "name": "outputPath",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "SQL"
+          ],
+          "version_history": [
+            {
+              "version": "1.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "1.3.0",
+              "change": "added optional database parameter to allow operations on databases other than the current one"
+            },
+            {
+              "version": "4.2.0",
+              "change": "return container/binary data in addition to text (new asText parameter) and outputPath parameter added"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_FileMakerSQL.md"
+        },
+        {
+          "name": "BE_GetMachineName",
+          "signature": "BE_GetMachineName",
+          "parameters": [],
+          "keywords": [
+            "MachineName",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_GetMachineName.md"
+        },
+        {
+          "name": "BE_GetSystemDrive",
+          "signature": "BE_GetSystemDrive",
+          "parameters": [],
+          "keywords": [
+            "SystemDrive",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_GetSystemDrive.md"
+        },
+        {
+          "name": "BE_Pause",
+          "signature": "BE_Pause ( milliseconds )",
+          "parameters": [
+            {
+              "name": "milliseconds",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Pause",
+            "Time"
+          ],
+          "version_history": [
+            {
+              "version": "3.3.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_Pause.md"
+        },
+        {
+          "name": "BE_RegularExpression",
+          "signature": "BE_RegularExpression ( text ; expression ; { options ; replaceString } )",
+          "parameters": [
+            {
+              "name": "text",
+              "optional": false
+            },
+            {
+              "name": "expression",
+              "optional": false
+            },
+            {
+              "name": "options",
+              "optional": true
+            },
+            {
+              "name": "replaceString",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "RegularExpression",
+            "Regular",
+            "Expression",
+            "Regex"
+          ],
+          "version_history": [
+            {
+              "version": "3.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.05",
+              "change": "Added an extra option \"v\" to allow you to treat the input as a value list and perform the expression over all values in the list."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_RegularExpression.md"
+        },
+        {
+          "name": "BE_ScriptExecute",
+          "signature": "BE_ScriptExecute ( scriptName ; { fileName ; parameter ; scriptControl } )",
+          "parameters": [
+            {
+              "name": "scriptName",
+              "optional": false
+            },
+            {
+              "name": "fileName",
+              "optional": true,
+              "default": "current File"
+            },
+            {
+              "name": "parameter",
+              "optional": true
+            },
+            {
+              "name": "scriptControl",
+              "optional": true,
+              "default": "Pause"
+            }
+          ],
+          "keywords": [
+            "Script"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ScriptExecute.md"
+        },
+        {
+          "name": "BE_ScriptStepInstall",
+          "signature": "BE_ScriptStepInstall ( name ; definitionXML ; id ; description ; calculation )",
+          "parameters": [
+            {
+              "name": "name",
+              "optional": false
+            },
+            {
+              "name": "definitionXML",
+              "optional": false
+            },
+            {
+              "name": "id",
+              "optional": false
+            },
+            {
+              "name": "description",
+              "optional": false
+            },
+            {
+              "name": "calculation",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Script",
+            "Step",
+            "Install"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ScriptStepInstall.md"
+        },
+        {
+          "name": "BE_ScriptStepPerform",
+          "signature": "BE_ScriptStepPerform ( scriptStepId )",
+          "parameters": [
+            {
+              "name": "scriptStepId",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Script",
+            "Step",
+            "Perform"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ScriptStepPerform.md"
+        },
+        {
+          "name": "BE_ScriptStepRemove",
+          "signature": "BE_ScriptStepRemove ( scriptStepId )",
+          "parameters": [
+            {
+              "name": "scriptStepId",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Script",
+            "Step",
+            "Remove"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": false,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ScriptStepRemove.md"
+        },
+        {
+          "name": "BE_SetTextEncoding",
+          "signature": "BE_SetTextEncoding ( { encoding } )",
+          "parameters": [
+            {
+              "name": "encoding",
+              "optional": true,
+              "default": "UTF_8"
+            }
+          ],
+          "keywords": [
+            "Set",
+            "Text",
+            "Encoding"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_SetTextEncoding.md"
+        },
+        {
+          "name": "BE_Version",
+          "signature": "BE_Version",
+          "parameters": [],
+          "keywords": [
+            "Version"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_Version.md"
+        },
+        {
+          "name": "BE_VersionAutoUpdate",
+          "signature": "BE_Version",
+          "parameters": [],
+          "keywords": [
+            "Version",
+            "Auto",
+            "Update"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_VersionAutoUpdate.md"
+        }
+      ]
+    },
+    "PDF": {
+      "notes": "All paths are native OS paths. BE_PDFAppend requires the destination file to already exist.",
+      "functions": [
+        {
+          "name": "BE_PDFAppend",
+          "signature": "BE_PDFAppend ( pdfPathOrContainer ; appendPathOrContainer ; { destinationPath } )",
+          "parameters": [
+            {
+              "name": "pdfPathOrContainer",
+              "optional": false
+            },
+            {
+              "name": "appendPathOrContainer",
+              "optional": false
+            },
+            {
+              "name": "destinationPath",
+              "optional": true,
+              "default": "container"
+            }
+          ],
+          "keywords": [
+            "PDF",
+            "Path",
+            "Append"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Renamed from BE_PDF_Append"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": false,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_PDFAppend.md"
+        },
+        {
+          "name": "BE_PDFGetPages",
+          "signature": "BE_PDFGetPages ( pdfPathOrContainer ; newPDFPath ; fromPageNum ; { toPageNum } )",
+          "parameters": [
+            {
+              "name": "pdfPathOrContainer",
+              "optional": false
+            },
+            {
+              "name": "newPDFPath",
+              "optional": false
+            },
+            {
+              "name": "fromPageNum",
+              "optional": false
+            },
+            {
+              "name": "toPageNum",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "PDF",
+            "Page",
+            "Get",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_PDF_GetPages"
+            },
+            {
+              "version": "4.2.0",
+              "change": "Added a \"garbage collection\" option so that the resulting file size is reduced as well"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": false,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_PDFGetPages.md"
+        },
+        {
+          "name": "BE_PDFPageCount",
+          "signature": "BE_PDFPageCount ( pdfPathOrContainer )",
+          "parameters": [
+            {
+              "name": "pdfPathOrContainer",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "PDF",
+            "Page",
+            "Count",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Renamed from BE_PDF_PageCount"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": false,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_PDFPageCount.md"
+        }
+      ]
+    },
+    "Preferences": {
+      "notes": "Preferences persist in macOS user defaults / Windows registry between sessions. applicationID defaults to the plugin's own ID if omitted.",
+      "functions": [
+        {
+          "name": "BE_PreferenceDelete",
+          "signature": "BE_PreferenceDelete ( key ; { domain } )",
+          "parameters": [
+            {
+              "name": "key",
+              "optional": false
+            },
+            {
+              "name": "domain",
+              "optional": true,
+              "default": "See Notes"
+            }
+          ],
+          "keywords": [
+            "Preference",
+            "Delete"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_PreferenceDelete.md"
+        },
+        {
+          "name": "BE_PreferenceGet",
+          "signature": "BE_PreferenceGet ( key ; { domain } )",
+          "parameters": [
+            {
+              "name": "key",
+              "optional": false
+            },
+            {
+              "name": "domain",
+              "optional": true,
+              "default": "See Notes"
+            }
+          ],
+          "keywords": [
+            "Preference",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "1.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on Linux"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_GetPreference"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_PreferenceGet.md"
+        },
+        {
+          "name": "BE_SetPreference",
+          "signature": "BE_SetPreference ( key ; value ; { domain } )",
+          "parameters": [
+            {
+              "name": "key",
+              "optional": false
+            },
+            {
+              "name": "value",
+              "optional": false
+            },
+            {
+              "name": "domain",
+              "optional": true,
+              "default": "See Notes"
+            }
+          ],
+          "keywords": [
+            "Preference",
+            "Get"
+          ],
+          "version_history": [
+            {
+              "version": "1.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Return error 3, command not available on Linux"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SetPreference"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": false
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_SetPreference.md"
+        }
+      ]
+    },
+    "SMTP Email": {
+      "notes": "Setup sequence: BE_SMTPServer → BE_SMTPSetHeader (repeat) → BE_SMTPAddAttachment (optional, repeat) → BE_SMTPSend. Always check BE_GetLastError after BE_SMTPSend.",
+      "functions": [
+        {
+          "name": "BE_SMTPAddAttachment",
+          "signature": "BE_SMTPAddAttachment ( { attachment ; contentType } )",
+          "parameters": [
+            {
+              "name": "attachment",
+              "optional": true
+            },
+            {
+              "name": "contentType",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "SMTP",
+            "Attachment",
+            "Add",
+            "ContainerField"
+          ],
+          "version_history": [
+            {
+              "version": "3.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Changed the *container* parameter to *attachment* and added the *contentType* parameter"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SMTP_AddAttachment"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_SMTPAddAttachment.md"
+        },
+        {
+          "name": "BE_SMTPSend",
+          "signature": "BE_SMTPSend ( from ; to ; subject ; text ; { cc ; bcc ; replyTo ; html ; attachments} )",
+          "parameters": [
+            {
+              "name": "from",
+              "optional": false
+            },
+            {
+              "name": "to",
+              "optional": false
+            },
+            {
+              "name": "subject",
+              "optional": false
+            },
+            {
+              "name": "text",
+              "optional": false
+            },
+            {
+              "name": "cc",
+              "optional": true
+            },
+            {
+              "name": "bcc",
+              "optional": true
+            },
+            {
+              "name": "replyTo",
+              "optional": true
+            },
+            {
+              "name": "html",
+              "optional": true
+            },
+            {
+              "name": "attachments",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "keyword",
+            "keyword"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.0",
+              "change": "Added an RFC 1123 format date header"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SMTPSend"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_SMTPSend.md"
+        },
+        {
+          "name": "BE_SMTPServer",
+          "signature": "BE_SMTPServer ( server ; { port ; username ; password ; keepOpen } )",
+          "parameters": [
+            {
+              "name": "server",
+              "optional": false
+            },
+            {
+              "name": "port",
+              "optional": true
+            },
+            {
+              "name": "username",
+              "optional": true
+            },
+            {
+              "name": "password",
+              "optional": true
+            },
+            {
+              "name": "keepOpen",
+              "optional": true,
+              "default": "False"
+            }
+          ],
+          "keywords": [
+            "keyword",
+            "keyword"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SMTP_Server"
+            },
+            {
+              "version": "5.0.0",
+              "change": "Renamed from BE_SMTPSend"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_SMTPServer.md",
+          "doc_bug_note": "⚠️ Doc bug (parameter #3): parameters section names this parameter 'userName' but the signature and version history indicate the correct name is 'username'. Original as-fetched: 'userName'"
+        },
+        {
+          "name": "BE_SMTPSetHeader",
+          "signature": "BE_SMTPSetHeader ( { header ; value } )",
+          "parameters": [
+            {
+              "name": "header",
+              "optional": true
+            },
+            {
+              "name": "value",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "SMTP",
+            "Header",
+            "Set"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_SMTP_Set_Header"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_SMTPSetHeader.md"
+        }
+      ]
+    },
+    "Time": {
+      "notes": "All return integers. BE_TimeZoneOffset returns local UTC offset in minutes.",
+      "functions": [
+        {
+          "name": "BE_TimeCurrentMilliseconds",
+          "signature": "BE_TimeCurrentMilliseconds",
+          "parameters": [],
+          "keywords": [
+            "Time",
+            "UTC",
+            "Milliseconds"
+          ],
+          "version_history": [
+            {
+              "version": "2.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_TimeCurrentMilliseconds.md"
+        },
+        {
+          "name": "BE_TimeUTCMilliseconds",
+          "signature": "BE_TimeUTCMilliseconds",
+          "parameters": [],
+          "keywords": [
+            "Time",
+            "UTC",
+            "Milliseconds"
+          ],
+          "version_history": [
+            {
+              "version": "2.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_UTCMilliseconds"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_TimeUTCMilliseconds.md"
+        },
+        {
+          "name": "BE_TimeZoneOffset",
+          "signature": "BE_TimeZoneOffset",
+          "parameters": [],
+          "keywords": [
+            "Time",
+            "UTC",
+            "Milliseconds",
+            "Offset"
+          ],
+          "version_history": [
+            {
+              "version": "2.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_TimeZoneOffset.md"
+        }
+      ]
+    },
+    "Value Lists": {
+      "notes": "All operate on FileMaker value lists (newline-delimited). BE_ValuesSort type: 0 = text, 1 = numeric; order: 0 = ascending, 1 = descending.",
+      "functions": [
+        {
+          "name": "BE_ValuesContainsDuplicates",
+          "signature": "BE_ValuesContainsDuplicates ( listOfValues ; { caseSensitiveBoolean } )",
+          "parameters": [
+            {
+              "name": "listOfValues",
+              "optional": false
+            },
+            {
+              "name": "caseSensitiveBoolean",
+              "optional": true,
+              "default": "True"
+            }
+          ],
+          "keywords": [
+            "Values",
+            "Duplicates",
+            "Contains"
+          ],
+          "version_history": [
+            {
+              "version": "3.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.1.0",
+              "change": "Renamed from BE_Values_ContainsDuplicates"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ValuesContainsDuplicates.md"
+        },
+        {
+          "name": "BE_ValuesFilterOut",
+          "signature": "BE_ValuesFilterOut ( textToFilter ; filterValues ; { caseSensitiveBoolean } )",
+          "parameters": [
+            {
+              "name": "textToFilter",
+              "optional": false
+            },
+            {
+              "name": "filterValues",
+              "optional": false
+            },
+            {
+              "name": "caseSensitiveBoolean",
+              "optional": true,
+              "default": "True"
+            }
+          ],
+          "keywords": [
+            "Values",
+            "Filter",
+            "Out"
+          ],
+          "version_history": [
+            {
+              "version": "2.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.1.0",
+              "change": "Added the optional caseSensitive parameter"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Values_FilterOut"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ValuesFilterOut.md"
+        },
+        {
+          "name": "BE_ValuesSort",
+          "signature": "BE_ValuesSort ( listOfValues ; { ascendingBoolean ; type } )",
+          "parameters": [
+            {
+              "name": "listOfValues",
+              "optional": false
+            },
+            {
+              "name": "ascendingBoolean",
+              "optional": true,
+              "default": "1"
+            },
+            {
+              "name": "type",
+              "optional": true,
+              "default": "0"
+            }
+          ],
+          "keywords": [
+            "Values",
+            "Sort"
+          ],
+          "version_history": [
+            {
+              "version": "2.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.3.0",
+              "change": "Added the ascending and type parameters"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Values_Sort"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ValuesSort.md"
+        },
+        {
+          "name": "BE_ValuesTimesDuplicated",
+          "signature": "BE_ValuesTimesDuplicated ( listOfValues ; numberOfTimes )",
+          "parameters": [
+            {
+              "name": "listOfValues",
+              "optional": false
+            },
+            {
+              "name": "numberOfTimes",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Values",
+            "Duplicates",
+            "Times"
+          ],
+          "version_history": [
+            {
+              "version": "3.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Values_TimesDuplicated"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ValuesTimesDuplicated.md"
+        },
+        {
+          "name": "BE_ValuesTrim",
+          "signature": "BE_ValuesTrim ( listOfValues )",
+          "parameters": [
+            {
+              "name": "listOfValues",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Values",
+            "Trim"
+          ],
+          "version_history": [
+            {
+              "version": "3.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Values_Trim"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ValuesTrim.md"
+        },
+        {
+          "name": "BE_ValuesUnique",
+          "signature": "BE_ValuesUnique ( listOfValues ; { caseSensitiveBoolean } )",
+          "parameters": [
+            {
+              "name": "listOfValues",
+              "optional": false
+            },
+            {
+              "name": "caseSensitiveBoolean",
+              "optional": true,
+              "default": "True"
+            }
+          ],
+          "keywords": [
+            "Values",
+            "Unique",
+            "List"
+          ],
+          "version_history": [
+            {
+              "version": "2.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "3.1.0",
+              "change": "Added caseSensitiveBoolean option"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Values_Unique"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_ValuesUnique.md"
+        }
+      ]
+    },
+    "Vectors": {
+      "notes": "Vectors are FileMaker value lists (one number per line). Useful for AI embedding similarity: dot product after L2 normalisation = cosine similarity.",
+      "functions": [
+        {
+          "name": "BE_VectorDotProduct",
+          "signature": "BE_VectorDotProduct ( a ; b )",
+          "parameters": [
+            {
+              "name": "a",
+              "optional": false
+            },
+            {
+              "name": "b",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Vector",
+            "DotProductkeyword"
+          ],
+          "version_history": [
+            {
+              "version": "3.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Vector_DotProduct"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_VectorDotProduct.md"
+        },
+        {
+          "name": "BE_VectorEuclideanDistance",
+          "signature": "BE_VectorEuclideanDistance ( a ; b )",
+          "parameters": [
+            {
+              "name": "a",
+              "optional": false
+            },
+            {
+              "name": "b",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Vector",
+            "DotProductkeyword"
+          ],
+          "version_history": [
+            {
+              "version": "3.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_Vector_EuclideanDistance"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_VectorEuclideanDistance.md"
+        }
+      ]
+    },
+    "XML, XSLT, and JSON": {
+      "notes": "BE_XPath returns the first match; BE_XPathAll returns all matches as a value list. BE_XSLT_ApplyInMemory operates on strings; BE_XSLTApply reads/writes native file paths. BE_XMLValidate returns empty string if valid.",
+      "functions": [
+        {
+          "name": "BE_JSON_ArraySize",
+          "signature": "BE_JSON_ArraySize ( json { ; path } )",
+          "parameters": [
+            {
+              "name": "json",
+              "optional": false
+            },
+            {
+              "name": "path",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "JSON",
+            "Array",
+            "Size"
+          ],
+          "version_history": [
+            {
+              "version": "2.1.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.1.0",
+              "change": "Added the optional path parameter"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_JSON_ArraySize.md",
+          "doc_bug_note": "⚠️ Doc bug (parameter #2): parameters section names this parameter 'name' but the signature and version history indicate the correct name is 'path'. Original as-fetched: 'name'"
+        },
+        {
+          "name": "BE_JSON_jq",
+          "signature": "BE_JSON_jq ( json ; filter { ; options } )",
+          "parameters": [
+            {
+              "name": "json",
+              "optional": false
+            },
+            {
+              "name": "filter",
+              "optional": false
+            },
+            {
+              "name": "options",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "jq",
+            "json"
+          ],
+          "version_history": [
+            {
+              "version": "5.0.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": false,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_JSON_jq.md"
+        },
+        {
+          "name": "BE_XMLParse",
+          "signature": "BE_XMLParse ( pathOrXMLText )",
+          "parameters": [
+            {
+              "name": "pathOrXMLText",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "XML",
+            "Parse",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "2.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_XML_Parse"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XMLParse.md"
+        },
+        {
+          "name": "BE_XMLStripInvalidCharacters",
+          "signature": "BE_XMLStripInvalidCharacters ( path ; { resultFilePath } )",
+          "parameters": [
+            {
+              "name": "path",
+              "optional": false
+            },
+            {
+              "name": "resultFilePath",
+              "optional": true,
+              "default": "path"
+            }
+          ],
+          "keywords": [
+            "XML",
+            "Strip",
+            "Invalid",
+            "Characters"
+          ],
+          "version_history": [
+            {
+              "version": "4.2.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XMLStripInvalidCharacters.md"
+        },
+        {
+          "name": "BE_XMLStripNodes",
+          "signature": "BE_XMLStripNodes ( inputFilePath ; outputFilePath ; nodeNames )",
+          "parameters": [
+            {
+              "name": "inputFilePath",
+              "optional": false
+            },
+            {
+              "name": "outputFilePath",
+              "optional": false
+            },
+            {
+              "name": "nodeNames",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "XML",
+            "Strip",
+            "Nodes",
+            "Path"
+          ],
+          "version_history": [
+            {
+              "version": "4.2.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XMLStripNodes.md"
+        },
+        {
+          "name": "BE_XMLTidy",
+          "signature": "BE_XMLTidy ( xml )",
+          "parameters": [
+            {
+              "name": "xml",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "XML",
+            "Tidy"
+          ],
+          "version_history": [
+            {
+              "version": "4.2.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XMLTidy.md"
+        },
+        {
+          "name": "BE_XMLValidate",
+          "signature": "BE_XMLValidate ( xmlText ; schemaText )",
+          "parameters": [
+            {
+              "name": "xmlText",
+              "optional": false
+            },
+            {
+              "name": "schemaText",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "XML",
+            "Validate",
+            "Schema"
+          ],
+          "version_history": [
+            {
+              "version": "4.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "4.0.2",
+              "change": "Renamed from BE_XML_Validate"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XMLValidate.md"
+        },
+        {
+          "name": "BE_XML_Canonical",
+          "signature": "BE_XML_Canonical ( xml )",
+          "parameters": [
+            {
+              "name": "xml",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "XML",
+            "Canonical"
+          ],
+          "version_history": [
+            {
+              "version": "4.1.2",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XML_Canonical.md"
+        },
+        {
+          "name": "BE_XPath",
+          "signature": "BE_XPath ( xmlText ; xpathText ; { namespaceListText ; asTextBoolean } )",
+          "parameters": [
+            {
+              "name": "xmlText",
+              "optional": false
+            },
+            {
+              "name": "xpathText",
+              "optional": false
+            },
+            {
+              "name": "namespaceListText",
+              "optional": true
+            },
+            {
+              "name": "asTextBoolean",
+              "optional": true,
+              "default": "False"
+            }
+          ],
+          "keywords": [
+            "XML",
+            "XPath"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "1.2.0"
+            },
+            {
+              "version": "2.2.0",
+              "change": "Added the optional asText parameter"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XPath.md"
+        },
+        {
+          "name": "BE_XPathAll",
+          "signature": "BE_XPathAll ( xmlText ; xpathText ; { namespaceListText } )",
+          "parameters": [
+            {
+              "name": "xmlText",
+              "optional": false
+            },
+            {
+              "name": "xpathText",
+              "optional": false
+            },
+            {
+              "name": "namespaceListText",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "XML",
+            "XPath"
+          ],
+          "version_history": [
+            {
+              "version": "1.2.0",
+              "change": "First Release"
+            },
+            {
+              "version": "2.2.0",
+              "change": "support objects of type XPATH_BOOLEAN, XPATH_NUMBER and XPATH_STRING"
+            },
+            {
+              "version": "2.2.1",
+              "change": "return an empty string when getting an empty node set as xml"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XPathAll.md"
+        },
+        {
+          "name": "BE_XSLTApply",
+          "signature": "BE_XSLTApply ( xmlFilePath ; xsltText ; outputFilePath {; scriptName ; databaseName ; [ xsltText ; outputFilePath ] ; ... } )",
+          "parameters": [
+            {
+              "name": "xmlFilePath",
+              "optional": false
+            },
+            {
+              "name": "xsltText",
+              "optional": false
+            },
+            {
+              "name": "outputFilePath",
+              "optional": true
+            },
+            {
+              "name": "scriptName",
+              "optional": true
+            },
+            {
+              "name": "databaseName",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "XML",
+            "XSLT",
+            "Memory"
+          ],
+          "version_history": [
+            {
+              "version": "1.0.0",
+              "change": "First Release"
+            },
+            {
+              "version": "5.0.0",
+              "change": "Added scriptName, and optional extra parameters."
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XSLTApply.md",
+          "doc_bug_note": "⚠️ Doc bug (signature): the code-block signature names 'BE_XSLT_Apply' but this page's heading/filename is 'BE_XSLTApply'. Likely a copy/paste error upstream. Function name corrected to 'BE_XSLTApply' here; original signature as-fetched: 'BE_XSLT_Apply ( xmlFilePath ; xsltText ; outputFilePath {; scriptName ; databaseName ; [ xsltText ; outputFilePath ] ; ... } )'"
+        },
+        {
+          "name": "BE_XSLT_ApplyInMemory",
+          "signature": "BE_XSLT_ApplyInMemory ( xmlText ; xsltText )",
+          "parameters": [
+            {
+              "name": "xmlText",
+              "optional": false
+            },
+            {
+              "name": "xsltText",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "XML",
+            "XSLT",
+            "Memory"
+          ],
+          "version_history": [
+            {
+              "version": "1.2.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_XSLT_ApplyInMemory.md"
+        }
+      ]
+    },
+    "Zip and Gzip": {
+      "notes": "BE_Gzip / BE_UnGzip operate on container data (in-memory). BE_Zip / BE_Unzip operate on native file paths.",
+      "functions": [
+        {
+          "name": "BE_Gzip",
+          "signature": "BE_Gzip ( data ; { filename } )",
+          "parameters": [
+            {
+              "name": "data",
+              "optional": false
+            },
+            {
+              "name": "filename",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Gzip",
+            "zip"
+          ],
+          "version_history": [
+            {
+              "version": "3.3.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_Gzip.md"
+        },
+        {
+          "name": "BE_UnGzip",
+          "signature": "BE_UnGzip ( gzip_data ; { filename } )",
+          "parameters": [
+            {
+              "name": "gzip_data",
+              "optional": false
+            },
+            {
+              "name": "filename",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Gzip",
+            "zip",
+            "Ungzip",
+            "unzip"
+          ],
+          "version_history": [
+            {
+              "version": "3.3.0",
+              "change": "First Release"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_UnGzip.md"
+        },
+        {
+          "name": "BE_Unzip",
+          "signature": "BE_Unzip ( archiveFilePath ; { outputFolderPath } )",
+          "parameters": [
+            {
+              "name": "archiveFilePath",
+              "optional": false
+            },
+            {
+              "name": "outputFolderPath",
+              "optional": false
+            }
+          ],
+          "keywords": [
+            "Zip",
+            "Unzip"
+          ],
+          "version_history": [
+            {
+              "version": "1.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "2.2.0",
+              "change": "added the outputFolderPath parameter"
+            },
+            {
+              "version": "4.2.0",
+              "change": "added the option to allow archiveFilePath to be a container field"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_Unzip.md",
+          "doc_bug_note": "⚠️ Doc bug (parameter #2): parameters section names this parameter 'filename' but the signature and version history indicate the correct name is 'outputFolderPath'. Original as-fetched: 'filename'"
+        },
+        {
+          "name": "BE_Zip",
+          "signature": "BE_Zip ( filePathList ; { archiveFilePath } )",
+          "parameters": [
+            {
+              "name": "filePathList",
+              "optional": false
+            },
+            {
+              "name": "archiveFilePath",
+              "optional": true
+            }
+          ],
+          "keywords": [
+            "Zip",
+            "Unzip"
+          ],
+          "version_history": [
+            {
+              "version": "1.3.0",
+              "change": "First Release"
+            },
+            {
+              "version": "2.0.0",
+              "change": "Bug Fixes"
+            },
+            {
+              "version": "2.2.0",
+              "change": "added the archiveFilePath parameter"
+            },
+            {
+              "version": "2.3.0",
+              "change": "modified the archiveFilePath parameter to allow a list of file paths, instead of a single file/folder"
+            },
+            {
+              "version": "3.0.0",
+              "change": "improved error handling, create empty directories in archives"
+            },
+            {
+              "version": "4.1.3",
+              "change": "don't crash when there's nothing to archive"
+            },
+            {
+              "version": "4.1.3",
+              "change": "return an error if more than one file with the same name is added to the archive"
+            },
+            {
+              "version": "4.2.0",
+              "change": "added the option to allow filePathList to be a container field"
+            }
+          ],
+          "compatibility": {
+            "status": "Active",
+            "mac_fmp": true,
+            "win_fmp": true,
+            "fms": true,
+            "ios": true,
+            "linux": true
+          },
+          "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/BE_Zip.md"
+        }
+      ]
+    }
+  },
+  "deprecated": [
+    {
+      "name": "BE_Base64_Decode",
+      "status": "deprecated",
+      "reason": "Superseded by native FileMaker function.",
+      "replaced_by": "Base64Decode (native FM)",
+      "signature": "BE_Base64_Decode ( text { ; name } )",
+      "parameters": [
+        {
+          "name": "text",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "optional": true
+        }
+      ],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "1.3.0",
+          "change": "First Release"
+        },
+        {
+          "version": "4.0.0",
+          "change": "Deprecated. Use the FileMaker 16 function *Base64Decode* instead."
+        },
+        {
+          "version": "4.2.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_Base64_Decode.md"
+    },
+    {
+      "name": "BE_Base64_Encode",
+      "status": "deprecated",
+      "reason": "Superseded by native FileMaker function.",
+      "replaced_by": "Base64Encode (native FM)",
+      "signature": "BE_Base64_Encode ( text { ; name } )",
+      "parameters": [
+        {
+          "name": "text",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "optional": true
+        }
+      ],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "1.3.0",
+          "change": "First Release"
+        },
+        {
+          "version": "4.0.0",
+          "change": "Deprecated. Use the FileMaker 16 function *Base64Encode* instead."
+        },
+        {
+          "version": "4.2.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_Base64_Encode.md"
+    },
+    {
+      "name": "BE_Base64_URL_Encode",
+      "status": "deprecated",
+      "reason": "Superseded by native FileMaker function.",
+      "replaced_by": "Base64EncodeURL (native FM)",
+      "signature": "BE_Base64_URL_Encode ( data )",
+      "parameters": [
+        {
+          "name": "data",
+          "optional": false
+        }
+      ],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "2.0.0",
+          "change": "First Release"
+        },
+        {
+          "version": "4.0.0",
+          "change": "Deprecated. Use the FileMaker 16 function *Base64EncodeRFC* instead."
+        },
+        {
+          "version": "4.2.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_Base64_URL_Encode.md"
+    },
+    {
+      "name": "BE_ExecuteShellCommand",
+      "status": "renamed",
+      "reason": "Renamed for cross-platform clarity.",
+      "replaced_by": "BE_ExecuteSystemCommand",
+      "signature": "BE_ExecuteShellCommand ( command { ; waitForResponse } )",
+      "parameters": [
+        {
+          "name": "command",
+          "optional": false
+        },
+        {
+          "name": "waitForResponse",
+          "optional": true
+        }
+      ],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "1.1.0",
+          "change": "First Release"
+        },
+        {
+          "version": "1.2.0",
+          "change": "Modified to include an optional waitForResponse parameter"
+        },
+        {
+          "version": "2.0.0",
+          "change": "Deprecated. Use *BE_ExecuteSystemCommand* instead."
+        },
+        {
+          "version": "3.0.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_ExecuteShellCommand.md"
+    },
+    {
+      "name": "BE_FileMaker_Fields",
+      "status": "deprecated",
+      "reason": "Superseded by native FileMaker DDL.",
+      "replaced_by": "FieldNames / DDL (native FM)",
+      "signature": "BE_FileMaker_Fields",
+      "parameters": [],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "1.1.0",
+          "change": "First Release"
+        },
+        {
+          "version": "2.0.0",
+          "change": "Deprecated. Use internal *ExecuteSQL* instead."
+        },
+        {
+          "version": "3.0.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_FileMaker_Fields.md"
+    },
+    {
+      "name": "BE_FileMaker_Tables",
+      "status": "deprecated",
+      "reason": "Superseded by native FileMaker DDL.",
+      "replaced_by": "TableNames / DDL (native FM)",
+      "signature": "BE_FileMaker_Tables",
+      "parameters": [],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "1.1.0",
+          "change": "First Release"
+        },
+        {
+          "version": "2.0.0",
+          "change": "Deprecated. Use internal *ExecuteSQL* instead."
+        },
+        {
+          "version": "3.0.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_FileMaker_Tables.md"
+    },
+    {
+      "name": "BE_HMAC",
+      "status": "deprecated",
+      "reason": "Superseded by native FileMaker function (FM 19.3+).",
+      "replaced_by": "CryptAuthCode (native FM 19.3+)",
+      "signature": "BE_HMAC ( text ; key ; { algorithm ; outputEncoding ; inputEncoding } )",
+      "parameters": [
+        {
+          "name": "text",
+          "optional": false
+        },
+        {
+          "name": "key",
+          "optional": false
+        },
+        {
+          "name": "algorithm",
+          "optional": true,
+          "default": "BE_MessageDigestAlgorithm_SHA1"
+        },
+        {
+          "name": "outputEncoding",
+          "optional": true,
+          "default": "BE_Encoding_Hex"
+        },
+        {
+          "name": "inputEncoding",
+          "optional": true,
+          "default": "BE_Encoding_Hex"
+        }
+      ],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "3.0.0",
+          "change": "First Release"
+        },
+        {
+          "version": "4.0.0",
+          "change": "Deprecated. Use internal *CryptAuthCode* instead."
+        },
+        {
+          "version": "4.2.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_HMAC.md"
+    },
+    {
+      "name": "BE_JSON_Encode",
+      "status": "deprecated",
+      "reason": "Superseded by native FileMaker JSON functions.",
+      "replaced_by": "JSONSetElement (native FM)",
+      "signature": "BE_JSON_Encode ( key ; { value ; type } )",
+      "parameters": [
+        {
+          "name": "key",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "optional": true
+        },
+        {
+          "name": "type",
+          "optional": true
+        }
+      ],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "2.1.0",
+          "change": "First Release"
+        },
+        {
+          "version": "4.0.0",
+          "change": "Deprecated. Use internal JSON functions instead."
+        },
+        {
+          "version": "4.2.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_JSON_Encode.md"
+    },
+    {
+      "name": "BE_JSON_Error_Description",
+      "status": "deprecated",
+      "reason": "Superseded by native FileMaker JSON functions.",
+      "replaced_by": "JSONFormatElements (native FM)",
+      "signature": "BE_JSON_Error_Description",
+      "parameters": [],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "2.1.0",
+          "change": "First Release"
+        },
+        {
+          "version": "4.0.0",
+          "change": "Deprecated. Use internal JSON functions instead."
+        },
+        {
+          "version": "5.0.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_JSON_Error_Description.md"
+    },
+    {
+      "name": "BE_JSONPath",
+      "status": "deprecated",
+      "reason": "Superseded by native FileMaker JSON functions.",
+      "replaced_by": "JSONGetElement (native FM)",
+      "signature": "BE_JSONPath ( json ; path )",
+      "parameters": [
+        {
+          "name": "json",
+          "optional": false
+        },
+        {
+          "name": "path",
+          "optional": false
+        }
+      ],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "2.1.0",
+          "change": "First Release"
+        },
+        {
+          "version": "4.0.0",
+          "change": "Deprecated. Use internal JSON functions instead."
+        },
+        {
+          "version": "5.0.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_JSONPath.md"
+    },
+    {
+      "name": "BE_XeroSetTokens",
+      "status": "removed",
+      "reason": "Xero integration removed from plugin.",
+      "replaced_by": null,
+      "signature": "BE_XeroSetTokens ( consumer_key ; private_key )",
+      "parameters": [
+        {
+          "name": "consumer_key",
+          "optional": false
+        },
+        {
+          "name": "private_key",
+          "optional": false
+        }
+      ],
+      "keywords": [
+        "Removed"
+      ],
+      "version_history": [
+        {
+          "version": "3.0.0",
+          "change": "First Release"
+        },
+        {
+          "version": "4.1.4",
+          "change": "Deprecated.  Xero no longer uses this auth mechanism, and has switched to a OAuth2 compatible process."
+        },
+        {
+          "version": "4.2.0",
+          "change": "Removed."
+        }
+      ],
+      "url": "https://raw.githubusercontent.com/GoyaPtyLtd/BaseElements-Plugin/main/docs/Functions/Deprecated/BE_XeroSetTokens.md"
+    }
+  ],
+  "constants": {
+    "note": "Named constants the plugin registers as zero-parameter functions — use them in calculations instead of magic numbers. Source: Constants.md (see meta.constants_source).",
+    "groups": [
+      {
+        "used_with": "BE_DialogDisplay (return value)",
+        "constants": [
+          {
+            "name": "BE_ButtonOK",
+            "value": 1,
+            "since_version": "1.0.0",
+            "description": "Returned by BE_DialogDisplay when the user clicks the default (OK) button.",
+            "doc_bug_note": "Upstream Constants.md describes this as the alternateButton result — a copy/paste error from the BE_ButtonAlternate row; value 1 is the default/OK button per BE_DialogDisplay's own doc page."
+          },
+          {
+            "name": "BE_ButtonCancel",
+            "value": 2,
+            "since_version": "1.0.0",
+            "description": "Returned by BE_DialogDisplay when the user clicks the cancelButton option."
+          },
+          {
+            "name": "BE_ButtonAlternate",
+            "value": 3,
+            "since_version": "1.0.0",
+            "description": "Returned by BE_DialogDisplay when the user clicks the alternateButton option."
+          }
+        ]
+      },
+      {
+        "used_with": "BE_FileListFolder (type parameter)",
+        "constants": [
+          {
+            "name": "BE_FileTypeAll",
+            "value": 0,
+            "since_version": "1.1.0",
+            "description": "List both files and folders."
+          },
+          {
+            "name": "BE_FileType_File",
+            "value": 1,
+            "since_version": "1.1.0",
+            "description": "List files only. (Upstream name really does mix underscore styles — BE_FileType_File vs BE_FileTypeAll/BE_FileTypeFolder.)"
+          },
+          {
+            "name": "BE_FileTypeFolder",
+            "value": 2,
+            "since_version": "1.1.0",
+            "description": "List folders only."
+          }
+        ]
+      },
+      {
+        "used_with": "BE_MessageDigest (encoding parameter)",
+        "constants": [
+          {
+            "name": "BE_EncodingHex",
+            "value": 1,
+            "since_version": "1.2.0",
+            "description": "Return the digest hex-encoded."
+          },
+          {
+            "name": "BE_EncodingBase64",
+            "value": 2,
+            "since_version": "1.2.0",
+            "description": "Return the digest Base64-encoded."
+          }
+        ]
+      },
+      {
+        "used_with": "BE_MessageDigest (algorithm parameter)",
+        "constants": [
+          {
+            "name": "BE_MessageDigestAlgorithmMD5",
+            "value": 1,
+            "since_version": "1.2.0",
+            "description": "Use the MD5 digest algorithm."
+          },
+          {
+            "name": "BE_MessageDigestAlgorithmMDC2",
+            "value": 4,
+            "since_version": "1.2.0",
+            "description": "Use the MDC2 digest algorithm."
+          }
+        ]
+      }
+    ]
+  }
+}

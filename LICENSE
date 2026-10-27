@@ -1,0 +1,37 @@
+SPDX-License-Identifier: CC-BY-4.0
+
+FileMaker Pro Agent Skills — independent adaptation, 2026.
+CadenceUX contributions: Darrin Southern / CadenceUX.
+
+The original instructions, documentation, routing logic and scripts in this project,
+and adaptations of CadenceUX material to the extent the contributors own those
+rights, are licensed under Creative Commons Attribution 4.0 International:
+https://creativecommons.org/licenses/by/4.0/
+Legal terms: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+You may share and adapt the licensed material, including commercially, provided you
+give appropriate credit, link the license, identify changes and impose no additional
+restrictions inconsistent with the license. This summary does not replace its terms.
+No warranty is provided. Nothing here grants trademark rights or implies endorsement.
+
+This license applies only to material the contributors can license. It does NOT
+relicense:
+
+- Claris FileMaker documentation, software, preview programs or trademarks;
+- vendor documentation, example code, plug-in binaries or other material owned by
+  Goya Pty Ltd, Monkeybread Software / Christian Schmitz Software GmbH, Beezwax
+  Datatools, Inc. or their licensors;
+- third-party libraries, community custom functions or linked pages.
+- supplied logo artwork and its resized variants, for which no separate
+  artwork licence or authorship metadata was supplied. See assets/README.md
+  in the repository; public redistribution rights remain to be confirmed.
+
+The BaseElements, MBS and bBox catalogs retain factual API metadata and CadenceUX
+CC BY 4.0 synthesis. Vendor prose and vendor example code are not redistributed;
+each entry links to the vendor page. The FileMaker catalogs retain factual metadata
+and adapted technical references; potentially Claris-derived worked examples were
+individually rewritten. See ATTRIBUTION.md and THIRD-PARTY.md for the source and
+rights record.
+
+Product names are used only to identify interoperability. No vendor or OpenAI
+endorsement is claimed.

@@ -1,0 +1,57 @@
+{
+  "review_date": "2026-10-27",
+  "automated_status": "PASS",
+  "python_files_checked": [
+    "scripts/audit.py",
+    "scripts/build.py",
+    "scripts/generate_assets.py",
+    "scripts/import_facts.py",
+    "scripts/import_plugin_catalogs.py",
+    "scripts/install_codex.py",
+    "scripts/lint_examples.py",
+    "scripts/validate.py",
+    "scripts/verify_plugin_provenance.py",
+    "scripts/verify_provenance.py",
+    "filemaker-pro/scripts/catalog.py",
+    "goya-be-plugin/scripts/catalog.py",
+    "beezwax-bbox-plugin/scripts/catalog.py",
+    "monkeybread-mbs-plugin/scripts/catalog.py",
+    "fmp-dev-orchestrator/scripts/route.py"
+  ],
+  "text_files_scanned": 135,
+  "artifacts": {
+    "plugin": {
+      "sha256": "66935395ae4841802baa3102fb9876fce0df9e43c7d0edb395e376c43e87cda0",
+      "bytes": 1016449
+    },
+    "skills": {
+      "filemaker-pro": {
+        "sha256": "1820fe6f8a22509645dc877489640a9c9945bf0f9e04ae4c8270f09151e095b3",
+        "bytes": 248718
+      },
+      "goya-be-plugin": {
+        "sha256": "bca992b8af66f8b7bc5375fd025125ce9e8f9040adc7b5b8c08e1247980f5ad7",
+        "bytes": 28625
+      },
+      "beezwax-bbox-plugin": {
+        "sha256": "9b40547e7f957b052977a55c5ba13516d1dc2f7320f753bac9e9f2b9ecbc5138",
+        "bytes": 27035
+      },
+      "monkeybread-mbs-plugin": {
+        "sha256": "ffa8cb3f61dce37ac51672e0229435e33a983a770fa6ee5efd448fbb20fd9fa2",
+        "bytes": 407700
+      },
+      "fmp-dev-orchestrator": {
+        "sha256": "3f16deddd5873b90e6008eecf7ced137ab71a4c5fc8303921db47259d9dd8e27",
+        "bytes": 12900
+      }
+    }
+  },
+  "findings": [],
+  "limits": [
+    "Pattern/AST checks cannot prove absence of malware, prompt injection or credentials.",
+    "No runtime sandbox, dependency-binary, Git history or legal audit.",
+    "Human review must inspect prompts, tool contracts and authorization behavior.",
+    "No ChatGPT/Codex host or FileMaker engine acceptance is performed."
+  ]
+}

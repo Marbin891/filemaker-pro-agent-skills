@@ -1,0 +1,20 @@
+{
+  "note": "Routing-contract cases for the deterministic helper and for live host evaluation. They do not measure model activation accuracy.",
+  "cases": [
+    {"prompt": "Fix this FileMaker calculation", "expected": ["filemaker-pro"]},
+    {"prompt": "Does Open Transaction work on FileMaker Server 19.6.1?", "expected": ["filemaker-pro"]},
+    {"prompt": "Review a FileMaker Data API integration", "expected": ["filemaker-pro"]},
+    {"prompt": "What parameters does BE_HTTP_POST take?", "expected": ["goya-be-plugin"]},
+    {"prompt": "Use BaseElements to write a file", "expected": ["goya-be-plugin"]},
+    {"prompt": "Which MBS function creates a PDF?", "expected": ["monkeybread-mbs-plugin"]},
+    {"prompt": "Is DynaPDF included in the MBS licence?", "expected": ["monkeybread-mbs-plugin"]},
+    {"prompt": "Why does bBox_Zsh fail in a server script?", "expected": ["beezwax-bbox-plugin", "filemaker-pro"]},
+    {"prompt": "Compare BE_HTTP_POST and bBox_Curl for a FileMaker HTTP call", "expected": ["goya-be-plugin", "beezwax-bbox-plugin"]},
+    {"prompt": "Write a FileMaker script that calls MBS", "expected": ["monkeybread-mbs-plugin", "filemaker-pro"]},
+    {"prompt": "Explain bBox", "expected": ["beezwax-bbox-plugin"]},
+    {"prompt": "Read an Excel file with MBS XL", "expected": ["monkeybread-mbs-plugin"]},
+    {"prompt": "Optimize PostgreSQL", "expected": []},
+    {"prompt": "Format generic JSON", "expected": []},
+    {"prompt": "Write an Excel formula", "expected": []}
+  ]
+}

@@ -1,0 +1,2741 @@
+{
+  "skill": "monkeybread-mbs-plugin",
+  "version": "2.0.0",
+  "plugin_name": "MBS FileMaker Plugin",
+  "plugin_version_released_at_build": "16.4",
+  "site_function_count_at_build": 7971,
+  "catalog_function_count": 7859,
+  "prerelease_function_count": 0,
+  "prerelease_meaning": "The vendor's doc site documents functions for in-development plugin versions ahead of release. prerelease: true means the function's version_introduced was higher than plugin_version_released_at_build when this catalog was built -- it exists in the docs but may not be in the shipping plugin yet. Once that version ships, the flag is stale until the next rebuild.",
+  "deprecated_function_count": 400,
+  "deprecated_meaning": "Listed on the vendor's deprecated functions page (https://www.mbsplugins.eu/deprecated.md) at build time. Deprecated functions still exist and run, but the vendor recommends a replacement -- check the function's own doc page for what to use instead.",
+  "count_note": "catalog_function_count is derived by enumerating every function link on the vendor's component_X.md pages plus the deprecated.md page. The site's index.md headline counter (site_function_count_at_build) is higher by a small residual not linked from any listing page; the enumerated set is a strict superset of the previous docset-based catalog and includes every function on the newest newinversionNNN.md pages.",
+  "vendor": "Monkeybread Software (Christian Schmitz)",
+  "source": "Live crawl of https://www.mbsplugins.eu (enumerated via the markdown mirror index.md/component_X.md, detail parsed from the .shtml pages).",
+  "license": "comprehensive catalog -- every function tagged with a status field (free / licensed / unknown_license). See status_counts and status_meaning below.",
+  "status_meaning": {
+    "free": "Vendor doc page states this function is free to use (works unregistered).",
+    "licensed": "Vendor doc page states this function checks for a license (requires the base MBS plugin to be registered).",
+    "unknown_license": "Vendor doc page has neither marker. Status genuinely unconfirmed; verify against the live url before relying on this being free or licensed."
+  },
+  "addon_components": {
+    "DynaPDF": "Requires a separate DynaPDF licence (Starter, Lite, Pro or Enterprise, plus an optional PDF/A add-on) on top of the base MBS plugin. Check current pricing with Monkeybread.",
+    "XL": "Requires a separate LibXL licence on top of the base MBS plugin. Check current pricing with Monkeybread.",
+    "Saxon": "Requires a separate Saxon-PE or Saxon-EE licence on top of the base MBS plugin. Check current pricing with Monkeybread."
+  },
+  "url_pattern": "https://www.mbsplugins.eu/{FunctionNameWithoutDots}.md",
+  "index_url": "https://www.mbsplugins.eu/index.md",
+  "release_notes_url": "https://www.monkeybreadsoftware.com/filemaker/releasenotes.shtml",
+  "total_function_count": 7859,
+  "status_counts": {
+    "free": 2586,
+    "licensed": 4698,
+    "unknown_license": 575
+  },
+  "upstream_skill_version": "2.0.1",
+  "adapted_from": "CadenceUX monkeybread-mbs-plugin 2.0.1",
+  "source_commit": "946bdca12c2117defb4dc2b8959ee00f04c74086",
+  "content_policy": {
+    "retained": "Factual API metadata and CadenceUX CC BY 4.0 synthesis",
+    "omitted": "Vendor documentation prose, vendor parameter descriptions, vendor notes and vendor example code",
+    "reason": "The vendor documentation sites do not declare a redistribution licence. Consult the linked vendor page for full prose and examples."
+  },
+  "field_note": "Each entry retains signature, parameter names/flags, result, version introduced, platform support, licensing status, deprecation flag, see-also links and the vendor URL. Descriptions and examples are not copied; see the URL.",
+  "components": {
+    "DynaPDF": {
+      "file": "references/group-01.json",
+      "function_count": 664,
+      "status_counts": {
+        "free": 22,
+        "licensed": 631,
+        "unknown_license": 11
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 4
+    },
+    "CURL": {
+      "file": "references/group-02.json",
+      "function_count": 459,
+      "status_counts": {
+        "free": 62,
+        "licensed": 141,
+        "unknown_license": 256
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 17
+    },
+    "XL": {
+      "file": "references/group-03.json",
+      "function_count": 471,
+      "status_counts": {
+        "free": 4,
+        "licensed": 364,
+        "unknown_license": 103
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "GMImage": {
+      "file": "references/group-04.json",
+      "function_count": 366,
+      "status_counts": {
+        "free": 8,
+        "licensed": 350,
+        "unknown_license": 8
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "AddToErrorLog": {
+      "file": "references/group-05.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "App": {
+      "file": "references/group-05.json",
+      "function_count": 19,
+      "status_counts": {
+        "free": 6,
+        "licensed": 13,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "Clipboard": {
+      "file": "references/group-05.json",
+      "function_count": 21,
+      "status_counts": {
+        "free": 3,
+        "licensed": 18,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CompileTime": {
+      "file": "references/group-05.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "DirectoryWatcher": {
+      "file": "references/group-05.json",
+      "function_count": 13,
+      "status_counts": {
+        "free": 6,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "FM": {
+      "file": "references/group-05.json",
+      "function_count": 120,
+      "status_counts": {
+        "free": 53,
+        "licensed": 67,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 10
+    },
+    "FSEvents": {
+      "file": "references/group-05.json",
+      "function_count": 30,
+      "status_counts": {
+        "free": 12,
+        "licensed": 18,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsClient": {
+      "file": "references/group-05.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "MessageComposer": {
+      "file": "references/group-05.json",
+      "function_count": 23,
+      "status_counts": {
+        "free": 16,
+        "licensed": 6,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Mutex": {
+      "file": "references/group-05.json",
+      "function_count": 10,
+      "status_counts": {
+        "free": 4,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "System": {
+      "file": "references/group-05.json",
+      "function_count": 4,
+      "status_counts": {
+        "free": 4,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WIA": {
+      "file": "references/group-05.json",
+      "function_count": 21,
+      "status_counts": {
+        "free": 8,
+        "licensed": 13,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WinPhotoAcquire": {
+      "file": "references/group-05.json",
+      "function_count": 6,
+      "status_counts": {
+        "free": 2,
+        "licensed": 4,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "AVAsset": {
+      "file": "references/group-06.json",
+      "function_count": 29,
+      "status_counts": {
+        "free": 9,
+        "licensed": 20,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CNGroup": {
+      "file": "references/group-06.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 0,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Hash": {
+      "file": "references/group-06.json",
+      "function_count": 15,
+      "status_counts": {
+        "free": 8,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsMacOS": {
+      "file": "references/group-06.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "PrintDialog": {
+      "file": "references/group-06.json",
+      "function_count": 47,
+      "status_counts": {
+        "free": 28,
+        "licensed": 19,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 6
+    },
+    "Register": {
+      "file": "references/group-06.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ServerSocket": {
+      "file": "references/group-06.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 3,
+        "licensed": 5,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 8
+    },
+    "ServiceProvider": {
+      "file": "references/group-06.json",
+      "function_count": 3,
+      "status_counts": {
+        "free": 3,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SocialRequest": {
+      "file": "references/group-06.json",
+      "function_count": 19,
+      "status_counts": {
+        "free": 19,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 19
+    },
+    "Toolbar": {
+      "file": "references/group-06.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 0,
+        "licensed": 8,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "USB": {
+      "file": "references/group-06.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 1,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Variable": {
+      "file": "references/group-06.json",
+      "function_count": 16,
+      "status_counts": {
+        "free": 0,
+        "licensed": 16,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WebRequest": {
+      "file": "references/group-06.json",
+      "function_count": 24,
+      "status_counts": {
+        "free": 11,
+        "licensed": 13,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WebView": {
+      "file": "references/group-06.json",
+      "function_count": 158,
+      "status_counts": {
+        "free": 10,
+        "licensed": 130,
+        "unknown_license": 18
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 6
+    },
+    "AppleScript": {
+      "file": "references/group-07.json",
+      "function_count": 13,
+      "status_counts": {
+        "free": 4,
+        "licensed": 9,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "BinaryFile": {
+      "file": "references/group-07.json",
+      "function_count": 22,
+      "status_counts": {
+        "free": 3,
+        "licensed": 19,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ColorPanel": {
+      "file": "references/group-07.json",
+      "function_count": 14,
+      "status_counts": {
+        "free": 5,
+        "licensed": 9,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IKPictureTaker": {
+      "file": "references/group-07.json",
+      "function_count": 31,
+      "status_counts": {
+        "free": 0,
+        "licensed": 31,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "ImagePicker": {
+      "file": "references/group-07.json",
+      "function_count": 50,
+      "status_counts": {
+        "free": 34,
+        "licensed": 15,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ImagePlayground": {
+      "file": "references/group-07.json",
+      "function_count": 13,
+      "status_counts": {
+        "free": 0,
+        "licensed": 10,
+        "unknown_license": 3
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsRegistered": {
+      "file": "references/group-07.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Overlay": {
+      "file": "references/group-07.json",
+      "function_count": 45,
+      "status_counts": {
+        "free": 4,
+        "licensed": 2,
+        "unknown_license": 39
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SendCommand": {
+      "file": "references/group-07.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "SQL": {
+      "file": "references/group-07.json",
+      "function_count": 143,
+      "status_counts": {
+        "free": 128,
+        "licensed": 9,
+        "unknown_license": 6
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Unregister": {
+      "file": "references/group-07.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "UUID": {
+      "file": "references/group-07.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 0,
+        "licensed": 8,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WebPolicyDelegate": {
+      "file": "references/group-07.json",
+      "function_count": 3,
+      "status_counts": {
+        "free": 0,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WinPDF": {
+      "file": "references/group-07.json",
+      "function_count": 15,
+      "status_counts": {
+        "free": 3,
+        "licensed": 9,
+        "unknown_license": 3
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ECKey": {
+      "file": "references/group-08.json",
+      "function_count": 20,
+      "status_counts": {
+        "free": 5,
+        "licensed": 15,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Encryption": {
+      "file": "references/group-08.json",
+      "function_count": 16,
+      "status_counts": {
+        "free": 5,
+        "licensed": 11,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 8
+    },
+    "EventMonitor": {
+      "file": "references/group-08.json",
+      "function_count": 10,
+      "status_counts": {
+        "free": 4,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Events": {
+      "file": "references/group-08.json",
+      "function_count": 178,
+      "status_counts": {
+        "free": 12,
+        "licensed": 166,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "FontManager": {
+      "file": "references/group-08.json",
+      "function_count": 4,
+      "status_counts": {
+        "free": 0,
+        "licensed": 4,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IKSlideShow": {
+      "file": "references/group-08.json",
+      "function_count": 27,
+      "status_counts": {
+        "free": 18,
+        "licensed": 9,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsError": {
+      "file": "references/group-08.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsWindows": {
+      "file": "references/group-08.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "MediaLibraryBrowser": {
+      "file": "references/group-08.json",
+      "function_count": 6,
+      "status_counts": {
+        "free": 0,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "PhotoPicker": {
+      "file": "references/group-08.json",
+      "function_count": 21,
+      "status_counts": {
+        "free": 18,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "RichText": {
+      "file": "references/group-08.json",
+      "function_count": 30,
+      "status_counts": {
+        "free": 15,
+        "licensed": 15,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "RSA": {
+      "file": "references/group-08.json",
+      "function_count": 12,
+      "status_counts": {
+        "free": 4,
+        "licensed": 8,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SerialPort": {
+      "file": "references/group-08.json",
+      "function_count": 45,
+      "status_counts": {
+        "free": 33,
+        "licensed": 12,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SpeechRecognition": {
+      "file": "references/group-08.json",
+      "function_count": 7,
+      "status_counts": {
+        "free": 1,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CFunction": {
+      "file": "references/group-09.json",
+      "function_count": 15,
+      "status_counts": {
+        "free": 4,
+        "licensed": 11,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "EnvironmentVariables": {
+      "file": "references/group-09.json",
+      "function_count": 7,
+      "status_counts": {
+        "free": 7,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "GetSystemUIMode": {
+      "file": "references/group-09.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "GetSystemUIModeOptions": {
+      "file": "references/group-09.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ImageView": {
+      "file": "references/group-09.json",
+      "function_count": 20,
+      "status_counts": {
+        "free": 8,
+        "licensed": 12,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsServer": {
+      "file": "references/group-09.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "JSON": {
+      "file": "references/group-09.json",
+      "function_count": 108,
+      "status_counts": {
+        "free": 38,
+        "licensed": 66,
+        "unknown_license": 4
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ListDialog": {
+      "file": "references/group-09.json",
+      "function_count": 75,
+      "status_counts": {
+        "free": 72,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Math": {
+      "file": "references/group-09.json",
+      "function_count": 39,
+      "status_counts": {
+        "free": 38,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "MountNotification": {
+      "file": "references/group-09.json",
+      "function_count": 2,
+      "status_counts": {
+        "free": 2,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "RemoteControl": {
+      "file": "references/group-09.json",
+      "function_count": 25,
+      "status_counts": {
+        "free": 7,
+        "licensed": 18,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Saxon": {
+      "file": "references/group-09.json",
+      "function_count": 30,
+      "status_counts": {
+        "free": 14,
+        "licensed": 6,
+        "unknown_license": 10
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Social": {
+      "file": "references/group-09.json",
+      "function_count": 4,
+      "status_counts": {
+        "free": 4,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 4
+    },
+    "Vision": {
+      "file": "references/group-09.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 0,
+        "licensed": 8,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WindowsUserNotification": {
+      "file": "references/group-09.json",
+      "function_count": 33,
+      "status_counts": {
+        "free": 33,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ClearRegistration": {
+      "file": "references/group-10.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Container": {
+      "file": "references/group-10.json",
+      "function_count": 40,
+      "status_counts": {
+        "free": 11,
+        "licensed": 25,
+        "unknown_license": 4
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Debugger": {
+      "file": "references/group-10.json",
+      "function_count": 7,
+      "status_counts": {
+        "free": 0,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "EmailParser": {
+      "file": "references/group-10.json",
+      "function_count": 30,
+      "status_counts": {
+        "free": 28,
+        "licensed": 2,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "iOSDevice": {
+      "file": "references/group-10.json",
+      "function_count": 14,
+      "status_counts": {
+        "free": 14,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "LCMS": {
+      "file": "references/group-10.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "MongoDB": {
+      "file": "references/group-10.json",
+      "function_count": 128,
+      "status_counts": {
+        "free": 24,
+        "licensed": 101,
+        "unknown_license": 3
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 3
+    },
+    "PKCS12": {
+      "file": "references/group-10.json",
+      "function_count": 11,
+      "status_counts": {
+        "free": 2,
+        "licensed": 9,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "PortMidi": {
+      "file": "references/group-10.json",
+      "function_count": 27,
+      "status_counts": {
+        "free": 4,
+        "licensed": 23,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Process": {
+      "file": "references/group-10.json",
+      "function_count": 16,
+      "status_counts": {
+        "free": 3,
+        "licensed": 13,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Speech": {
+      "file": "references/group-10.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 5,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "TextView": {
+      "file": "references/group-10.json",
+      "function_count": 57,
+      "status_counts": {
+        "free": 5,
+        "licensed": 52,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WebDownloadDelegate": {
+      "file": "references/group-10.json",
+      "function_count": 21,
+      "status_counts": {
+        "free": 18,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WindowsLocation": {
+      "file": "references/group-10.json",
+      "function_count": 4,
+      "status_counts": {
+        "free": 0,
+        "licensed": 4,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WMFP": {
+      "file": "references/group-10.json",
+      "function_count": 37,
+      "status_counts": {
+        "free": 2,
+        "licensed": 31,
+        "unknown_license": 4
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Audit": {
+      "file": "references/group-11.json",
+      "function_count": 41,
+      "status_counts": {
+        "free": 32,
+        "licensed": 8,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "FileDialog": {
+      "file": "references/group-11.json",
+      "function_count": 38,
+      "status_counts": {
+        "free": 32,
+        "licensed": 5,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "iOSKeyboard": {
+      "file": "references/group-11.json",
+      "function_count": 9,
+      "status_counts": {
+        "free": 0,
+        "licensed": 9,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Is64bit": {
+      "file": "references/group-11.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "JavaScript": {
+      "file": "references/group-11.json",
+      "function_count": 19,
+      "status_counts": {
+        "free": 3,
+        "licensed": 16,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Modbus": {
+      "file": "references/group-11.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "PKey": {
+      "file": "references/group-11.json",
+      "function_count": 12,
+      "status_counts": {
+        "free": 2,
+        "licensed": 10,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Platform": {
+      "file": "references/group-11.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "QLPreviewPanel": {
+      "file": "references/group-11.json",
+      "function_count": 24,
+      "status_counts": {
+        "free": 2,
+        "licensed": 22,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "QuartzFilterManager": {
+      "file": "references/group-11.json",
+      "function_count": 3,
+      "status_counts": {
+        "free": 0,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SmartCard": {
+      "file": "references/group-11.json",
+      "function_count": 26,
+      "status_counts": {
+        "free": 3,
+        "licensed": 23,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SocialComposer": {
+      "file": "references/group-11.json",
+      "function_count": 21,
+      "status_counts": {
+        "free": 21,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 21
+    },
+    "SyntaxColoring": {
+      "file": "references/group-11.json",
+      "function_count": 133,
+      "status_counts": {
+        "free": 133,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 11
+    },
+    "TOTP": {
+      "file": "references/group-11.json",
+      "function_count": 4,
+      "status_counts": {
+        "free": 4,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "UNNotification": {
+      "file": "references/group-11.json",
+      "function_count": 54,
+      "status_counts": {
+        "free": 54,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WindowsOCR": {
+      "file": "references/group-11.json",
+      "function_count": 15,
+      "status_counts": {
+        "free": 8,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Barcode": {
+      "file": "references/group-12.json",
+      "function_count": 23,
+      "status_counts": {
+        "free": 13,
+        "licensed": 10,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CGImageSource": {
+      "file": "references/group-12.json",
+      "function_count": 21,
+      "status_counts": {
+        "free": 3,
+        "licensed": 18,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "DNSLookup": {
+      "file": "references/group-12.json",
+      "function_count": 11,
+      "status_counts": {
+        "free": 2,
+        "licensed": 9,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "DragDrop": {
+      "file": "references/group-12.json",
+      "function_count": 53,
+      "status_counts": {
+        "free": 17,
+        "licensed": 30,
+        "unknown_license": 6
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "IKDeviceBrowserPanel": {
+      "file": "references/group-12.json",
+      "function_count": 30,
+      "status_counts": {
+        "free": 16,
+        "licensed": 14,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ImageCapture": {
+      "file": "references/group-12.json",
+      "function_count": 32,
+      "status_counts": {
+        "free": 0,
+        "licensed": 29,
+        "unknown_license": 3
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Log": {
+      "file": "references/group-12.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Notification": {
+      "file": "references/group-12.json",
+      "function_count": 6,
+      "status_counts": {
+        "free": 0,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Printer": {
+      "file": "references/group-12.json",
+      "function_count": 17,
+      "status_counts": {
+        "free": 11,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SetSystemUIMode": {
+      "file": "references/group-12.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "StoreRegistration": {
+      "file": "references/group-12.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "VersionAutoUpdate": {
+      "file": "references/group-12.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Window": {
+      "file": "references/group-12.json",
+      "function_count": 128,
+      "status_counts": {
+        "free": 26,
+        "licensed": 102,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 10
+    },
+    "WindowsML": {
+      "file": "references/group-12.json",
+      "function_count": 19,
+      "status_counts": {
+        "free": 13,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WMIQuery": {
+      "file": "references/group-12.json",
+      "function_count": 10,
+      "status_counts": {
+        "free": 2,
+        "licensed": 8,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Bonjour": {
+      "file": "references/group-13.json",
+      "function_count": 4,
+      "status_counts": {
+        "free": 0,
+        "licensed": 4,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CNContact": {
+      "file": "references/group-13.json",
+      "function_count": 22,
+      "status_counts": {
+        "free": 0,
+        "licensed": 9,
+        "unknown_license": 13
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CoreImage": {
+      "file": "references/group-13.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "EIDSDK": {
+      "file": "references/group-13.json",
+      "function_count": 36,
+      "status_counts": {
+        "free": 35,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ErrorLog": {
+      "file": "references/group-13.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Files": {
+      "file": "references/group-13.json",
+      "function_count": 94,
+      "status_counts": {
+        "free": 17,
+        "licensed": 73,
+        "unknown_license": 4
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "MouseCursor": {
+      "file": "references/group-13.json",
+      "function_count": 4,
+      "status_counts": {
+        "free": 1,
+        "licensed": 1,
+        "unknown_license": 2
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Phidget": {
+      "file": "references/group-13.json",
+      "function_count": 31,
+      "status_counts": {
+        "free": 15,
+        "licensed": 10,
+        "unknown_license": 6
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "PKCS7": {
+      "file": "references/group-13.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 2,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Preview": {
+      "file": "references/group-13.json",
+      "function_count": 15,
+      "status_counts": {
+        "free": 8,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Registry": {
+      "file": "references/group-13.json",
+      "function_count": 10,
+      "status_counts": {
+        "free": 0,
+        "licensed": 10,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Screen": {
+      "file": "references/group-13.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 0,
+        "licensed": 8,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Shell": {
+      "file": "references/group-13.json",
+      "function_count": 56,
+      "status_counts": {
+        "free": 23,
+        "licensed": 33,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "UserNotification": {
+      "file": "references/group-13.json",
+      "function_count": 49,
+      "status_counts": {
+        "free": 49,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WebHook": {
+      "file": "references/group-13.json",
+      "function_count": 25,
+      "status_counts": {
+        "free": 11,
+        "licensed": 14,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Backdrop": {
+      "file": "references/group-14.json",
+      "function_count": 2,
+      "status_counts": {
+        "free": 2,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CoreLocation": {
+      "file": "references/group-14.json",
+      "function_count": 40,
+      "status_counts": {
+        "free": 5,
+        "licensed": 35,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Font": {
+      "file": "references/group-14.json",
+      "function_count": 5,
+      "status_counts": {
+        "free": 1,
+        "licensed": 4,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Keychain": {
+      "file": "references/group-14.json",
+      "function_count": 10,
+      "status_counts": {
+        "free": 0,
+        "licensed": 10,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "LDAP": {
+      "file": "references/group-14.json",
+      "function_count": 37,
+      "status_counts": {
+        "free": 14,
+        "licensed": 23,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 5
+    },
+    "List": {
+      "file": "references/group-14.json",
+      "function_count": 54,
+      "status_counts": {
+        "free": 0,
+        "licensed": 52,
+        "unknown_license": 2
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Plugin": {
+      "file": "references/group-14.json",
+      "function_count": 56,
+      "status_counts": {
+        "free": 50,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Preferences": {
+      "file": "references/group-14.json",
+      "function_count": 9,
+      "status_counts": {
+        "free": 0,
+        "licensed": 9,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ScriptWorkspace": {
+      "file": "references/group-14.json",
+      "function_count": 37,
+      "status_counts": {
+        "free": 10,
+        "licensed": 27,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SharedMemory": {
+      "file": "references/group-14.json",
+      "function_count": 5,
+      "status_counts": {
+        "free": 0,
+        "licensed": 5,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SharingPanel": {
+      "file": "references/group-14.json",
+      "function_count": 24,
+      "status_counts": {
+        "free": 13,
+        "licensed": 11,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ShowURL": {
+      "file": "references/group-14.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "TAPI": {
+      "file": "references/group-14.json",
+      "function_count": 39,
+      "status_counts": {
+        "free": 16,
+        "licensed": 23,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Translation": {
+      "file": "references/group-14.json",
+      "function_count": 15,
+      "status_counts": {
+        "free": 9,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Validate": {
+      "file": "references/group-14.json",
+      "function_count": 3,
+      "status_counts": {
+        "free": 3,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 3
+    },
+    "ClearErrors": {
+      "file": "references/group-15.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CLGeocoder": {
+      "file": "references/group-15.json",
+      "function_count": 12,
+      "status_counts": {
+        "free": 6,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CompileDate": {
+      "file": "references/group-15.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ContinuityCamera": {
+      "file": "references/group-15.json",
+      "function_count": 10,
+      "status_counts": {
+        "free": 3,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Dictionary": {
+      "file": "references/group-15.json",
+      "function_count": 36,
+      "status_counts": {
+        "free": 5,
+        "licensed": 31,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Icon": {
+      "file": "references/group-15.json",
+      "function_count": 4,
+      "status_counts": {
+        "free": 0,
+        "licensed": 4,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Java": {
+      "file": "references/group-15.json",
+      "function_count": 22,
+      "status_counts": {
+        "free": 7,
+        "licensed": 15,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Msgbox": {
+      "file": "references/group-15.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "NetworkInterfaces": {
+      "file": "references/group-15.json",
+      "function_count": 5,
+      "status_counts": {
+        "free": 0,
+        "licensed": 5,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Path": {
+      "file": "references/group-15.json",
+      "function_count": 9,
+      "status_counts": {
+        "free": 9,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "PList": {
+      "file": "references/group-15.json",
+      "function_count": 3,
+      "status_counts": {
+        "free": 0,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "RunTask": {
+      "file": "references/group-15.json",
+      "function_count": 21,
+      "status_counts": {
+        "free": 2,
+        "licensed": 19,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 21
+    },
+    "SystemInfo": {
+      "file": "references/group-15.json",
+      "function_count": 87,
+      "status_counts": {
+        "free": 86,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 18
+    },
+    "Text": {
+      "file": "references/group-15.json",
+      "function_count": 87,
+      "status_counts": {
+        "free": 27,
+        "licensed": 59,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "UnZipFile": {
+      "file": "references/group-15.json",
+      "function_count": 30,
+      "status_counts": {
+        "free": 0,
+        "licensed": 30,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 3
+    },
+    "WordFile": {
+      "file": "references/group-15.json",
+      "function_count": 34,
+      "status_counts": {
+        "free": 6,
+        "licensed": 28,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Addressbook": {
+      "file": "references/group-16.json",
+      "function_count": 85,
+      "status_counts": {
+        "free": 36,
+        "licensed": 49,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 85
+    },
+    "Archive": {
+      "file": "references/group-16.json",
+      "function_count": 23,
+      "status_counts": {
+        "free": 7,
+        "licensed": 15,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "DocumentPicker": {
+      "file": "references/group-16.json",
+      "function_count": 10,
+      "status_counts": {
+        "free": 7,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Email": {
+      "file": "references/group-16.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "FoundationModels": {
+      "file": "references/group-16.json",
+      "function_count": 19,
+      "status_counts": {
+        "free": 13,
+        "licensed": 5,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "GZipFile": {
+      "file": "references/group-16.json",
+      "function_count": 2,
+      "status_counts": {
+        "free": 0,
+        "licensed": 2,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "HealthKit": {
+      "file": "references/group-16.json",
+      "function_count": 10,
+      "status_counts": {
+        "free": 10,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "HotKey": {
+      "file": "references/group-16.json",
+      "function_count": 29,
+      "status_counts": {
+        "free": 10,
+        "licensed": 19,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsIOS": {
+      "file": "references/group-16.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsIOSSimulator": {
+      "file": "references/group-16.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Llama": {
+      "file": "references/group-16.json",
+      "function_count": 28,
+      "status_counts": {
+        "free": 9,
+        "licensed": 4,
+        "unknown_license": 15
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "MenuItem": {
+      "file": "references/group-16.json",
+      "function_count": 76,
+      "status_counts": {
+        "free": 36,
+        "licensed": 40,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 2
+    },
+    "OCR": {
+      "file": "references/group-16.json",
+      "function_count": 26,
+      "status_counts": {
+        "free": 20,
+        "licensed": 6,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ProcessActivity": {
+      "file": "references/group-16.json",
+      "function_count": 5,
+      "status_counts": {
+        "free": 3,
+        "licensed": 2,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Twain": {
+      "file": "references/group-16.json",
+      "function_count": 73,
+      "status_counts": {
+        "free": 50,
+        "licensed": 23,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WindowTransition": {
+      "file": "references/group-16.json",
+      "function_count": 3,
+      "status_counts": {
+        "free": 3,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 3
+    },
+    "Calendar": {
+      "file": "references/group-17.json",
+      "function_count": 99,
+      "status_counts": {
+        "free": 0,
+        "licensed": 99,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 99
+    },
+    "CGPSConverter": {
+      "file": "references/group-17.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "CLibrary": {
+      "file": "references/group-17.json",
+      "function_count": 9,
+      "status_counts": {
+        "free": 4,
+        "licensed": 5,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CNContactStore": {
+      "file": "references/group-17.json",
+      "function_count": 40,
+      "status_counts": {
+        "free": 4,
+        "licensed": 36,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CoreML": {
+      "file": "references/group-17.json",
+      "function_count": 20,
+      "status_counts": {
+        "free": 5,
+        "licensed": 15,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "DialogModifications": {
+      "file": "references/group-17.json",
+      "function_count": 5,
+      "status_counts": {
+        "free": 2,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "JS": {
+      "file": "references/group-17.json",
+      "function_count": 24,
+      "status_counts": {
+        "free": 2,
+        "licensed": 22,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Menubar": {
+      "file": "references/group-17.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 0,
+        "licensed": 8,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Schedule": {
+      "file": "references/group-17.json",
+      "function_count": 44,
+      "status_counts": {
+        "free": 6,
+        "licensed": 38,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ScreenshotRect": {
+      "file": "references/group-17.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SNMP": {
+      "file": "references/group-17.json",
+      "function_count": 3,
+      "status_counts": {
+        "free": 3,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 3
+    },
+    "TouchBar": {
+      "file": "references/group-17.json",
+      "function_count": 24,
+      "status_counts": {
+        "free": 8,
+        "licensed": 16,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WinSendMail": {
+      "file": "references/group-17.json",
+      "function_count": 21,
+      "status_counts": {
+        "free": 4,
+        "licensed": 17,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 1
+    },
+    "X509": {
+      "file": "references/group-17.json",
+      "function_count": 17,
+      "status_counts": {
+        "free": 2,
+        "licensed": 15,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "XML": {
+      "file": "references/group-17.json",
+      "function_count": 48,
+      "status_counts": {
+        "free": 19,
+        "licensed": 28,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "AVExport": {
+      "file": "references/group-18.json",
+      "function_count": 26,
+      "status_counts": {
+        "free": 4,
+        "licensed": 22,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CNContainer": {
+      "file": "references/group-18.json",
+      "function_count": 2,
+      "status_counts": {
+        "free": 0,
+        "licensed": 0,
+        "unknown_license": 2
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "HadErrors": {
+      "file": "references/group-18.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IBAN": {
+      "file": "references/group-18.json",
+      "function_count": 7,
+      "status_counts": {
+        "free": 0,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IKScannerDevicePanel": {
+      "file": "references/group-18.json",
+      "function_count": 32,
+      "status_counts": {
+        "free": 21,
+        "licensed": 11,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsIOSDevice": {
+      "file": "references/group-18.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsLinux": {
+      "file": "references/group-18.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "MapView": {
+      "file": "references/group-18.json",
+      "function_count": 99,
+      "status_counts": {
+        "free": 62,
+        "licensed": 14,
+        "unknown_license": 23
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 2
+    },
+    "Menu": {
+      "file": "references/group-18.json",
+      "function_count": 37,
+      "status_counts": {
+        "free": 19,
+        "licensed": 17,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "MetaDataQuery": {
+      "file": "references/group-18.json",
+      "function_count": 23,
+      "status_counts": {
+        "free": 7,
+        "licensed": 16,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "PDFKit": {
+      "file": "references/group-18.json",
+      "function_count": 53,
+      "status_counts": {
+        "free": 12,
+        "licensed": 41,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ProgressDialog": {
+      "file": "references/group-18.json",
+      "function_count": 38,
+      "status_counts": {
+        "free": 10,
+        "licensed": 28,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SendMail": {
+      "file": "references/group-18.json",
+      "function_count": 42,
+      "status_counts": {
+        "free": 2,
+        "licensed": 36,
+        "unknown_license": 4
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Time": {
+      "file": "references/group-18.json",
+      "function_count": 8,
+      "status_counts": {
+        "free": 8,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Trace": {
+      "file": "references/group-18.json",
+      "function_count": 17,
+      "status_counts": {
+        "free": 17,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Updater": {
+      "file": "references/group-18.json",
+      "function_count": 11,
+      "status_counts": {
+        "free": 0,
+        "licensed": 11,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CF": {
+      "file": "references/group-19.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CNContactPicker": {
+      "file": "references/group-19.json",
+      "function_count": 7,
+      "status_counts": {
+        "free": 6,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "CUPS": {
+      "file": "references/group-19.json",
+      "function_count": 25,
+      "status_counts": {
+        "free": 3,
+        "licensed": 22,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 16
+    },
+    "Dialog": {
+      "file": "references/group-19.json",
+      "function_count": 54,
+      "status_counts": {
+        "free": 47,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "FileDialogWatcher": {
+      "file": "references/group-19.json",
+      "function_count": 2,
+      "status_counts": {
+        "free": 0,
+        "licensed": 2,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Folders": {
+      "file": "references/group-19.json",
+      "function_count": 20,
+      "status_counts": {
+        "free": 20,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsMobile": {
+      "file": "references/group-19.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Matrix": {
+      "file": "references/group-19.json",
+      "function_count": 64,
+      "status_counts": {
+        "free": 6,
+        "licensed": 58,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Python": {
+      "file": "references/group-19.json",
+      "function_count": 38,
+      "status_counts": {
+        "free": 25,
+        "licensed": 4,
+        "unknown_license": 9
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "RegEx": {
+      "file": "references/group-19.json",
+      "function_count": 26,
+      "status_counts": {
+        "free": 10,
+        "licensed": 16,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SchemaChange": {
+      "file": "references/group-19.json",
+      "function_count": 7,
+      "status_counts": {
+        "free": 3,
+        "licensed": 3,
+        "unknown_license": 1
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Screenshot": {
+      "file": "references/group-19.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 0,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SharingService": {
+      "file": "references/group-19.json",
+      "function_count": 9,
+      "status_counts": {
+        "free": 0,
+        "licensed": 9,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Socket": {
+      "file": "references/group-19.json",
+      "function_count": 76,
+      "status_counts": {
+        "free": 25,
+        "licensed": 51,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "SSH": {
+      "file": "references/group-19.json",
+      "function_count": 51,
+      "status_counts": {
+        "free": 6,
+        "licensed": 45,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "StoreKit": {
+      "file": "references/group-19.json",
+      "function_count": 17,
+      "status_counts": {
+        "free": 10,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "AVPlayer": {
+      "file": "references/group-20.json",
+      "function_count": 47,
+      "status_counts": {
+        "free": 13,
+        "licensed": 34,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "AVRecorder": {
+      "file": "references/group-20.json",
+      "function_count": 47,
+      "status_counts": {
+        "free": 10,
+        "licensed": 37,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "DocumentCameraScan": {
+      "file": "references/group-20.json",
+      "function_count": 12,
+      "status_counts": {
+        "free": 7,
+        "licensed": 5,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "GameKit": {
+      "file": "references/group-20.json",
+      "function_count": 97,
+      "status_counts": {
+        "free": 97,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "iOSApp": {
+      "file": "references/group-20.json",
+      "function_count": 40,
+      "status_counts": {
+        "free": 16,
+        "licensed": 24,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "IsRuntime": {
+      "file": "references/group-20.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "MailComposer": {
+      "file": "references/group-20.json",
+      "function_count": 25,
+      "status_counts": {
+        "free": 18,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "MarkDown": {
+      "file": "references/group-20.json",
+      "function_count": 9,
+      "status_counts": {
+        "free": 2,
+        "licensed": 7,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "NSEventFilter": {
+      "file": "references/group-20.json",
+      "function_count": 3,
+      "status_counts": {
+        "free": 0,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "PageSetupDialog": {
+      "file": "references/group-20.json",
+      "function_count": 23,
+      "status_counts": {
+        "free": 10,
+        "licensed": 13,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "QuickList": {
+      "file": "references/group-20.json",
+      "function_count": 68,
+      "status_counts": {
+        "free": 1,
+        "licensed": 64,
+        "unknown_license": 3
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Registration": {
+      "file": "references/group-20.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "URLScheme": {
+      "file": "references/group-20.json",
+      "function_count": 3,
+      "status_counts": {
+        "free": 0,
+        "licensed": 3,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "Version": {
+      "file": "references/group-20.json",
+      "function_count": 1,
+      "status_counts": {
+        "free": 1,
+        "licensed": 0,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "WindowsScript": {
+      "file": "references/group-20.json",
+      "function_count": 21,
+      "status_counts": {
+        "free": 20,
+        "licensed": 1,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 0
+    },
+    "ZipFile": {
+      "file": "references/group-20.json",
+      "function_count": 11,
+      "status_counts": {
+        "free": 0,
+        "licensed": 11,
+        "unknown_license": 0
+      },
+      "prerelease_count": 0,
+      "deprecated_count": 3
+    }
+  }
+}

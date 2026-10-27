@@ -1,0 +1,1044 @@
+{
+  "release": "2.0.0",
+  "plugin": {
+    "name": "filemaker-pro-agent-skills",
+    "format": "portable-agent-plugin",
+    "path": "plugin.zip",
+    "version": "2.0.0",
+    "skills": [
+      "filemaker-pro",
+      "goya-be-plugin",
+      "beezwax-bbox-plugin",
+      "monkeybread-mbs-plugin",
+      "fmp-dev-orchestrator"
+    ],
+    "sha256": "66935395ae4841802baa3102fb9876fce0df9e43c7d0edb395e376c43e87cda0",
+    "bytes": 1016449,
+    "file_count": 97,
+    "uncompressed_bytes": 9588668,
+    "layout": [
+      "plugin.json",
+      "README.md",
+      "LICENSE",
+      "ATTRIBUTION.md",
+      "THIRD-PARTY.md",
+      "assets/logo-512.png",
+      "assets/icon-128.png",
+      "skills/<skill>/..."
+    ],
+    "files": [
+      {
+        "path": "ATTRIBUTION.md",
+        "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+        "bytes": 5207
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+        "bytes": 2036
+      },
+      {
+        "path": "README.md",
+        "sha256": "55386c24f0f30c56315801755fe4bda088f415751a0714ac44ad7158efd716b7",
+        "bytes": 1079
+      },
+      {
+        "path": "THIRD-PARTY.md",
+        "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+        "bytes": 4260
+      },
+      {
+        "path": "assets/icon-128.png",
+        "sha256": "4909120bf1ea0473c64e8d2e3e7238721063b887e426c34d015120b868c02aa0",
+        "bytes": 26661
+      },
+      {
+        "path": "assets/logo-512.png",
+        "sha256": "20262794ad83a2afc8a987e02821404ee900ab4eb05a22967693ff17e18678f0",
+        "bytes": 256915
+      },
+      {
+        "path": "plugin.json",
+        "sha256": "fde958c5b25033e4338a037e4300eaca0a0fd94e2c39ab3df8a7f7d724e38b70",
+        "bytes": 1668
+      },
+      {
+        "path": "skills/beezwax-bbox-plugin/ATTRIBUTION.md",
+        "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+        "bytes": 5207
+      },
+      {
+        "path": "skills/beezwax-bbox-plugin/LICENSE",
+        "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+        "bytes": 2036
+      },
+      {
+        "path": "skills/beezwax-bbox-plugin/SKILL.md",
+        "sha256": "b33027dbcc0f2130e649b4c29c1a5d07fd07ea7b5e335aced8148038a8cd0bce",
+        "bytes": 8709
+      },
+      {
+        "path": "skills/beezwax-bbox-plugin/THIRD-PARTY.md",
+        "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+        "bytes": 4260
+      },
+      {
+        "path": "skills/beezwax-bbox-plugin/agents/openai.yaml",
+        "sha256": "ee11fd59d080bcdd529de7e3feb023a9005c7fcf789923f45ef6c0291ae521d9",
+        "bytes": 229
+      },
+      {
+        "path": "skills/beezwax-bbox-plugin/references/function-catalog.json",
+        "sha256": "3982cd779abac6a4a23b3bd816ad45f86d4b2515798a9939bf6f9edc27bc2e34",
+        "bytes": 84321
+      },
+      {
+        "path": "skills/beezwax-bbox-plugin/references/patterns.md",
+        "sha256": "975013f498ab8da0fdda8c7918e5a6553f2c48d49e5b0957120be7baf026f7f3",
+        "bytes": 4193
+      },
+      {
+        "path": "skills/beezwax-bbox-plugin/references/provenance.json",
+        "sha256": "042c09a50e8156de5213824cf6500f2496cfac1683ec73159e4adaac14da6ced",
+        "bytes": 997
+      },
+      {
+        "path": "skills/beezwax-bbox-plugin/scripts/catalog.py",
+        "sha256": "6aab4352ab96c3bce8df6fb1ceeb5b7e9e7ea67121a10100cb4195c7b1a74fd5",
+        "bytes": 3564
+      },
+      {
+        "path": "skills/filemaker-pro/ATTRIBUTION.md",
+        "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+        "bytes": 5207
+      },
+      {
+        "path": "skills/filemaker-pro/LICENSE",
+        "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+        "bytes": 2036
+      },
+      {
+        "path": "skills/filemaker-pro/SKILL.md",
+        "sha256": "69213c8f0507e0c9382812191147668aca0c039ce9076bdacc54bb19958ae396",
+        "bytes": 10175
+      },
+      {
+        "path": "skills/filemaker-pro/THIRD-PARTY.md",
+        "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+        "bytes": 4260
+      },
+      {
+        "path": "skills/filemaker-pro/agents/openai.yaml",
+        "sha256": "11a54c673d52993bfffcbb9ab4e0fd10279af0e49db80b4f82639edddb52aade",
+        "bytes": 251
+      },
+      {
+        "path": "skills/filemaker-pro/references/adt-integration.md",
+        "sha256": "906990680f0e6a05aaef8ef7aed339afdb47e39977a316c81efc3f72bc68a0df",
+        "bytes": 6062
+      },
+      {
+        "path": "skills/filemaker-pro/references/architecture.md",
+        "sha256": "f53fadd50078833d485fafdd7959fc42804328a2219812d83d2d0d6134b054d2",
+        "bytes": 6020
+      },
+      {
+        "path": "skills/filemaker-pro/references/cadenceux-integration-details.md",
+        "sha256": "a0b3240aed12cab0e9af084f598173d0a73fa028a3b70740388ca83a74e4970f",
+        "bytes": 27814
+      },
+      {
+        "path": "skills/filemaker-pro/references/cadenceux-patterns.md",
+        "sha256": "8ca4da9ad6341691628825b77653e9c781adb7fbc3c3c38808be159020f71761",
+        "bytes": 24932
+      },
+      {
+        "path": "skills/filemaker-pro/references/compatibility.md",
+        "sha256": "4e831151ac0d38fbfc20371ec9355debe11fd015ed14c9b1b4fe1abed70ba5bc",
+        "bytes": 3219
+      },
+      {
+        "path": "skills/filemaker-pro/references/data-api-reference.md",
+        "sha256": "8fd05c5e5ad2ec65df1274cbfb1bb9309d937d738854f82bd3efefb8cb54dfdb",
+        "bytes": 6177
+      },
+      {
+        "path": "skills/filemaker-pro/references/date-time-functions-examples.md",
+        "sha256": "9385b6d03479de4c55d2f663bb014a35b251d27882a938e5979024b1db2b7404",
+        "bytes": 21223
+      },
+      {
+        "path": "skills/filemaker-pro/references/design-container-functions-examples.md",
+        "sha256": "97a735c45e2a8fa75f4833d07b3f917a14f158955ba5e5bba355eb9caec39448",
+        "bytes": 36116
+      },
+      {
+        "path": "skills/filemaker-pro/references/errata.json",
+        "sha256": "e8d8826e137e2b767336cc1d3b6649cfcf57ddd1d18560446edd6cbb3a85b843",
+        "bytes": 770
+      },
+      {
+        "path": "skills/filemaker-pro/references/error-codes.json",
+        "sha256": "1b8e7f56e4e423740da44c0564ddcbb8ce05eb0d66735640e34b0f3fdf49b8f7",
+        "bytes": 27056
+      },
+      {
+        "path": "skills/filemaker-pro/references/error-codes.md",
+        "sha256": "92e65b7c42636f94606882889fe8490ac352a849341036864328ff0ce584e3e2",
+        "bytes": 5305
+      },
+      {
+        "path": "skills/filemaker-pro/references/field-types-catalog.json",
+        "sha256": "2c6f457f5db8248b28b25f549d7165db2bd9b0d6e2a1efbb703c2102a0eaa4ea",
+        "bytes": 12341
+      },
+      {
+        "path": "skills/filemaker-pro/references/filemaker-go-reference.md",
+        "sha256": "a1a87cb8a82100d9578a84bb98f3dc04998ba9cde4867d37d74baa9aa5e4c42b",
+        "bytes": 5943
+      },
+      {
+        "path": "skills/filemaker-pro/references/function-catalog.json",
+        "sha256": "a10b0c5a5099d01fe5767514273a20340e7fa47bac8fed20188eb7ee6ac77530",
+        "bytes": 181540
+      },
+      {
+        "path": "skills/filemaker-pro/references/get-functions-examples.md",
+        "sha256": "a077e898032a59b787f303b6e40677a222f086556931bfda319229299875fd6e",
+        "bytes": 27180
+      },
+      {
+        "path": "skills/filemaker-pro/references/help-sitemap.md",
+        "sha256": "1c045f1a757e4519164ec2098f06cd65e4066a7c4f0a1b23f0154e1687fab46a",
+        "bytes": 7828
+      },
+      {
+        "path": "skills/filemaker-pro/references/integrations.md",
+        "sha256": "9967e80fd745d96596a978a794acc12c6fd37c27ef0e79bcaac7bba4f207de6c",
+        "bytes": 6358
+      },
+      {
+        "path": "skills/filemaker-pro/references/logical-json-ai-functions-examples.md",
+        "sha256": "46f9cc5962a3b6cece0fd4122cf32c38030e927154c406f5fae5f26197f9b292",
+        "bytes": 52335
+      },
+      {
+        "path": "skills/filemaker-pro/references/numeric-functions-examples.md",
+        "sha256": "cda53b283e244aed11c32b47667bcdf91d762878228e1d45106cd81b542aca8e",
+        "bytes": 29298
+      },
+      {
+        "path": "skills/filemaker-pro/references/odata-api-reference.md",
+        "sha256": "2770ae5517a35ada6c15f9e6ae50ce29b97fd9a7ce309b20e3fc3b92a96e0e5e",
+        "bytes": 6196
+      },
+      {
+        "path": "skills/filemaker-pro/references/professional-patterns.md",
+        "sha256": "17ff229c94c585f4415755186986a6c1979ee180c6b2860480a9c035edd8ffad",
+        "bytes": 5918
+      },
+      {
+        "path": "skills/filemaker-pro/references/replacement-ledger.json",
+        "sha256": "73503e50ec5b36bcff854c31517f47f533f6289df6e4929be2c226d40bbfd9d1",
+        "bytes": 227672
+      },
+      {
+        "path": "skills/filemaker-pro/references/script-steps-catalog.json",
+        "sha256": "a0dcc0a9e337fa86c3227cfcf87eaba077e9c17fb2942ed89e15ed51013b4b55",
+        "bytes": 136932
+      },
+      {
+        "path": "skills/filemaker-pro/references/source-inventory.json",
+        "sha256": "9cd6260985cd2ec290e9b6dbd5f7e35744de2b3ba416b196679d2d3091a6a8a7",
+        "bytes": 21548
+      },
+      {
+        "path": "skills/filemaker-pro/references/specialty-functions-examples.md",
+        "sha256": "1094bfbe7d46d35cfa653acdcc8e1bbb8a8e06c15dd0bc8bab6d05f9ecd62347",
+        "bytes": 36988
+      },
+      {
+        "path": "skills/filemaker-pro/references/sql-reference.md",
+        "sha256": "4ded12c507eea98ce98f149cade5dbe39fd5596e0e2aa4fcbcf61bbf620a3da9",
+        "bytes": 5350
+      },
+      {
+        "path": "skills/filemaker-pro/references/text-functions-examples.md",
+        "sha256": "d5369353b01c755a021255c15c7031e14dfd24f6961f458f1a1a4fe0824329c8",
+        "bytes": 20713
+      },
+      {
+        "path": "skills/filemaker-pro/references/webdirect-reference.md",
+        "sha256": "7f580f25455da6247ab9d5c4c707c09f094ed82af687e74a34b72769b65e876b",
+        "bytes": 6510
+      },
+      {
+        "path": "skills/filemaker-pro/references/worked-examples.md",
+        "sha256": "26073547b46ffb5ebc1823c056459a27c33cfeba79bf619a0c246f7bb9752b00",
+        "bytes": 5281
+      },
+      {
+        "path": "skills/filemaker-pro/scripts/catalog.py",
+        "sha256": "7a65059076be6aecfa75354f1312328d72de32b777d7ca4180d8595cc7303520",
+        "bytes": 6165
+      },
+      {
+        "path": "skills/fmp-dev-orchestrator/ATTRIBUTION.md",
+        "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+        "bytes": 5207
+      },
+      {
+        "path": "skills/fmp-dev-orchestrator/LICENSE",
+        "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+        "bytes": 2036
+      },
+      {
+        "path": "skills/fmp-dev-orchestrator/SKILL.md",
+        "sha256": "1be495efeafeaf8bdd2f1d73f3a697a5624b05ab37609b79fba9fa3a0f61c97b",
+        "bytes": 5199
+      },
+      {
+        "path": "skills/fmp-dev-orchestrator/THIRD-PARTY.md",
+        "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+        "bytes": 4260
+      },
+      {
+        "path": "skills/fmp-dev-orchestrator/agents/openai.yaml",
+        "sha256": "64a649a9f235dc52ae491ba1cb8ac7f06dc06af1a41989e89c90eee57acfbaf9",
+        "bytes": 224
+      },
+      {
+        "path": "skills/fmp-dev-orchestrator/references/provenance.json",
+        "sha256": "a683d0777711b8362df3fcb8689f6edbeb43c14240c2eae982b66a6de25582ca",
+        "bytes": 987
+      },
+      {
+        "path": "skills/fmp-dev-orchestrator/references/routing.md",
+        "sha256": "46cdf43ce367fbbf3ed6b25e3849840b69a6b462f8a6a796ca639282e31183b6",
+        "bytes": 4081
+      },
+      {
+        "path": "skills/fmp-dev-orchestrator/scripts/route.py",
+        "sha256": "3bafd87711c63d4ea9f4378cce2c58570b70086df0bd4e942cc1116f8f0560af",
+        "bytes": 4516
+      },
+      {
+        "path": "skills/goya-be-plugin/ATTRIBUTION.md",
+        "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+        "bytes": 5207
+      },
+      {
+        "path": "skills/goya-be-plugin/LICENSE",
+        "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+        "bytes": 2036
+      },
+      {
+        "path": "skills/goya-be-plugin/SKILL.md",
+        "sha256": "002fa724cad32a5b47bc4fcb1821f3bbd87f4a717327b6b194508cd0c85561a0",
+        "bytes": 8921
+      },
+      {
+        "path": "skills/goya-be-plugin/THIRD-PARTY.md",
+        "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+        "bytes": 4260
+      },
+      {
+        "path": "skills/goya-be-plugin/agents/openai.yaml",
+        "sha256": "dafd2c33c13bcb6e685ca8a35c5032b546fb2deb3055d710ee5c7828cd975f08",
+        "bytes": 250
+      },
+      {
+        "path": "skills/goya-be-plugin/references/function-catalog.json",
+        "sha256": "660b4c0050991a3d291e40a61935b7ffe035428da6ddc714d41dd04ea4138548",
+        "bytes": 171565
+      },
+      {
+        "path": "skills/goya-be-plugin/references/patterns.md",
+        "sha256": "31fa5da1b7e71ffab28ed295a8150e3b3108bfd0d6249bcf91c31af9092d5466",
+        "bytes": 6327
+      },
+      {
+        "path": "skills/goya-be-plugin/references/provenance.json",
+        "sha256": "5c65080d2e9802bef5d45666ea5564cfc58e5ab7ddaef227d5e4bebc90845000",
+        "bytes": 991
+      },
+      {
+        "path": "skills/goya-be-plugin/scripts/catalog.py",
+        "sha256": "108a2e7232b06ad687d79b194c7805d1061192b3b99b5cfc4233eaf86bef51dd",
+        "bytes": 3625
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/ATTRIBUTION.md",
+        "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+        "bytes": 5207
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/LICENSE",
+        "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+        "bytes": 2036
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/SKILL.md",
+        "sha256": "c17f511f0f7d7a387b6ff957199466cd5df0c378f0a40a3b00d58e9cce460b22",
+        "bytes": 8803
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/THIRD-PARTY.md",
+        "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+        "bytes": 4260
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/agents/openai.yaml",
+        "sha256": "15bbf5eb1fa7f00b9a0fa60650a9230a80b4d9c1d9fa6fbed6449fb5d35e19bd",
+        "bytes": 240
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/component-guide.md",
+        "sha256": "d6e5b04d08d11086eb40bc55faf7f9465563d355b01dab20652ab43b055f565b",
+        "bytes": 5845
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-01.json",
+        "sha256": "d33073f7db45939312ef06955dad667eca5ee0a8c72cfd13ca2d5511ee980a99",
+        "bytes": 786642
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-02.json",
+        "sha256": "f1cc92f020967dc98903bb39fe401e12ccd16100b2e4ce973f2498acc27ae3f9",
+        "bytes": 474569
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-03.json",
+        "sha256": "d6d422cae109ed726581993d79a2ef49aef308bf64848571f185d39a80d6ec5b",
+        "bytes": 590239
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-04.json",
+        "sha256": "65519f309c4fadd06ba5475b256a66e34bff4a7aa0c26ae091187ec85c04ebf3",
+        "bytes": 377367
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-05.json",
+        "sha256": "404513d2cc5ea98c00c7b84d22f8fbcb93d7d89606ae8499bf01efd89b47a14e",
+        "bytes": 273609
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-06.json",
+        "sha256": "88a4f0427840c59a58ba8a3c170c3a7010fec66ed21ab45edb8cd809b0ddeff3",
+        "bytes": 331610
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-07.json",
+        "sha256": "d1a98a747640be354fbd67975422a69e1b1475b5be344ec63d8718852852b588",
+        "bytes": 346950
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-08.json",
+        "sha256": "958db08e89b06126f5518a195d4913a8e837e890e3bb0931535a71284a25a5f4",
+        "bytes": 374445
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-09.json",
+        "sha256": "2e6893cc9c8f9763a8ca81aed284d135aa7afc2712b8651e1cb1e6de465c5b89",
+        "bytes": 352377
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-10.json",
+        "sha256": "11b317da47ec33414967b9361b4d5d9ab9156fa156d439a204d4c206870c2c40",
+        "bytes": 377222
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-11.json",
+        "sha256": "7ad1de683e3303f7e6a8463bb7401ea284ae4b1d27f1bd31ccce2eb3757769ab",
+        "bytes": 385061
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-12.json",
+        "sha256": "4f841f7c53e41d7b94f326cdf9be3505420415d713732be52fa5564defe04690",
+        "bytes": 350156
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-13.json",
+        "sha256": "e6c21c5081d880b5eef9224557264b692839c437317c7c6956d79efa02765ae3",
+        "bytes": 338041
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-14.json",
+        "sha256": "42167779dc02541a9e4b82fe5ac3c6dbbac32fdef48aaffada14e790801a157e",
+        "bytes": 305263
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-15.json",
+        "sha256": "e4620d2f980db7c0dd048484a7c5e9c6cbcf6e7a6bb40b4a9943e14c778befd4",
+        "bytes": 327612
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-16.json",
+        "sha256": "51d91e595ece092138a11092a454664479033ffb18d30106c6d2f67b2a4c6bee",
+        "bytes": 362251
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-17.json",
+        "sha256": "7c5cf35addf281e70cfb18445533de96712993128ce040bcf4cc48b2700adbfa",
+        "bytes": 355723
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-18.json",
+        "sha256": "165eefe701b4623e8c0107cf3cc79c4455d387117d54daff0d34dc1569c465db",
+        "bytes": 385211
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-19.json",
+        "sha256": "30f1dcc4da29ec64ab89faea038e14e007cb1c408df999bb121b62bb27d472a8",
+        "bytes": 366112
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/group-20.json",
+        "sha256": "bbf2bb6c097f6f50eeecf90e140130210d6cfff233db25cfeb75604b3a78a21b",
+        "bytes": 396249
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/index.json",
+        "sha256": "d1fe9b110aa2af0b345b6b8ab73a32f340e2430992238becd912ea05efcc5477",
+        "bytes": 67154
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/references/provenance.json",
+        "sha256": "e9520b3a36e14bde7c895496394c94863d4fea2621c0a1f1528d2261a8f3db9b",
+        "bytes": 4208
+      },
+      {
+        "path": "skills/monkeybread-mbs-plugin/scripts/catalog.py",
+        "sha256": "f8a802257b6f65f830ae06bb3cabbfbf2f82492c3a49b49dc75955967a0385aa",
+        "bytes": 4453
+      }
+    ]
+  },
+  "skills": {
+    "filemaker-pro": {
+      "path": "skills/filemaker-pro.zip",
+      "format": "single-skill",
+      "top_level_folder": "filemaker-pro",
+      "version": "2.0.0",
+      "sha256": "1820fe6f8a22509645dc877489640a9c9945bf0f9e04ae4c8270f09151e095b3",
+      "bytes": 248718,
+      "file_count": 35,
+      "uncompressed_bytes": 988719,
+      "files": [
+        {
+          "path": "filemaker-pro/ATTRIBUTION.md",
+          "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+          "bytes": 5207
+        },
+        {
+          "path": "filemaker-pro/LICENSE",
+          "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+          "bytes": 2036
+        },
+        {
+          "path": "filemaker-pro/SKILL.md",
+          "sha256": "69213c8f0507e0c9382812191147668aca0c039ce9076bdacc54bb19958ae396",
+          "bytes": 10175
+        },
+        {
+          "path": "filemaker-pro/THIRD-PARTY.md",
+          "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+          "bytes": 4260
+        },
+        {
+          "path": "filemaker-pro/agents/openai.yaml",
+          "sha256": "11a54c673d52993bfffcbb9ab4e0fd10279af0e49db80b4f82639edddb52aade",
+          "bytes": 251
+        },
+        {
+          "path": "filemaker-pro/references/adt-integration.md",
+          "sha256": "906990680f0e6a05aaef8ef7aed339afdb47e39977a316c81efc3f72bc68a0df",
+          "bytes": 6062
+        },
+        {
+          "path": "filemaker-pro/references/architecture.md",
+          "sha256": "f53fadd50078833d485fafdd7959fc42804328a2219812d83d2d0d6134b054d2",
+          "bytes": 6020
+        },
+        {
+          "path": "filemaker-pro/references/cadenceux-integration-details.md",
+          "sha256": "a0b3240aed12cab0e9af084f598173d0a73fa028a3b70740388ca83a74e4970f",
+          "bytes": 27814
+        },
+        {
+          "path": "filemaker-pro/references/cadenceux-patterns.md",
+          "sha256": "8ca4da9ad6341691628825b77653e9c781adb7fbc3c3c38808be159020f71761",
+          "bytes": 24932
+        },
+        {
+          "path": "filemaker-pro/references/compatibility.md",
+          "sha256": "4e831151ac0d38fbfc20371ec9355debe11fd015ed14c9b1b4fe1abed70ba5bc",
+          "bytes": 3219
+        },
+        {
+          "path": "filemaker-pro/references/data-api-reference.md",
+          "sha256": "8fd05c5e5ad2ec65df1274cbfb1bb9309d937d738854f82bd3efefb8cb54dfdb",
+          "bytes": 6177
+        },
+        {
+          "path": "filemaker-pro/references/date-time-functions-examples.md",
+          "sha256": "9385b6d03479de4c55d2f663bb014a35b251d27882a938e5979024b1db2b7404",
+          "bytes": 21223
+        },
+        {
+          "path": "filemaker-pro/references/design-container-functions-examples.md",
+          "sha256": "97a735c45e2a8fa75f4833d07b3f917a14f158955ba5e5bba355eb9caec39448",
+          "bytes": 36116
+        },
+        {
+          "path": "filemaker-pro/references/errata.json",
+          "sha256": "e8d8826e137e2b767336cc1d3b6649cfcf57ddd1d18560446edd6cbb3a85b843",
+          "bytes": 770
+        },
+        {
+          "path": "filemaker-pro/references/error-codes.json",
+          "sha256": "1b8e7f56e4e423740da44c0564ddcbb8ce05eb0d66735640e34b0f3fdf49b8f7",
+          "bytes": 27056
+        },
+        {
+          "path": "filemaker-pro/references/error-codes.md",
+          "sha256": "92e65b7c42636f94606882889fe8490ac352a849341036864328ff0ce584e3e2",
+          "bytes": 5305
+        },
+        {
+          "path": "filemaker-pro/references/field-types-catalog.json",
+          "sha256": "2c6f457f5db8248b28b25f549d7165db2bd9b0d6e2a1efbb703c2102a0eaa4ea",
+          "bytes": 12341
+        },
+        {
+          "path": "filemaker-pro/references/filemaker-go-reference.md",
+          "sha256": "a1a87cb8a82100d9578a84bb98f3dc04998ba9cde4867d37d74baa9aa5e4c42b",
+          "bytes": 5943
+        },
+        {
+          "path": "filemaker-pro/references/function-catalog.json",
+          "sha256": "a10b0c5a5099d01fe5767514273a20340e7fa47bac8fed20188eb7ee6ac77530",
+          "bytes": 181540
+        },
+        {
+          "path": "filemaker-pro/references/get-functions-examples.md",
+          "sha256": "a077e898032a59b787f303b6e40677a222f086556931bfda319229299875fd6e",
+          "bytes": 27180
+        },
+        {
+          "path": "filemaker-pro/references/help-sitemap.md",
+          "sha256": "1c045f1a757e4519164ec2098f06cd65e4066a7c4f0a1b23f0154e1687fab46a",
+          "bytes": 7828
+        },
+        {
+          "path": "filemaker-pro/references/integrations.md",
+          "sha256": "9967e80fd745d96596a978a794acc12c6fd37c27ef0e79bcaac7bba4f207de6c",
+          "bytes": 6358
+        },
+        {
+          "path": "filemaker-pro/references/logical-json-ai-functions-examples.md",
+          "sha256": "46f9cc5962a3b6cece0fd4122cf32c38030e927154c406f5fae5f26197f9b292",
+          "bytes": 52335
+        },
+        {
+          "path": "filemaker-pro/references/numeric-functions-examples.md",
+          "sha256": "cda53b283e244aed11c32b47667bcdf91d762878228e1d45106cd81b542aca8e",
+          "bytes": 29298
+        },
+        {
+          "path": "filemaker-pro/references/odata-api-reference.md",
+          "sha256": "2770ae5517a35ada6c15f9e6ae50ce29b97fd9a7ce309b20e3fc3b92a96e0e5e",
+          "bytes": 6196
+        },
+        {
+          "path": "filemaker-pro/references/professional-patterns.md",
+          "sha256": "17ff229c94c585f4415755186986a6c1979ee180c6b2860480a9c035edd8ffad",
+          "bytes": 5918
+        },
+        {
+          "path": "filemaker-pro/references/replacement-ledger.json",
+          "sha256": "73503e50ec5b36bcff854c31517f47f533f6289df6e4929be2c226d40bbfd9d1",
+          "bytes": 227672
+        },
+        {
+          "path": "filemaker-pro/references/script-steps-catalog.json",
+          "sha256": "a0dcc0a9e337fa86c3227cfcf87eaba077e9c17fb2942ed89e15ed51013b4b55",
+          "bytes": 136932
+        },
+        {
+          "path": "filemaker-pro/references/source-inventory.json",
+          "sha256": "9cd6260985cd2ec290e9b6dbd5f7e35744de2b3ba416b196679d2d3091a6a8a7",
+          "bytes": 21548
+        },
+        {
+          "path": "filemaker-pro/references/specialty-functions-examples.md",
+          "sha256": "1094bfbe7d46d35cfa653acdcc8e1bbb8a8e06c15dd0bc8bab6d05f9ecd62347",
+          "bytes": 36988
+        },
+        {
+          "path": "filemaker-pro/references/sql-reference.md",
+          "sha256": "4ded12c507eea98ce98f149cade5dbe39fd5596e0e2aa4fcbcf61bbf620a3da9",
+          "bytes": 5350
+        },
+        {
+          "path": "filemaker-pro/references/text-functions-examples.md",
+          "sha256": "d5369353b01c755a021255c15c7031e14dfd24f6961f458f1a1a4fe0824329c8",
+          "bytes": 20713
+        },
+        {
+          "path": "filemaker-pro/references/webdirect-reference.md",
+          "sha256": "7f580f25455da6247ab9d5c4c707c09f094ed82af687e74a34b72769b65e876b",
+          "bytes": 6510
+        },
+        {
+          "path": "filemaker-pro/references/worked-examples.md",
+          "sha256": "26073547b46ffb5ebc1823c056459a27c33cfeba79bf619a0c246f7bb9752b00",
+          "bytes": 5281
+        },
+        {
+          "path": "filemaker-pro/scripts/catalog.py",
+          "sha256": "7a65059076be6aecfa75354f1312328d72de32b777d7ca4180d8595cc7303520",
+          "bytes": 6165
+        }
+      ]
+    },
+    "goya-be-plugin": {
+      "path": "skills/goya-be-plugin.zip",
+      "format": "single-skill",
+      "top_level_folder": "goya-be-plugin",
+      "version": "2.0.0",
+      "sha256": "bca992b8af66f8b7bc5375fd025125ce9e8f9040adc7b5b8c08e1247980f5ad7",
+      "bytes": 28625,
+      "file_count": 9,
+      "uncompressed_bytes": 203182,
+      "files": [
+        {
+          "path": "goya-be-plugin/ATTRIBUTION.md",
+          "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+          "bytes": 5207
+        },
+        {
+          "path": "goya-be-plugin/LICENSE",
+          "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+          "bytes": 2036
+        },
+        {
+          "path": "goya-be-plugin/SKILL.md",
+          "sha256": "002fa724cad32a5b47bc4fcb1821f3bbd87f4a717327b6b194508cd0c85561a0",
+          "bytes": 8921
+        },
+        {
+          "path": "goya-be-plugin/THIRD-PARTY.md",
+          "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+          "bytes": 4260
+        },
+        {
+          "path": "goya-be-plugin/agents/openai.yaml",
+          "sha256": "dafd2c33c13bcb6e685ca8a35c5032b546fb2deb3055d710ee5c7828cd975f08",
+          "bytes": 250
+        },
+        {
+          "path": "goya-be-plugin/references/function-catalog.json",
+          "sha256": "660b4c0050991a3d291e40a61935b7ffe035428da6ddc714d41dd04ea4138548",
+          "bytes": 171565
+        },
+        {
+          "path": "goya-be-plugin/references/patterns.md",
+          "sha256": "31fa5da1b7e71ffab28ed295a8150e3b3108bfd0d6249bcf91c31af9092d5466",
+          "bytes": 6327
+        },
+        {
+          "path": "goya-be-plugin/references/provenance.json",
+          "sha256": "5c65080d2e9802bef5d45666ea5564cfc58e5ab7ddaef227d5e4bebc90845000",
+          "bytes": 991
+        },
+        {
+          "path": "goya-be-plugin/scripts/catalog.py",
+          "sha256": "108a2e7232b06ad687d79b194c7805d1061192b3b99b5cfc4233eaf86bef51dd",
+          "bytes": 3625
+        }
+      ]
+    },
+    "beezwax-bbox-plugin": {
+      "path": "skills/beezwax-bbox-plugin.zip",
+      "format": "single-skill",
+      "top_level_folder": "beezwax-bbox-plugin",
+      "version": "2.0.0",
+      "sha256": "9b40547e7f957b052977a55c5ba13516d1dc2f7320f753bac9e9f2b9ecbc5138",
+      "bytes": 27035,
+      "file_count": 9,
+      "uncompressed_bytes": 113516,
+      "files": [
+        {
+          "path": "beezwax-bbox-plugin/ATTRIBUTION.md",
+          "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+          "bytes": 5207
+        },
+        {
+          "path": "beezwax-bbox-plugin/LICENSE",
+          "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+          "bytes": 2036
+        },
+        {
+          "path": "beezwax-bbox-plugin/SKILL.md",
+          "sha256": "b33027dbcc0f2130e649b4c29c1a5d07fd07ea7b5e335aced8148038a8cd0bce",
+          "bytes": 8709
+        },
+        {
+          "path": "beezwax-bbox-plugin/THIRD-PARTY.md",
+          "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+          "bytes": 4260
+        },
+        {
+          "path": "beezwax-bbox-plugin/agents/openai.yaml",
+          "sha256": "ee11fd59d080bcdd529de7e3feb023a9005c7fcf789923f45ef6c0291ae521d9",
+          "bytes": 229
+        },
+        {
+          "path": "beezwax-bbox-plugin/references/function-catalog.json",
+          "sha256": "3982cd779abac6a4a23b3bd816ad45f86d4b2515798a9939bf6f9edc27bc2e34",
+          "bytes": 84321
+        },
+        {
+          "path": "beezwax-bbox-plugin/references/patterns.md",
+          "sha256": "975013f498ab8da0fdda8c7918e5a6553f2c48d49e5b0957120be7baf026f7f3",
+          "bytes": 4193
+        },
+        {
+          "path": "beezwax-bbox-plugin/references/provenance.json",
+          "sha256": "042c09a50e8156de5213824cf6500f2496cfac1683ec73159e4adaac14da6ced",
+          "bytes": 997
+        },
+        {
+          "path": "beezwax-bbox-plugin/scripts/catalog.py",
+          "sha256": "6aab4352ab96c3bce8df6fb1ceeb5b7e9e7ea67121a10100cb4195c7b1a74fd5",
+          "bytes": 3564
+        }
+      ]
+    },
+    "monkeybread-mbs-plugin": {
+      "path": "skills/monkeybread-mbs-plugin.zip",
+      "format": "single-skill",
+      "top_level_folder": "monkeybread-mbs-plugin",
+      "version": "2.0.0",
+      "sha256": "ffa8cb3f61dce37ac51672e0229435e33a983a770fa6ee5efd448fbb20fd9fa2",
+      "bytes": 407700,
+      "file_count": 29,
+      "uncompressed_bytes": 7958915,
+      "files": [
+        {
+          "path": "monkeybread-mbs-plugin/ATTRIBUTION.md",
+          "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+          "bytes": 5207
+        },
+        {
+          "path": "monkeybread-mbs-plugin/LICENSE",
+          "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+          "bytes": 2036
+        },
+        {
+          "path": "monkeybread-mbs-plugin/SKILL.md",
+          "sha256": "c17f511f0f7d7a387b6ff957199466cd5df0c378f0a40a3b00d58e9cce460b22",
+          "bytes": 8803
+        },
+        {
+          "path": "monkeybread-mbs-plugin/THIRD-PARTY.md",
+          "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+          "bytes": 4260
+        },
+        {
+          "path": "monkeybread-mbs-plugin/agents/openai.yaml",
+          "sha256": "15bbf5eb1fa7f00b9a0fa60650a9230a80b4d9c1d9fa6fbed6449fb5d35e19bd",
+          "bytes": 240
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/component-guide.md",
+          "sha256": "d6e5b04d08d11086eb40bc55faf7f9465563d355b01dab20652ab43b055f565b",
+          "bytes": 5845
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-01.json",
+          "sha256": "d33073f7db45939312ef06955dad667eca5ee0a8c72cfd13ca2d5511ee980a99",
+          "bytes": 786642
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-02.json",
+          "sha256": "f1cc92f020967dc98903bb39fe401e12ccd16100b2e4ce973f2498acc27ae3f9",
+          "bytes": 474569
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-03.json",
+          "sha256": "d6d422cae109ed726581993d79a2ef49aef308bf64848571f185d39a80d6ec5b",
+          "bytes": 590239
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-04.json",
+          "sha256": "65519f309c4fadd06ba5475b256a66e34bff4a7aa0c26ae091187ec85c04ebf3",
+          "bytes": 377367
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-05.json",
+          "sha256": "404513d2cc5ea98c00c7b84d22f8fbcb93d7d89606ae8499bf01efd89b47a14e",
+          "bytes": 273609
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-06.json",
+          "sha256": "88a4f0427840c59a58ba8a3c170c3a7010fec66ed21ab45edb8cd809b0ddeff3",
+          "bytes": 331610
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-07.json",
+          "sha256": "d1a98a747640be354fbd67975422a69e1b1475b5be344ec63d8718852852b588",
+          "bytes": 346950
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-08.json",
+          "sha256": "958db08e89b06126f5518a195d4913a8e837e890e3bb0931535a71284a25a5f4",
+          "bytes": 374445
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-09.json",
+          "sha256": "2e6893cc9c8f9763a8ca81aed284d135aa7afc2712b8651e1cb1e6de465c5b89",
+          "bytes": 352377
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-10.json",
+          "sha256": "11b317da47ec33414967b9361b4d5d9ab9156fa156d439a204d4c206870c2c40",
+          "bytes": 377222
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-11.json",
+          "sha256": "7ad1de683e3303f7e6a8463bb7401ea284ae4b1d27f1bd31ccce2eb3757769ab",
+          "bytes": 385061
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-12.json",
+          "sha256": "4f841f7c53e41d7b94f326cdf9be3505420415d713732be52fa5564defe04690",
+          "bytes": 350156
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-13.json",
+          "sha256": "e6c21c5081d880b5eef9224557264b692839c437317c7c6956d79efa02765ae3",
+          "bytes": 338041
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-14.json",
+          "sha256": "42167779dc02541a9e4b82fe5ac3c6dbbac32fdef48aaffada14e790801a157e",
+          "bytes": 305263
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-15.json",
+          "sha256": "e4620d2f980db7c0dd048484a7c5e9c6cbcf6e7a6bb40b4a9943e14c778befd4",
+          "bytes": 327612
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-16.json",
+          "sha256": "51d91e595ece092138a11092a454664479033ffb18d30106c6d2f67b2a4c6bee",
+          "bytes": 362251
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-17.json",
+          "sha256": "7c5cf35addf281e70cfb18445533de96712993128ce040bcf4cc48b2700adbfa",
+          "bytes": 355723
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-18.json",
+          "sha256": "165eefe701b4623e8c0107cf3cc79c4455d387117d54daff0d34dc1569c465db",
+          "bytes": 385211
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-19.json",
+          "sha256": "30f1dcc4da29ec64ab89faea038e14e007cb1c408df999bb121b62bb27d472a8",
+          "bytes": 366112
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/group-20.json",
+          "sha256": "bbf2bb6c097f6f50eeecf90e140130210d6cfff233db25cfeb75604b3a78a21b",
+          "bytes": 396249
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/index.json",
+          "sha256": "d1fe9b110aa2af0b345b6b8ab73a32f340e2430992238becd912ea05efcc5477",
+          "bytes": 67154
+        },
+        {
+          "path": "monkeybread-mbs-plugin/references/provenance.json",
+          "sha256": "e9520b3a36e14bde7c895496394c94863d4fea2621c0a1f1528d2261a8f3db9b",
+          "bytes": 4208
+        },
+        {
+          "path": "monkeybread-mbs-plugin/scripts/catalog.py",
+          "sha256": "f8a802257b6f65f830ae06bb3cabbfbf2f82492c3a49b49dc75955967a0385aa",
+          "bytes": 4453
+        }
+      ]
+    },
+    "fmp-dev-orchestrator": {
+      "path": "skills/fmp-dev-orchestrator.zip",
+      "format": "single-skill",
+      "top_level_folder": "fmp-dev-orchestrator",
+      "version": "2.0.0",
+      "sha256": "3f16deddd5873b90e6008eecf7ced137ab71a4c5fc8303921db47259d9dd8e27",
+      "bytes": 12900,
+      "file_count": 8,
+      "uncompressed_bytes": 26510,
+      "files": [
+        {
+          "path": "fmp-dev-orchestrator/ATTRIBUTION.md",
+          "sha256": "70ee1ee19089767b03a5f9be0f55292490fb86d41f542ab5ef9b64ba5b5a83c2",
+          "bytes": 5207
+        },
+        {
+          "path": "fmp-dev-orchestrator/LICENSE",
+          "sha256": "42a2dae492850429d772470cd850fd2e7c3d2c26ab5de913ab94ea4be86f3086",
+          "bytes": 2036
+        },
+        {
+          "path": "fmp-dev-orchestrator/SKILL.md",
+          "sha256": "1be495efeafeaf8bdd2f1d73f3a697a5624b05ab37609b79fba9fa3a0f61c97b",
+          "bytes": 5199
+        },
+        {
+          "path": "fmp-dev-orchestrator/THIRD-PARTY.md",
+          "sha256": "fab441de1dfc09fe78ada408411e590c8771601188040d4d5d0bf5d94b85cdd3",
+          "bytes": 4260
+        },
+        {
+          "path": "fmp-dev-orchestrator/agents/openai.yaml",
+          "sha256": "64a649a9f235dc52ae491ba1cb8ac7f06dc06af1a41989e89c90eee57acfbaf9",
+          "bytes": 224
+        },
+        {
+          "path": "fmp-dev-orchestrator/references/provenance.json",
+          "sha256": "a683d0777711b8362df3fcb8689f6edbeb43c14240c2eae982b66a6de25582ca",
+          "bytes": 987
+        },
+        {
+          "path": "fmp-dev-orchestrator/references/routing.md",
+          "sha256": "46cdf43ce367fbbf3ed6b25e3849840b69a6b462f8a6a796ca639282e31183b6",
+          "bytes": 4081
+        },
+        {
+          "path": "fmp-dev-orchestrator/scripts/route.py",
+          "sha256": "3bafd87711c63d4ea9f4378cce2c58570b70086df0bd4e942cc1116f8f0560af",
+          "bytes": 4516
+        }
+      ]
+    }
+  },
+  "coverage": {
+    "filemaker_functions": 368,
+    "filemaker_script_steps": 216,
+    "filemaker_error_codes": 292,
+    "baseelements_catalog_entries": 133,
+    "baseelements_unique_functions": 129,
+    "mbs_functions": 7859,
+    "mbs_components": 245,
+    "bbox_functions": 87
+  },
+  "limitations": [
+    "No FileMaker engine execution is performed by this build.",
+    "No live ChatGPT or Codex host acceptance is performed by this build.",
+    "Vendor plug-in binaries, installers and licence keys are not bundled."
+  ]
+}

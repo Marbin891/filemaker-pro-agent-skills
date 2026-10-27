@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/CadenceUX/beezwax-bbox-plugin-skill",
+  "commit": "0c4179ddfd5428f514f85f75f2a68d1001ec4483",
+  "version": "1.1.1",
+  "license_declaration": "CC-BY-4.0 declared in README.md; vendor documentation rights remain with each vendor",
+  "treatment": "Adapted factual catalog plus CadenceUX CC BY synthesis; vendor prose and examples omitted",
+  "source_files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 15649,
+      "sha256": "3ca9db9d84fc3bdcb5740c87441d058f8f7246d9fce828989c306117001e29e2"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "cc52f678848b814373757b460383bf61960e4943c203735adde0a350b3e50989"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11043,
+      "sha256": "3c2459f4fa9b8fd6852168ea9b18ea352e0a8e6d1b20491c39455760f48d8703"
+    },
+    {
+      "path": "references/function-catalog.json",
+      "bytes": 150072,
+      "sha256": "0c12bf1e5d5a57b29a05af953c5b17ac70e0a5cdf47e51cf5324fd8569a6649d"
+    }
+  ]
+}

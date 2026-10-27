@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "scope": "Get functions, help sitemap, integration coverage supplement, and scripting/audit patterns only",
+  "policy": "Retain reusable CC BY 4.0 CadenceUX synthesis and factual technical coverage; replace concrete expressive worked examples with original synthetic examples. Do not infer that the CadenceUX license licenses third-party Claris documentation. No blanket exclusion of CadenceUX prose.",
+  "attribution": [
+    {
+      "author": "Darrin Southern",
+      "organization": "CadenceUX",
+      "repository": "https://github.com/CadenceUX/claris-filemaker-pro-skill",
+      "commit": "bda594e15f4a6981e93403c4b187d262ca820116",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "author": "Darrin Southern",
+      "organization": "CadenceUX",
+      "repository": "https://github.com/CadenceUX/fmp-dev-design-patterns",
+      "commit": "17471d6d0a3fd1e53a1714d0c265dc3afad718cc",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "owned_outputs": [
+    "filemaker-pro/references/get-functions-examples.md",
+    "filemaker-pro/references/help-sitemap.md",
+    "filemaker-pro/references/cadenceux-integration-details.md",
+    "filemaker-pro/references/cadenceux-patterns.md",
+    "docs/replacements-other.json"
+  ],
+  "unchanged_complementary_guides": [
+    "filemaker-pro/references/data-api-reference.md",
+    "filemaker-pro/references/odata-api-reference.md",
+    "filemaker-pro/references/sql-reference.md",
+    "filemaker-pro/references/filemaker-go-reference.md",
+    "filemaker-pro/references/webdirect-reference.md"
+  ],
+  "evidence_levels": {
+    "source-read": "Complete local source read and comparison; not live vendor verification.",
+    "static-checked": "Deterministic local text/structure checks; no FileMaker execution.",
+    "manual-review": "Source-to-destination technical coverage review, including corrections; no engine validation.",
+    "runtime": "Not performed: no FileMaker engine, ADT validation/write/readback, API request, device, browser or driver query execution."
+  },
+  "static_checks": [
+    {
+      "check": "Parse this manifest as JSON; require every owned output to exist and resolve all local relative Markdown file links",
+      "level": "static-checked",
+      "observed": {"source_mappings": 10, "valid_json": true, "all_owned_outputs_exist": true, "broken_relative_file_links": []},
+      "interpretation": "Does not validate remote URLs, anchor targets or FileMaker syntax."
+    },
+    {
+      "check": "Extract table rows beginning with Get(function) from source and destination; compare names and complete row text",
+      "level": "static-checked",
+      "observed": {"source_entries": 138, "destination_entries": 138, "missing": [], "extra": [], "changed_table_rows": []}
+    },
+    {
+      "check": "Extract upstream sitemap .../ chapter paths and full HTTP(S) URLs; require each literal path/address in destination",
+      "level": "static-checked",
+      "observed": {"chapter_paths": 70, "full_urls": 23, "missing_paths": [], "missing_urls": []}
+    },
+    {
+      "check": "Count semicolon-separated named steps in supplement WebDirect exception lists",
+      "level": "static-checked",
+      "observed": {"unsupported": 75, "partial": 35}
+    },
+    {
+      "check": "Count fenced-code delimiters in four owned Markdown documents",
+      "level": "static-checked",
+      "observed": {"get-functions-examples.md": 32, "help-sitemap.md": 0, "cadenceux-integration-details.md": 18, "cadenceux-patterns.md": 10},
+      "interpretation": "All counts even; structural smoke check only, not calculation/script parsing."
+    }
+  ],
+  "sources": [
+    {
+      "source": "sources/claris-filemaker-pro-skill/references/get-functions-examples.md",
+      "commit": "bda594e15f4a6981e93403c4b187d262ca820116",
+      "read": "complete, 500 lines",
+      "destination": "filemaker-pro/references/get-functions-examples.md",
+      "level": "static-checked",
+      "sections": [
+        {"source_section": "Overview and Contents", "disposition": "adapted", "coverage": "138-entry snapshot, FM26 additions, enumeration distinctions, invalid RecordCount/error 1215, context/version qualification"},
+        {"source_section": "Date & Time", "disposition": "retained tables; replaced examples", "coverage": "All six entries and epoch notes; clock/host context, overdue and ISO date patterns, UTC conversion, expected rather than observed output"},
+        {"source_section": "Account & Privileges", "disposition": "retained tables; replaced examples", "coverage": "All ten entries/account-type values/password expiry values; account versus current privilege, user name, extended privilege keywords and exact-list membership"},
+        {"source_section": "File & Database", "disposition": "retained tables; replaced examples", "coverage": "All 28 entries, full platform/architecture/multiuser/encryption enumerations; file/network path forms, engine labels, appearance routing"},
+        {"source_section": "Paths & File System", "disposition": "retained tables; replaced examples", "coverage": "All five entries, directory listing and original UUID-based export path instead of locale-sensitive timestamp filename"},
+        {"source_section": "Record & Found Set", "disposition": "retained tables; replaced examples", "coverage": "All ten entries, complete open-state/access values, found-set versus identity and portal distinctions, unsaved prompt as actual script syntax, progress"},
+        {"source_section": "Layout & Window", "disposition": "retained tables; replaced examples", "coverage": "All 28 entries and every view/mode/style/orientation/status/menubar value, WindowUUID and Find mode/responsive use"},
+        {"source_section": "Script & Trigger", "disposition": "retained tables; replaced examples", "coverage": "All 21 entries, panel/gesture/remote-control enumerations, AI usage keys, JSON parsing and immediate single-calculation error/detail/location capture"},
+        {"source_section": "Field & Object State", "disposition": "retained tables; replaced examples", "coverage": "All nine entries including selection, portal row and quick-find state"},
+        {"source_section": "Sorting & Printing", "disposition": "retained tables; replaced examples", "coverage": "All five entries and sort-state values; preview-only assumptions explicit"},
+        {"source_section": "Network & Connectivity", "disposition": "retained tables; replaced examples", "coverage": "All seven entries, network/connection enumerations, PersistentID lifetime/context, UUID/UUIDNumber units and stored-key distinction"},
+        {"source_section": "Device & Screen (FileMaker Go / iOS)", "disposition": "retained tables; replaced examples", "coverage": "All eight entries and device values, screen/scale/accessibility, FM26 Guided Access and region events"},
+        {"source_section": "Calculation & Custom Function Context", "disposition": "retained table; replaced example", "coverage": "CalculationRepetitionNumber and original repeating-label fixture"},
+        {"source_section": "Common Get() patterns", "disposition": "replaced examples; adapted synthesis", "coverage": "Audit stamp, stable sync key, responsive breakpoints, JSON context to subscript, server-label hint, captured detailed error logging, AI-token budget"}
+      ],
+      "corrections": [
+        "Unsaved-record prompt uses If script steps, not a script step inside an If calculation.",
+        "Capture LastError/detail/location together immediately; do not claim If necessarily clears LastError.",
+        "Extended privilege membership checks exact return-delimited values, not arbitrary substrings.",
+        "All literal outputs are conditional fixture expectations, not recorded engine values."
+      ],
+      "residual_uncertainties": ["Platform/version-dependent return values and availability require actual client/engine tests; unchanged source table notes are attributed snapshot synthesis, not newly vendor-verified claims."]
+    },
+    {
+      "source": "sources/claris-filemaker-pro-skill/references/help-sitemap.md",
+      "commit": "bda594e15f4a6981e93403c4b187d262ca820116",
+      "read": "complete, 216 lines",
+      "destination": "filemaker-pro/references/help-sitemap.md",
+      "level": "static-checked",
+      "sections": [
+        {"source_section": "Hub Page", "disposition": "retained", "coverage": "Exact help-centre URL"},
+        {"source_section": "Pro Help", "disposition": "retained; shorthand clarified", "coverage": "Exact slug/index/base; all top-level chapter and reference paths"},
+        {"source_section": "Data API Guide", "disposition": "retained; shorthand clarified", "coverage": "Exact slug/index/base and every topic path including external-source, OAuth, Claris ID, container, host/test/monitor"},
+        {"source_section": "OData API Guide", "disposition": "retained", "coverage": "Exact slug/index/base"},
+        {"source_section": "SQL Reference", "disposition": "retained; shorthand clarified", "coverage": "Exact slug/index/base and all ten topic paths"},
+        {"source_section": "WebDirect Guide; Go Release Notes; Go Help; Go Development Guide", "disposition": "retained in Other guides", "coverage": "Every original slug/index; shared base construction made explicit"},
+        {"source_section": "Data Migration Tool Guide; Developer Tool Guide; Upgrade Tool Guide", "disposition": "retained in Other guides", "coverage": "All slugs/index URLs including app-upgrade-tool-guide"},
+        {"source_section": "Pro Release Notes; Pro SVG Grammar for Button Icons", "disposition": "retained in Other guides", "coverage": "Both exact slugs and index URLs"},
+        {"source_section": "Documentation Archive", "disposition": "retained", "coverage": "Exact archive address and ?fmp/?fms/?fmc/?fmg/?cc/?cs filters"},
+        {"source_section": "PDF/Binary Docs", "disposition": "retained", "coverage": "ODBC/JDBC PDF, Custom Web Publishing PDF and deployment ZIP addresses"}
+      ],
+      "residual_uncertainties": ["Current remote reachability/redirects were not tested; offline usage does not require web access."]
+    },
+    {
+      "source": "sources/claris-filemaker-pro-skill/references/data-api-reference.md",
+      "commit": "bda594e15f4a6981e93403c4b187d262ca820116",
+      "read": "complete, 195 lines; compared complete existing destination guide",
+      "destination": "filemaker-pro/references/cadenceux-integration-details.md#data-api-additional-contracts",
+      "complement": "filemaker-pro/references/data-api-reference.md (unchanged)",
+      "level": "manual-review",
+      "sections": [
+        {"source_section": "Base URL", "disposition": "retained across main and supplement", "coverage": "v1/v2/vLatest and database/layout alias definitions"},
+        {"source_section": "Authentication", "disposition": "retained/adapted", "coverage": "Login/logout main; exact host-root validateSession endpoint supplement; 15-minute idle expiry, Basic/Bearer/FMID distinction; main's Cloud token-header correction takes precedence over source shorthand"},
+        {"source_section": "Records", "disposition": "covered in unchanged main", "coverage": "Create/read/range/edit/duplicate/delete methods and paths, JSON/Bearer headers and fieldData"},
+        {"source_section": "Find", "disposition": "original synthetic replacement in unchanged main", "coverage": "Query objects, sort fieldName/sortOrder, body limit/offset and one-based paging"},
+        {"source_section": "Metadata", "disposition": "retained across main and supplement", "coverage": "Layouts, layout metadata and scripts listing paths"},
+        {"source_section": "Scripts", "disposition": "retained/adapted with replacement parameter examples", "coverage": "One-text script.param, optional Exit Script result, all prerequest/presort/final parameter/result/error keys and stage ordering"},
+        {"source_section": "Global fields", "disposition": "restored in supplement with original synthetic body", "coverage": "PATCH globals, globalFields and qualified field names; session scope explicit"},
+        {"source_section": "Upload container data", "disposition": "restored in supplement with original multipart command", "coverage": "Full record/container/repetition endpoint, multipart boundary, upload part, authorization and expected verification"},
+        {"source_section": "HTTP Headers summary", "disposition": "retained in main and supplement", "coverage": "All five Content-Type/authorization uses"},
+        {"source_section": "Key notes", "disposition": "retained/adapted", "coverage": "Snapshot CORS recommendation qualified; idle timeout, Admin Console concurrency, normal JSON response/messages envelope and nonzero error interpretation"}
+      ],
+      "residual_uncertainties": ["Multipart host limits/container validation and proxy/CORS deployment settings need target-environment verification; OAuth/external-source login wire details are not provided by the original quick reference."]
+    },
+    {
+      "source": "sources/claris-filemaker-pro-skill/references/odata-api-reference.md",
+      "commit": "bda594e15f4a6981e93403c4b187d262ca820116",
+      "read": "complete, 177 lines; compared complete existing destination guide",
+      "destination": "filemaker-pro/references/cadenceux-integration-details.md#odata-additional-capabilities-and-exceptions",
+      "complement": "filemaker-pro/references/odata-api-reference.md (unchanged)",
+      "level": "manual-review",
+      "sections": [
+        {"source_section": "Choosing between OData and the Data API", "disposition": "retained/adapted", "coverage": "Direct tables versus layouts/portals, hosted prerequisites, no driver needed, interoperability, batch atomic sets and schema capabilities"},
+        {"source_section": "Terminology mapping", "disposition": "retained/adapted", "coverage": "entity/entity set/property/entity container/raw value"},
+        {"source_section": "Base URL and authentication", "disposition": "retained/corrected across main and supplement", "coverage": "v4, table name or FMTID, enabled access, Server Basic versus main's Cloud FMID contract; source OAuth wording retained as context rather than password-as-Basic instruction"},
+        {"source_section": "Query options", "disposition": "retained with original synthetic filter", "coverage": "All eight option groups, true-only filter, ISO/server timezone, quoted space/underscore identifiers, independent top/skip, related expansion and aggregation/grouping"},
+        {"source_section": "Operations", "disposition": "retained across main and supplement", "coverage": "Service/table discovery, metadata, keyed CRUD, POST batch, script invocation, create/alter/delete table/field/index capabilities without fabricating missing schema paths"},
+        {"source_section": "Running scripts", "disposition": "retained with original synthetic request/result", "coverage": "Empty no-parameter body, string/number/object parameter, resultParameter/code, naming restrictions, no interaction"},
+        {"source_section": "Not supported", "disposition": "retained/adapted", "coverage": "Complete search/lambda/fractionalseconds/isof/geo list, external ODBC and calc-context exclusions, no triggers, explicit server-script workaround qualified"},
+        {"source_section": "Script step support", "disposition": "retained with correction", "coverage": "Historical 216-step DataAPI 99 No/26 Partial and CWP 91 No/26 Partial counts; these are not an OData matrix; FM26 Export Field Contents support"},
+        {"source_section": "Release notes that matter", "disposition": "retained", "coverage": "26.0.1 metadata comments/AI annotations, numeric ? to null, timestamp-looking text preservation; 26.0.2 Cloud decimal precision"},
+        {"source_section": "Error codes", "disposition": "retained/qualified", "coverage": "1700–1715 and error 953 transfer limit; not always merely one oversized page"},
+        {"source_section": "When to fetch live", "disposition": "adapted to optional version-matched specification verification", "coverage": "Batch/schema wire details, webhook/container specifics and exact apply syntax remain targeted questions; original markdown index retained, no web prerequisite"}
+      ],
+      "residual_uncertainties": ["Exact batch serialization/atomicity-group syntax, script side effects within batch rollback, webhook options, apply combinations and alter/index endpoint bodies require a version-matched implementation specification; capabilities are retained rather than excluded."]
+    },
+    {
+      "source": "sources/claris-filemaker-pro-skill/references/sql-reference.md",
+      "commit": "bda594e15f4a6981e93403c4b187d262ca820116",
+      "read": "complete, 189 lines; compared complete existing destination guide",
+      "destination": "filemaker-pro/references/cadenceux-integration-details.md#sql-additional-syntax-and-functions",
+      "complement": "filemaker-pro/references/sql-reference.md (unchanged)",
+      "level": "manual-review",
+      "sections": [
+        {"source_section": "Two modes of use", "disposition": "retained/corrected", "coverage": "SELECT-only calculation versus driver DML/DDL; OData schema APIs not SQL execution"},
+        {"source_section": "ExecuteSQL syntax", "disposition": "covered in main and original supplement query", "coverage": "Separators, positional placeholders and text results"},
+        {"source_section": "Supported SQL SELECT", "disposition": "retained schematic grammar", "coverage": "DISTINCT, alias, JOIN, WHERE, GROUP BY, HAVING, ORDER BY, OFFSET and FETCH FIRST"},
+        {"source_section": "Data types; Date / Time literals", "disposition": "retained/adapted; original literals", "coverage": "Every text/number/date/time/timestamp/container/calculation mapping, container shorthand qualified by execution surface"},
+        {"source_section": "Key SQL functions", "disposition": "retained with original demonstration queries", "coverage": "COUNT/SUM/AVG/MIN/MAX/TRIM/UPPER/LOWER/SUBSTR/LENGTH/CAST/COALESCE/CASE"},
+        {"source_section": "JOINs", "disposition": "retained with original join", "coverage": "Exact occurrence names, INNER/LEFT supported, RIGHT/FULL unsupported"},
+        {"source_section": "Special FileMaker SQL objects", "disposition": "retained with original query", "coverage": "ROWID/ROWMODID equivalences, incorrect RECORDID/MODID historical correction, FM26 quoting/constants and system-column/table URLs"},
+        {"source_section": "CREATE TABLE / ALTER TABLE", "disposition": "retained grammar; original driver DDL", "coverage": "repetitions, DEFAULT/UNIQUE/NOT NULL/PRIMARY KEY/GLOBAL, FOREIGN KEY REFERENCES, EXTERNAL/SECURE/OPEN/FEWER_FOLDERS, FM26 foreign-key syntax, 100-character and quoted-identifier rules; no false ExecuteSQL/OData-SQL permission"},
+        {"source_section": "Common gotchas; Reserved keywords", "disposition": "retained", "coverage": "Quoted spaces/reserved words, occurrence context, conversion, NULL tests, IN/EXISTS/ANY/ALL subqueries, no DML in calculation, unsupported joins"},
+        {"source_section": "Full reference", "disposition": "retained", "coverage": "All statements/clauses/expressions/functions/system objects/error and reserved-word paths"}
+      ],
+      "residual_uncertainties": ["No example query or DDL was parsed/executed by FileMaker; per-driver container functions, SQL overloads and actual foreign-key enforcement must be checked separately from documented syntax."]
+    },
+    {
+      "source": "sources/claris-filemaker-pro-skill/references/filemaker-go-reference.md",
+      "commit": "bda594e15f4a6981e93403c4b187d262ca820116",
+      "read": "complete, 128 lines; compared complete existing destination guide",
+      "destination": "filemaker-pro/references/cadenceux-integration-details.md#go-option-level-differences",
+      "complement": "filemaker-pro/references/filemaker-go-reference.md (unchanged)",
+      "level": "manual-review",
+      "sections": [
+        {"source_section": "Script step support measured", "disposition": "retained with source-history scope", "coverage": "216/154 Yes/20 Partial/42 No, silent skip/error3, full common Partial and Go-only lists, Windows touch exception; 29+9 upstream page counts/date retained"},
+        {"source_section": "Not supported at all", "disposition": "retained", "coverage": "Full schema/structure authoring, import/export, baseline, plugin and hosting exclusions"},
+        {"source_section": "Behaviour differences", "disposition": "retained/adapted", "coverage": "No Layout/Preview, PDF alternative; layout-menu/button restrictions, value-list exceptions, tooltips/leaders/shadows, picker seconds, custom-menu limitations/shortcut precedence, independent print options/explicit margins"},
+        {"source_section": "Device capabilities", "disposition": "retained", "coverage": "All ten capability surfaces including location/sensors/beacons/barcode/capture/flash/media/NFC/regions/Guided Access/Siri/keychain"},
+        {"source_section": "Files, security and transfer", "disposition": "retained across main and supplement", "coverage": "Local/hosted, HTTPS tunnelling, host credentials/permitted hosts, transfers and kiosk-state detection"},
+        {"source_section": "When to fetch live", "disposition": "adapted to optional targeted verification", "coverage": "OS/Siri/keychain/permitted-host/transfer specifics and both original markdown indexes"}
+      ],
+      "residual_uncertainties": ["Device permissions, exact mobile print/export/window options, current iOS requirements and release-specific host/keychain/Siri setup have not been tested."]
+    },
+    {
+      "source": "sources/claris-filemaker-pro-skill/references/webdirect-reference.md",
+      "commit": "bda594e15f4a6981e93403c4b187d262ca820116",
+      "read": "complete, 146 lines; compared complete existing destination guide",
+      "destination": "filemaker-pro/references/cadenceux-integration-details.md#webdirect-complete-exception-snapshot",
+      "complement": "filemaker-pro/references/webdirect-reference.md (unchanged)",
+      "level": "static-checked exception counts; manual-review other coverage",
+      "sections": [
+        {"source_section": "Script step support measured", "disposition": "retained historically scoped", "coverage": "216/106 Yes/35 Partial/75 No, source 40-page/date claims, no-alert skip/error3 versus option-specific Partial, 26.0.3 PDF change"},
+        {"source_section": "Steps that don't run; Partial lists", "disposition": "retained complete", "coverage": "All 75 No and 35 Partial named steps with original category organization"},
+        {"source_section": "Feature limitations", "disposition": "retained/adapted", "coverage": "No schema authoring, Table View fallback, object stacking/click-through restrictions and all three alternatives, complete rich-text loss/style limits, no custom menus"},
+        {"source_section": "Connections and sessions", "disposition": "retained with historical qualification", "coverage": "Source general 100/server-machine figure not timeless cap; excess-user error, each window/tab connection, timeout and Admin Console/file-close reclamation"},
+        {"source_section": "Design guidance", "disposition": "retained", "coverage": "Mobile browser layout, controlled bars/UI, explicit sign-out/close, function/script/trigger review, hosted multi-file/external-source reachability"},
+        {"source_section": "Related surfaces", "disposition": "retained", "coverage": "ApplicationVersion context, error1225, function notes/test rather than nonexistent per-function Compatibility matrix"},
+        {"source_section": "When to fetch live", "disposition": "adapted to optional targeted verification", "coverage": "Browser/administration/homepage/POST-sign-in specifics and original markdown index"}
+      ],
+      "residual_uncertainties": ["Actual licensed topology capacity, browser matrices, rich-text editing behavior and option-specific workflows require deployment tests; historical count/limit preservation is not a current-capacity guarantee."]
+    },
+    {
+      "source": "sources/fmp-dev-design-patterns/references/scripting-patterns.md",
+      "commit": "17471d6d0a3fd1e53a1714d0c265dc3afad718cc",
+      "read": "complete, 224 lines",
+      "destination": "filemaker-pro/references/cadenceux-patterns.md",
+      "level": "manual-review",
+      "sections": [
+        {"source_section": "Error Handling", "disposition": "adapted; original error snapshot", "coverage": "Boilerplate, explicit exits, immediate capture, document logging location/lifetime; next-step-reset absolutism corrected"},
+        {"source_section": "Variable Scope", "disposition": "retained/adapted", "coverage": "Local versus session/file global lifetime, parameters/results instead of global error/data channels"},
+        {"source_section": "Looping Over Records", "disposition": "original checked loop and stable-key alternative", "coverage": "Empty-set guard, first/next navigation, checked commits/work, explicit exit and concurrent-membership caveat"},
+        {"source_section": "Sub-Scripts; JSON Parameter Passing", "disposition": "original caller/callee examples", "coverage": "JSON input, immediate invocation-error/result capture, callee validation and explicit result contract"},
+        {"source_section": "Perform Find", "disposition": "original safe find outcome fragment", "coverage": "Establish/check Find mode/criteria, immediate error capture, explicit 401 result; removed unsafe Show All Records fallback"},
+        {"source_section": "Transactions", "disposition": "corrected lifecycle/schematic", "coverage": "Open/Commit same block and nesting level, transaction ownership, first-error capture, auto-revert policy, Revert skip-to-boundary and post-boundary cleanup; no invalid conditional closure"},
+        {"source_section": "AI / ML Integration", "disposition": "adapted division of responsibilities; original design example", "coverage": "Configure AI Account no Model; generation model/user prompt/instructions/response/messages/agentic surfaces; separate named SQL/Find/RAG prompt templates"},
+        {"source_section": "Custom Functions", "disposition": "retained rules; optional explicit definitions and corrected helpers", "coverage": "Naming/100 chars/privilege/private/50000 recursion/SetRecursion/exit case/library, optional compatibility error CFs with side effect disclosure, original pure parameter helpers, robust modifier bitmask, guarded portal helpers and filtered-order caveat"}
+      ],
+      "residual_uncertainties": ["Actual authored transaction and script syntax require engine validation; schematic/comments are explicitly not runnable operations. Optional helper definitions are not installed, and GetNthRecord portal mapping requires verified related ordering."]
+    },
+    {
+      "source": "sources/fmp-dev-design-patterns/references/pattern-audit.md",
+      "commit": "17471d6d0a3fd1e53a1714d0c265dc3afad718cc",
+      "read": "complete, 82 lines",
+      "destination": "filemaker-pro/references/cadenceux-patterns.md#audit-inputs-and-xml-extraction",
+      "level": "manual-review",
+      "sections": [
+        {"source_section": "Source ADT or Save as XML", "disposition": "retained/adapted", "coverage": "Authorized optional tool read or local large XML parse; no Claude dependency, no assumed installed tool, style not schema integrity"},
+        {"source_section": "Extraction where things live", "disposition": "retained all paths/gotchas", "coverage": "FMSaveAsXML/Structure/AddAction, ScriptCatalog/Group, StepsForScripts/ObjectList/Step and child ScriptReference ID, nested Calculation/Text, comment Parameter, variable Name@value, FieldsForTables/FieldCatalog/ObjectList/Field and Storage@global, CustomFunctionsCatalog, TableOccurrenceCatalog/BaseTableSourceReference"},
+        {"source_section": "Stats to compute", "disposition": "retained all nine categories", "coverage": "Naming, opener/closer/result readers, written/empty/field comments, error-CF/capture gap, disabled steps, full global set/clear/read map incl field/CF/step targets and casing/startup, bare CF references/layout exclusion, naming drift, secrets"},
+        {"source_section": "Presenting findings", "disposition": "retained/adapted", "coverage": "Two recommendation lists with evidence counts, developer acceptance before generalized config edits, no solution names/stats in standards, deeper layout/reference analysis requires actual inspection"}
+      ],
+      "residual_uncertainties": ["XML paths are source-preserved, not checked against a real export here; export versions/namespaces and hidden/dynamic/layout references need actual inspection. No solution audit findings are invented."]
+    },
+    {
+      "source": "sources/fmp-dev-design-patterns/SKILL.md",
+      "commit": "17471d6d0a3fd1e53a1714d0c265dc3afad718cc",
+      "read": "complete, 286 lines",
+      "destination": "filemaker-pro/references/cadenceux-patterns.md",
+      "level": "manual-review",
+      "sections": [
+        {"source_section": "Metadata; FileMaker design patterns; Session setup", "disposition": "adapted", "coverage": "Attribution/license, pattern-versus-syntax scope, three audit/config choices and opener policy; no host/client-specific dependency"},
+        {"source_section": "Writing a script", "disposition": "retained adapted checklist", "coverage": "Purpose/sections, approved openers, error checks, JSON/results, syntax/platform check, anti-pattern review, authorized delivery/readback"},
+        {"source_section": "Configured design patterns Naming", "disposition": "retained as optional project conventions", "coverage": "Domain: Action, pipe/bracket/OLD/dividers, dot fields/_g/control table, dot occurrence context and xml_ staging prefix"},
+        {"source_section": "Configured error handling; Script structure", "disposition": "adapted", "coverage": "Optional explicitly defined CFs rather than assumed dependencies; local error snapshots preferred; explicit exits, JSON and narrow Halt use"},
+        {"source_section": "Anti-patterns", "disposition": "retained/adapted", "coverage": "Stale $$ channels, hidden setters/casing, empty comments, fall-through, capture without checks, disabled code and speculative CFs; no deletion without permission"},
+        {"source_section": "Script boilerplate; Exit Script; Blank lines", "disposition": "adapted with original examples", "coverage": "Abort/capture limitations, explicit and early exits, script-result semantics and status/empty/error/JSON contracts, section spacing"},
+        {"source_section": "Patterns", "disposition": "integrated", "coverage": "All scripting-pattern topics included in same destination"},
+        {"source_section": "Delivering scripts; Old patterns", "disposition": "adapted", "coverage": "Optional tool calculation validation/write/readback; readable steps without tools; historical clipboard delivery retirement retained without requiring plugins"},
+        {"source_section": "Platform differences; Configured functions", "disposition": "retained/adapted", "coverage": "Unsupported-step/error3 branches, per-step support, only explicitly configured project restrictions"},
+        {"source_section": "Skill update self-check", "disposition": "host-specific automation intentionally not carried forward", "coverage": "No automatic fetch or Claude plugin command. This is a portability/control change, not exclusion of technical FileMaker content."},
+        {"source_section": "Licence", "disposition": "retained attribution", "coverage": "Darrin Southern/CadenceUX, exact repository commit and CC BY 4.0 link"}
+      ],
+      "residual_uncertainties": ["Project convention adoption and any file/config changes require user acceptance; ADT availability/authorization and runtime behavior are not assumed."]
+    }
+  ],
+  "runtime_success_claims": false,
+  "blanket_content_blocks": [],
+  "notes": [
+    "The five existing independent main guides were read completely but not edited by this task.",
+    "Snapshot dates/page counts and compatibility measurements are attributed historical upstream claims, not newly observed vendor/device verification.",
+    "Technical names, endpoint grammar, XML paths, enumerations and minimal optional compatibility formulas remain where necessary for functional coverage; synthetic examples do not claim observed execution.",
+    "No automatic update check, network prerequisite, implicit Claude dependency or unauthorized configuration update was added."
+  ]
+}

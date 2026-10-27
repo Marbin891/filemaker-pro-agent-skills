@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/CadenceUX/goya-be-plugin-skill",
+  "commit": "29579288cba843286b5c15275cd5d23e7bb37f40",
+  "version": "1.4.1",
+  "license_declaration": "CC-BY-4.0 declared in README.md; vendor documentation rights remain with each vendor",
+  "treatment": "Adapted factual catalog plus CadenceUX CC BY synthesis; vendor prose and examples omitted",
+  "source_files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 14902,
+      "sha256": "b1b01a987049caf8255f8d97fa663629ca8f27459cf6d436abf22b8e23a399c6"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "7d072b48526b023950e4c48db01e8c273554a6401119f5691e7589ba9bc65d9d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6800,
+      "sha256": "016a17b4339e9a8397f05f2913c4e9262d08487779e2cd4e98aa8a2ae5d689ea"
+    },
+    {
+      "path": "references/function-catalog.json",
+      "bytes": 315467,
+      "sha256": "7b3f0cfd0a279c9b601e0b9f22eaf57ecfea38348475476ce3511061abf12f7e"
+    }
+  ]
+}

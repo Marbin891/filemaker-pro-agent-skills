@@ -1,0 +1,4 @@
+interface:
+  display_name: "FileMaker Skill Router"
+  short_description: "Select the right FileMaker skill for a request"
+  default_prompt: "Use $fmp-dev-orchestrator to select the FileMaker skills needed for this request."

@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/CadenceUX/fmp-dev-orchestrator-skill",
+  "commit": "1fe0b8f8682a0bf569a8c4df3ab9aaeab94f405e",
+  "version": "2.1.3",
+  "license_declaration": "CC-BY-4.0 declared in README.md; vendor documentation rights remain with each vendor",
+  "treatment": "Adapted factual catalog plus CadenceUX CC BY synthesis; vendor prose and examples omitted",
+  "source_files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 5643,
+      "sha256": "5c82c22869d46cd2f91404d80fe0133babba5b3debc77eeb3dbba3ea9f7138e1"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "eb01a4e8e8922406f15a22cadc3fae28d4f513afe11b4734788eb2ea73cf034e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2996,
+      "sha256": "b6ed26ccbe2ee7334eb24d6d753a05a126e5df90343d580636f0b05589b61980"
+    },
+    {
+      "path": "references/stack-check.md",
+      "bytes": 6351,
+      "sha256": "9312147f638f93c40cc5d9802fbf827a6a290b9f1ae246663ffc97160ae802a8"
+    }
+  ]
+}

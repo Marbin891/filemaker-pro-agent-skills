@@ -1,0 +1,64 @@
+name: Validate skills and plugin
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  PYTHONUTF8: '1'
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      CADENCEUX_SOURCES: ${{ runner.temp }}/filemaker-sources
+      FILEMAKER_SKILL_SOURCE_REFERENCES: ${{ runner.temp }}/filemaker-sources/claris-filemaker-pro-skill/references
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.10'
+      - name: Install development validators (not runtime dependencies)
+        run: python -m pip install --only-binary=:all: -r requirements-dev.txt
+      - name: Acquire pinned provenance sources (data only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$CADENCEUX_SOURCES"
+          while read -r repo pin; do
+            git init --quiet "$CADENCEUX_SOURCES/$repo"
+            git -C "$CADENCEUX_SOURCES/$repo" config core.autocrlf false
+            git -C "$CADENCEUX_SOURCES/$repo" fetch --quiet --depth 1 "https://github.com/CadenceUX/$repo.git" "$pin"
+            git -C "$CADENCEUX_SOURCES/$repo" -c core.hooksPath=/dev/null checkout --quiet --detach "$pin"
+          done <<'PINS'
+          claris-filemaker-pro-skill bda594e15f4a6981e93403c4b187d262ca820116
+          fmp-dev-design-patterns 17471d6d0a3fd1e53a1714d0c265dc3afad718cc
+          goya-be-plugin-skill 29579288cba843286b5c15275cd5d23e7bb37f40
+          monkeybread-mbs-plugin-skill 946bdca12c2117defb4dc2b8959ee00f04c74086
+          beezwax-bbox-plugin-skill 0c4179ddfd5428f514f85f75f2a68d1001ec4483
+          fmp-dev-orchestrator-skill 1fe0b8f8682a0bf569a8c4df3ab9aaeab94f405e
+          PINS
+      - name: Validate official portable manifest schema
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 \
+            https://agent-plugins.org/schemas/1.0.0/plugin.schema.json -o "$RUNNER_TEMP/plugin.schema.json"
+          echo "0a4aad95ce337878ad38802ebf0daa3fde76abe3f65400c86bcbb1ec0b3ab883  $RUNNER_TEMP/plugin.schema.json" | sha256sum --check
+          python -m jsonschema -i plugin.json "$RUNNER_TEMP/plugin.schema.json"
+      - run: python scripts/generate_assets.py --check
+      - run: python scripts/validate.py
+      - run: python scripts/verify_provenance.py "${{ env.CADENCEUX_SOURCES }}"
+      - run: python scripts/verify_plugin_provenance.py "${{ env.CADENCEUX_SOURCES }}"
+      - run: python scripts/build.py
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/lint_examples.py
+      - run: python scripts/audit.py
+      # No releases, publishing, execution of upstream code or use of secrets.

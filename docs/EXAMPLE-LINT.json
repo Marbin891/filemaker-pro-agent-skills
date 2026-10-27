@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "filemaker_fences_scanned": 453,
+  "call_names_checked": 1262,
+  "unknown_calls": [],
+  "argument_count_issues": [],
+  "limitation": "Lexical call inventory only: not FileMaker parsing, argument validation, type checking, evaluation or engine execution."
+}
